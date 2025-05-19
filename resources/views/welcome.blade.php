@@ -1056,7 +1056,7 @@
             </h3>
             <div class="flex grid-col-3 pt-8 gap-5">
                 <div
-                    class="w-[420px] h-[490px] border-[2px] border-gray-200 rounded-[24px]  hover:shadow-[0px_10px_20px_0px_#00000026] transition-shadow duration-300">
+                    class="w-1/3 h-full border-[2px] border-gray-200 rounded-[24px]  hover:shadow-[0px_10px_20px_0px_#00000026] transition-shadow duration-300">
                     <div class="p-6">
                         <div class="flex justify-between">
                             <div class="h-[196px] flex flex-col justify-between">
@@ -1079,7 +1079,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-[420px] h-[490px] border-[2px] border-gray-200 rounded-[24px] hover:shadow-[0px_10px_20px_0px_#00000026] transition-shadow duration-300 ">
+                    class="w-1/3 h-full border-[2px] border-gray-200 rounded-[24px] hover:shadow-[0px_10px_20px_0px_#00000026] transition-shadow duration-300 ">
                     <div class="p-6">
                         <div class="flex justify-between">
                             <div class="h-[196px] flex flex-col justify-between">
@@ -1102,7 +1102,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-[420px] h-[490px] border-[2px] border-gray-200 rounded-[24px] hover:shadow-[0px_10px_20px_0px_#00000026] transition-shadow duration-300 ">
+                    class="w-1/3 h-full border-[2px] border-gray-200 rounded-[24px] hover:shadow-[0px_10px_20px_0px_#00000026] transition-shadow duration-300 ">
                     <div class="p-6">
                         <div class="flex justify-between">
                             <div class="h-[196px] flex flex-col justify-between">
