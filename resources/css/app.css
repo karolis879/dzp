@@ -35,11 +35,11 @@
 }
 
 /* Container styling */
-.container {
-    padding: 0;
-    width: 1392px;
-    display: flex;
-}
+/*.container {*/
+/*    padding: 0;*/
+/*    width: 1392px;*/
+/*    display: flex;*/
+/*}*/
 
 .hover-svg use {
     fill: #0D5B60; /* Initial color */

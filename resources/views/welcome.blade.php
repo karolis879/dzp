@@ -19,8 +19,7 @@
 <body class="flex flex-col min-h-screen bg-white">
 
 <!-- Header -->
-<div>
-    <header class="w-full border-b-2 border-[#D6DBDB] h-24 flex items-center z-20 bg-white">
+    <header class="hidden w-full border-b-2 border-[#D6DBDB] h-24 md:flex items-center z-20 bg-white">
         <div class="container mx-auto flex justify-between items-center px-4 z-20">
             <nav class="flex items-center h-8">
                 <ul class="flex gap-8 text-base font-medium text-[#191919]">
@@ -54,6 +53,39 @@
         </div>
     </header>
 
+    <nav class="md:hidden">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-10 px-6 relative">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="{{ asset('images/dzp_logo.png') }}" alt="Wind Turbine"
+                     class="transition-transform duration-500 w-[80px]"
+                     style="transform-origin: center;"
+                     onmouseover="this.style.transform='rotate(180deg)'"
+                     onmouseout="this.style.transform='rotate(0deg)'"/>
+            </a>
+            <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden absolute top-[105px] left-0 w-full z-50 bg-white shadow-lg" id="navbar-hamburger">
+                <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm dark:bg-blue-600" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </div>
 
 <!-- Main Content -->
@@ -61,11 +93,11 @@
     <div class="container mx-auto flex justify-between items-center px-4 mt-[52px] mb-[52px] relative">
 
         <img src="{{ asset('images/guy.png') }}" alt="flying_guy"
-             class="w-[141px] h-[905px] absolute right-[-140px] top-[-70px] z-10"/>
+             class="md:w-[141px] w-20 top-[40px] right-3 md:h-[905px] absolute md:right-[-140px] hidden md:flex  md:top-[-70px] z-10"/>
 
         <div class="flex flex-wrap items-center">
             <!-- Image (like col-4) -->
-            <div class="w-full md:w-1/4">
+            <div class="hidden md:flex md:w-1/4">
                 <img src="{{ asset('images/dzp_logo.png') }}" alt="Wind Turbine"
                      class="transition-transform duration-500"
                      style="transform-origin: center;"
@@ -76,7 +108,7 @@
             <!-- Text (like col-8) -->
             <div class="w-full md:w-3/4">
                 <div>
-                    <p class="font-spaceGrotesk font-normal text-[74px] leading-[88px] tracking-[-0.04em] text-[#00403D] text-right">
+                    <p class="font-normal text-2xl md:text-[74px] md:leading-[88px] md:tracking-[-0.04em] text-[#00403D] md:text-right">
                         Ensuring that wind turbines blades
                         <span class="text-[#818181]">never stop turning</span>
                     </p>
@@ -85,36 +117,40 @@
         </div>
     </div>
 
-    <div class="relative">
+    <div class="relative mx-4">
         <div class="container mx-auto flex justify-between items-center relative">
             <div class="w-full relative">
                 <img src="{{asset('images/header.png')}}" alt="Wind Turbine"
-                     class="w-full h-[876px]"/>
+                     class="hidden md:flex w-full md:h-[876px]"/>
+                <img src="{{asset('images/mobile_header.png')}}" alt="Wind Turbine"
+                     class="md:hidden w-full md:h-[876px]"/>
             </div>
             <img src="{{ asset('images/hangin_guy_2.png') }}" alt="flying_guy"
-                 class="w-[128px] h-[1430px] object-cover absolute left-[-50px] top-219 z-10"/>
+                 class="hidden md:flex md:w-[128px] md:h-[1430px] object-cover absolute left-[-50px] top-219 z-10"/>
         </div>
     </div>
 
-    <div class="container mx-auto flex justify-between items-center mt-[52px] mb-[52px] flex-col">
-        <div class="w-full px-[75px]">
-            <h3 class="font-normal text-[60px] leading-[68px] tracking-[-0.04em] text-[#818181]">
+    <div class="container mx-auto flex justify-between items-center md:mt-[52px] mb-[52px] flex-col overflow-hidden relative">
+        <img src="{{ asset('images/guy.png') }}" alt="flying_guy"
+             class="md:w-[141px] w-20 top-[-350px] right-3 md:h-[905px] absolute md:right-[-140px] md:hidden  md:top-[-70px] z-10"/>
+        <div class="w-full pt-6 md:pt-2 px-4 md:px-[75px]">
+            <h3 class="font-normal text-4xl md:text-[60px] md:leading-[68px] tracking-[-0.04em] text-[#818181]">
                 Leading
                 <span
-                    class="font-normal text-[60px] leading-[68px] tracking-[-0.04em] text-[#00403D] text-right">
+                    class="font-normal text-4xl md:text-[60px] md:leading-[68px] tracking-[-0.04em] text-[#00403D] text-right">
                     the wind
                 </span>
             </h3>
-            <p class="font-normal text-[24px] leading-[32px] tracking-normal mt-[24px]">
+            <p class="font-normal w-3/4 md:w-full  text-base md:text-[24px] md:leading-[32px] tracking-normal mt-[24px]">
                 We are committed to advancing wind turbine maintenance solutions through innovation, efficiency and
                 safety. Check below our journey towards excellence!
             </p>
         </div>
 
-        <div class="w-full mt-[52px] px-[75px] flex">
-            <div class="w-1/2 relative">
+        <div class="w-full mt-[52px] md:px-[75px] flex">
+            <div class="w-1/2 relative hidden md:flex">
                 <img src="{{asset('images/leading_the_wind.jpg')}}" alt="leading_the_wind"
-                     class="h-full object-cover  rounded-[20px]"/>
+                     class=" h-full object-cover  rounded-[20px]"/>
                 <button
                     class="
                             bg-[#F06449]
@@ -128,45 +164,49 @@
                             font-hankenGrotesk
                             absolute top-10 left-10
                             cursor-pointer
+                            hidden md:flex
                           "
                 > Get a quote
                 </button>
             </div>
-            <div class="w-1/2 flex flex-col ml-[52px]">
+            <div class="md:px-0 md:w-1/2 flex flex-col md:ml-[52px]">
                 <div class="flex flex-col">
-                    <div class="flex border-b-2 border-[#D6DBDB] pb-[36px]">
-                        <div class="w-1/4">
+                    <div class="flex border-b-2 border-[#D6DBDB] md:pb-[36px] pb-6">
+                        <div class="md:w-1/4 px-3  pt-4 md: pt-0 flex md:felx-row flex-col gap-4 md:items-start items-center justify-start">
                             <img src="{{ asset('images/hand_wind.png') }}" class="w-[79px] h-[80px]" alt="hand_wing"/>
+                            <p class="md:hidden text-[15px] font-bold text-[#F06449]">2022</p>
                         </div>
-                        <div class="w-3/4 flex flex-col">
-                            <p class="text-[15px] font-bold text-[#F06449]">2022</p>
-                            <p class="font-medium text-2xl pt-4">The Beginning of dzp with 7 employees</p>
+                        <div class="w-3/4 flex flex-col px-3 ">
+                            <p class="hidden md:flex text-[15px] font-bold text-[#F06449]">2022</p>
+                            <p class="font-medium text-2xl pt-2">The Beginning of dzp with 7 employees</p>
                             <p class="font-normal pt-4 text-base">With a vision to deliver innovative and sustainable
                                 wind energy solutions.</p>
                         </div>
                     </div>
 
                     <div class="flex border-b-2 border-[#D6DBDB] pb-[36px] pt-[36px]">
-                        <div class="w-1/4">
-                            <img src="{{ asset('images/wind_wind.png') }}" class="w-[79px] h-[80px]" alt="hand_wing"/>
+                        <div class="md:w-1/4 pt-5 md:pt-0 px-3 flex md:felx-row flex-col gap-4 md:items-start items-center justify-start">
+                            <img src="{{ asset('images/wind_wind.png') }}" class="md:w-[79px] md:h-[80px]" alt="hand_wing"/>
+                            <p class="md:hidden text-[15px] font-bold text-[#F06449]">2023</p>
                         </div>
-                        <div class="w-3/4 flex flex-col">
-                            <p class="text-[15px] font-bold text-[#F06449]">2023</p>
+                        <div class="w-3/4 flex flex-col px-3 ">
+                            <p class="hidden md:flex text-[15px] font-bold text-[#F06449]">2023</p>
                             <p class="font-medium text-2xl pt-4">First 100 wind turbine projects and 72 employees in the
                                 company.</p>
-                            <p class="font-normal pt-4 text-base">Started the first project in TA 41, NY which was the
+                            <p class="font-normal pt-2 text-base">Started the first project in TA 41, NY which was the
                                 first step towards global expansion.</p>
                         </div>
                     </div>
 
 
                     <div class="flex border-b-2 border-[#D6DBDB] pb-[36px] pt-[36px]">
-                        <div class="w-1/4">
+                        <div class="md:w-1/4 pt-4 md:pt-0 px-3 flex md:felx-row flex-col gap-4 md:items-start items-center justify-start">
                             <img src="{{ asset('images/badge_win.png') }}" class="w-[79px] h-[80px]" alt="hand_wing"/>
+                            <p class="md:hidden text-[15px] font-bold text-[#F06449]">2024</p>
                         </div>
                         <div class="w-3/4 flex flex-col">
-                            <p class="text-[15px] font-bold text-[#F06449]">2024</p>
-                            <p class="font-medium text-2xl pt-4">Award-Winning Innovations and our ISO
+                            <p class="hidden md:flex text-[15px] font-bold text-[#F06449]">2024</p>
+                            <p class="font-medium text-2xl pt-2">Award-Winning Innovations and our ISO
                                 Certifications</p>
                             <p class="font-normal pt-4 text-base">Started the first project in TA 41, NY which was the
                                 first step towards global expansion.</p>
@@ -174,13 +214,14 @@
                     </div>
 
                     <div class="flex pt-[36px]">
-                        <div class="w-1/4">
+                        <div class="md:w-1/4 pt-4 md:pt-0 px-3 flex md:felx-row flex-col gap-4 md:items-start items-center justify-start">
                             <img src="{{ asset('images/house_win.png') }}" class="w-[79px] h-[80px]" alt="hand_wing"/>
+                            <p class="md:hidden  md:flex text-[15px] font-bold text-[#F06449]">2025</p>
                         </div>
                         <div class="w-3/4 flex flex-col">
-                            <p class="text-[15px] font-bold text-[#F06449]">2025</p>
+                            <p class="hidden md:flex text-[15px] font-bold text-[#F06449]">2025</p>
                             <p class="font-medium text-2xl pt-4">Growth & Expansion</p>
-                            <p class="font-normal pt-4 text-base">Within a few years, the company expanded rapidly,
+                            <p class="font-normal pt-2 text-base">Within a few years, the company expanded rapidly,
                                 installing more than 50 wind turbines in various countries.</p>
                         </div>
                     </div>
@@ -190,13 +231,13 @@
         </div>
     </div>
 
-    <div class="container mx-auto flex-start mb-[52px] mt-2 flex-col bg-[#E4E9E9] h-[911px] rounded-[24px]">
-        <div class="px-[75px] py-10">
+    <div class="container mx-auto flex-start mb-[52px] mt-2 flex-col bg-[#E4E9E9] md:h-[911px] rounded-[24px] pb-4 md:pb-0">
+        <div class="md:px-[75px] px-4 md:py-10">
             <h3
-                class="font-normal text-[60px] leading-[68px] tracking-[-0.04em] text-[#818181]">
+                class="font-normal md:text-[60px] text-[32px] pt-8 md:pt-0 md:leading-[68px] tracking-[-0.04em] text-[#818181]">
                 Our
                 <span
-                    class="font-normal text-[60px] leading-[68px] tracking-[-0.04em] text-[#00403D] text-right">
+                    class="font-normal md:text-[60px] md:leading-[68px] md:tracking-[-0.04em] text-[#00403D] text-right">
                                 services
                             </span>
             </h3>
@@ -206,10 +247,10 @@
         </div>
 
 
-        <div class=" border-gray-200 dark:border-gray-700 px-[75px] pt-[42px]">
+        <div class=" border-gray-200 dark:border-gray-700 md:px-[75px] md:pt-[42px] px-4 md:px-0 pt-4 md:pt-0">
 
             <!-- Tabs (custom grid) -->
-            <div class="grid grid-cols-4 gap-[7px]"
+            <div class="grid md:grid-cols-4 grid-cols-2 gap-[7px]"
                  id="default-styled-tab"
                  data-tabs-toggle="#default-styled-tab-content"
                  data-tabs-active-classes="bg-white text-[#0D5B60]"
@@ -257,7 +298,7 @@
 
                 <!-- Tab content -->
             <div id="default-styled-tab-content">
-                <div class="grid grid-cols-4 mt-2 gap-[7px]" id="blade" role="tabpanel" aria-labelledby="blade-tab">
+                <div class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px]" id="blade" role="tabpanel" aria-labelledby="blade-tab">
                     @foreach ($services as $service)
                         <button
                             class="text-[#0D5B60] hover:text-[#008983] group bg-white aspect-[4/3] rounded-[4px] h-[273px] w-full flex items-center justify-center font-normal text-base flex-col hover:shadow-lg hover:shadow-black/15">
@@ -319,12 +360,12 @@
     @endphp
 
     <div class="container mx-auto flex-start flex flex-col justify-between items-center mb-[52px]">
-        <div class=" w-full px-[75px]">
+        <div class=" w-full px-4 md:px-[75px]">
             <h3
-                class=" text-[60px] leading-[68px] tracking-[-0.04em] text-[#818181]">
+                class=" md:text-[60px] text-[32px] md:leading-[68px] tracking-[-0.04em] text-[#818181]">
                 Our
                 <span
-                    class=" text-[60px] leading-[68px] tracking-[-0.04em] text-[#00403D]">
+                    class=" md:text-[60px] text-[32px] md:leading-[68px] tracking-[-0.04em] text-[#00403D]">
                                 partners
                             </span>
             </h3>
@@ -440,9 +481,9 @@
 
     <div
         class="container mx-auto rounded-[24px] h-[715px] object-cover"
-        style="background-image: url('{{ asset('images/our_clients.png') }}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        style="background-image: url('{{ asset('images/our_clients.png') }}')">
 
-        <div class="w-[920px] px-[75px] py-20">
+        <div class="w-full px-[75px] py-20">
             <h4 class="font-metrophobic text-6xl text-white font-extralight">Our Certifications & Honors</h4>
             <p class="text-white pt-4">Find our ISO certifications and other our services quality assuring
                 information.</p>
@@ -1130,8 +1171,8 @@
 </main>
 
 <!-- Footer -->
-<footer class="max-w-[1744px] w-full h-[484px] mx-auto rounded-t-[90px] bg-[#013538]">
-    <div class="pt-[100px] px-[150px] flex justify-between">
+<footer class="max-w-[1744px] w-full h-[484px] mx-auto rounded-t-lg md:rounded-t-[90px] bg-[#013538]">
+    <div class="md:pt-[100px] px-4 pt-10 md:px-[150px] flex justify-center md:justify-between">
         <div>
             <img src="{{ asset('images/dzp_footer.png') }}" alt="logo" class="w-[215px] h-[58px]">
             <div class="pt-15 text-white flex flex-col">
@@ -1166,7 +1207,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex gap-10 text-white" >
+        <div class="hidden md:flex gap-10 text-white" >
             <div>
                 <h5 class="text-2xl">Our Services</h5>
                 <div class="flex flex-col gap-3 pt-6">
@@ -1188,17 +1229,19 @@
             </div>
         </div>
     </div>
-    <div class="px-[150px] pt-20 pb-5">
-        <div class="flex justify-between">
+    <div class="md:px-[150px] md:px-5 px-[4px] pt-20 pb-5">
+        <div class="md:flex md:flex-row flex-col justify-between">
             <div>
-                <p class="text-[#649295]">© 2023 DZP. All rights reserved.</p>
+                <p class="text-[#649295] text-xs">© 2023 DZP. All rights reserved.</p>
             </div>
-            <div class="flex gap-5">
-                <p class="text-[#649295]"><span class="font-semibold">Designed by</span> BrokenPixels in Switzerland </p>
-                <p class="text-[#649295]"><span class="font-semibold">Coded by</span> Karolis</p>
+            <div class="flex gap-5 md:pt-0 pt-3">
+                <p class="text-[#649295]  text-xs"><span class="font-semibold">Designed by</span> BrokenPixels in Switzerland </p>
+                <p class="text-[#649295]  text-xs"><span class="font-semibold">Coded by</span> Karolis</p>
             </div>
         </div>
     </div>
 </footer>
 </body>
 </html>
+
+
