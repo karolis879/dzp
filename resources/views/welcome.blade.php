@@ -507,7 +507,10 @@
         </div>
     </div>
     <div
-        class="container mx-auto">
+        class="container mx-auto relative overflow-hidden">
+
+        <img class="w-[162px] h-[430px] absolute right-[-50px] top-[-70px]" src="{{asset('images/hangin_guy_3.png')}}">
+
         <div class="px-[75px] py-10 w-full">
             <div class="flex items-center">
                 <h3
