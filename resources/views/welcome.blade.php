@@ -1130,7 +1130,7 @@
 </main>
 
 <!-- Footer -->
-<footer class="w-[1744px] h-[484px] mx-auto rounded-t-[90px] bg-[#013538]">
+<footer class="max-w-[1744px] w-full h-[484px] mx-auto rounded-t-[90px] bg-[#013538]">
     <div class="pt-[100px] px-[150px] flex justify-between">
         <div>
             <img src="{{ asset('images/dzp_footer.png') }}" alt="logo" class="w-[215px] h-[58px]">
