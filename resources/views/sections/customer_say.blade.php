@@ -1,5 +1,5 @@
 <div
-    class="container mx-auto  flex-start mb-[52px] mt-2 flex border-[2px] border-gray-200 rounded-[24px] justify-between">
+    class="container mx-auto  flex-start mb-[52px] mt-2 flex border-[2px] border-gray-200 rounded-[24px] justify-between overflow-hidden relative z-10 bg-white">
     <div class="px-[75px] py-10">
         <h3
             class="font-normal text-[60px] leading-[68px] tracking-[-0.04em] text-[#818181]">

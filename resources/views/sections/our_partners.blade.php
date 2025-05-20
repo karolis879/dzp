@@ -24,7 +24,7 @@
     ];
 @endphp
 
-<div class="container mx-auto flex-start flex flex-col justify-between items-center mb-[52px]">
+<div id="partners" class="container mx-auto flex-start flex flex-col justify-between items-center mb-[52px]">
     <div class=" w-full px-4 md:px-[75px]">
         <h3
             class=" md:text-[60px] text-[32px] md:leading-[68px] tracking-[-0.04em] text-[#818181]">

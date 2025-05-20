@@ -1,19 +1,19 @@
-<div class="container mx-auto flex-start mb-[52px] mt-2 flex-col bg-[#F9F8F2] h-[911px] rounded-[24px]">
-    <div class="px-[75px] py-14">
+<div class="container md:mx-auto flex-start mb-[52px] mt-2 flex-col bg-[#F9F8F2] md:h-[911px] md:rounded-[24px]">
+    <div class="md:px-[75px] md:py-14 px-4 md:px-0 py-4 md:py-0">
         <h3
-            class="font-normal text-[60px] leading-[68px] tracking-[-0.04em] text-[#818181]">
+            class="font-normal md:text-[60px] text-[32px] md:leading-[68px] tracking-[-0.04em] text-[#818181]">
             Our Values
             <span
-                class="font-normal text-[60px] leading-[68px] tracking-[-0.04em] text-[#00403D] text-right">
+                class="font-normal md:text-[60px] text-[32px] md:leading-[68px] tracking-[-0.04em] text-[#00403D] text-right">
                                 & Mission
                             </span>
         </h3>
-        <div class="flex pt-15 gap-25">
-            <img class="w-1/3" src="{{asset('images/values_and_mission.png')}}">
-            <div class="w-2/3 flex flex-wrap gap-6">
-                <div class="h-[222px] w-[356px]">
-                    <div class="w-[89px] h-[100px] pt-2 pl-2 group">
-                        <svg class="text-[#F06449] group-hover:text-[#FFC005]" width="90" height="100"
+        <div class="flex pt-15 md:gap-25">
+            <img class="hidden md:flex w-1/3" src="{{asset('images/values_and_mission.png')}}">
+            <div class="md:p-4 md:p-0 md:w-2/3 flex flex-wrap gap-10 md:gap-6">
+                <div class=" flex md:flex-col md:h-[222px] md:w-[356px]">
+                    <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
+                        <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 90 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M28.5314 6.93558C28.9533 6.50676 29.4651 5.03356 30.1637 4.33499C35.9597 -1.48175 52.8151 -1.31575 58.9223 4.05834C60.1949 5.1788 60.5892 6.7765 61.433 7.54423C62.1454 8.19438 64.2549 8.98977 65.2647 9.70908C72.9143 15.1247 78.4544 21.972 81.3247 31.0187C82.1962 33.7714 82.5558 38.7098 83.5518 40.7778C84.8383 43.4337 89.2233 44.4505 89.2717 48.8078C89.327 53.8223 84.7414 52.0655 81.6705 52.1485C55.5125 52.8332 29.2576 52.3836 3.05807 52.5358C-0.0128376 52.688 -0.351744 49.126 0.243072 46.8643C0.94855 44.1946 4.76644 43.1225 5.68632 41.0268C6.50247 39.1525 6.70304 35.3899 7.29786 33.1213C10.0783 22.5391 15.7498 15.9201 24.2916 9.57075C25.2737 8.83761 27.9919 7.49582 28.5383 6.9425L28.5314 6.93558ZM61.765 12.3166V23.4244C61.765 24.5726 58.2376 24.5726 58.2376 23.4244V9.6745C58.2376 6.36152 51.4387 4.252 48.7966 3.95459C44.4254 3.46352 32.6813 3.73326 31.5262 9.40476C30.8277 12.8284 32.3216 20.9345 31.2081 23.5213C30.6478 24.8285 27.9158 24.2751 27.9158 23.4244V11.9638C27.072 12.0814 26.249 12.8146 25.5435 13.2918C19.1734 17.6353 14.0898 24.0815 11.593 31.4268C10.5002 34.636 10.1474 40.5288 8.94398 42.8804C7.74051 45.232 4.44828 46.0136 3.93646 48.628H85.3708C85.0527 46.4493 82.2446 45.066 80.9581 43.3507C79.1114 40.8885 79.2152 37.2366 78.4198 34.2556C76.082 25.4509 70.0924 16.3558 61.7511 12.3235L61.765 12.3166Z"
@@ -26,13 +26,15 @@
                                 fill="currentColor"/>
                         </svg>
                     </div>
-                    <p class="text-[#191919] font-medium pt-4 text-[32px]">Safety First</p>
-                    <p class="text-[#191919] font-medium text-base pt-3">We work to reduce carbon emissions and
+                    <div class="px-4 md:pl-0">
+                        <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Safety First</p>
+                        <p class="text-[#191919] font-medium text-base pt-3">We work to reduce carbon emissions and
                         support the global transition to clean energy.</p>
+                    </div>
                 </div>
-                <div class="h-[222px] w-[356px]">
-                    <div class="w-[89px] h-[100px] pt-2 pl-2 group">
-                        <svg class="text-[#F06449] group-hover:text-[#FFC005]" width="111" height="108"
+                <div class=" flex md:flex-col md:h-[222px] md:w-[356px]">
+                    <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
+                        <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 111 108" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M32.2785 10.1775C30.9703 10.2615 31.3853 11.8009 31.1646 12.6047C29.951 17.0547 27.8758 22.9704 27.2926 27.3836C27.0299 29.3801 30.4659 32.5271 25.748 32.7057C25.2068 31.2399 24.1403 29.2277 24.1666 27.6516C24.2191 24.1893 26.5886 17.3384 27.4817 13.6502C28.3276 10.1722 28.8635 5.80105 29.9773 2.50167C31.0911 -0.797711 34.1856 -0.844995 35.168 2.42812V32.8738C35.3099 33.6619 36.5025 33.8248 37.1277 34.3186C38.3571 35.2853 39.6916 37.3711 39.8649 38.9315C39.9543 39.751 39.5445 40.9331 39.7441 41.3902C40.0488 42.0837 49.264 47.3585 50.7298 48.2727C51.6019 48.8191 58.6946 53.8102 59.0466 53.4687C59.1622 52.9748 58.7681 52.8487 58.5212 52.5493C57.6964 51.5406 55.8838 49.8804 54.8593 48.8611C51.1501 45.1782 47.1835 41.6844 43.4375 37.9805C42.4551 35.8475 45.518 36.0261 46.8105 36.7038C50.982 40.7598 55.2744 44.6844 59.3198 48.8664C61.0693 50.6737 64.5788 53.9048 65.866 55.6963C66.6804 56.8311 66.9063 57.761 65.9921 58.9694C64.9098 60.4037 63.6174 59.9466 62.2777 59.2846C58.6053 57.4721 54.1553 54.0203 50.5722 51.819C46.9891 49.6177 43.1171 47.3743 39.3868 45.173C38.8615 44.863 38.4884 43.8753 37.9053 44.5372C37.4429 45.2623 38.2678 49.5178 38.3203 50.6999C38.9823 67.0655 39.4604 83.3995 40.1381 99.7914C40.2275 101.972 40.7003 104.341 40.6162 106.548C40.3956 107.43 39.8229 107.688 38.9718 107.788C36.2188 108.108 29.9825 108.029 27.1455 107.793C26.7462 107.761 26.2313 107.756 25.8898 107.541C25.2331 107.126 25.4065 103.332 25.4432 102.392C25.9266 88.7374 27.3609 75.1038 28.0754 61.465C28.254 58.029 28.1385 54.53 28.6008 51.1045L3.73978 59.9729C0.282778 60.9921 -1.33539 57.6139 1.32829 55.4599L25.5851 39.8299C26.5781 38.9157 26.4205 37.6075 27.0982 36.3624C28.0649 34.5866 30.3135 33.3677 32.2785 33.0104V10.1775ZM30.2925 37.3133C26.6674 41.9366 33.1663 45.7929 36.0927 42.2046C39.3028 38.2747 33.077 33.7617 30.2925 37.3133ZM29.867 46.8699C30.24 45.6563 29.0158 45.3936 28.3328 44.6949C27.6498 43.9961 27.2085 42.7299 26.1683 43.0189L9.18272 54.5247L29.867 46.8699ZM28.8635 104.641H36.8703C37.7424 103.842 37.0226 102.618 36.9911 101.635C36.4552 84.9442 36.077 68.1688 35.1628 51.509C35.0682 49.7648 34.4745 47.9154 34.6427 46.1239C32.4203 46.0556 32 45.7719 31.7583 48.0993C31.296 52.5598 31.4956 57.5089 31.2277 62.0008C30.5027 74.0268 29.2733 86.121 28.8582 98.2047C28.7847 100.343 28.937 102.508 28.8687 104.646L28.8635 104.641Z"
@@ -45,13 +47,16 @@
                                 fill="currentColor"/>
                         </svg>
                     </div>
-                    <p class="text-[#191919] font-medium pt-4 text-[32px]">Advanced Technology</p>
+                    <div class="px-4 md:pl-0">
+
+                    <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Advanced Technology</p>
                     <p class="text-[#191919] font-medium text-base pt-3">We continue to innovate with the latest
                         technologies to improve the efficiency, reliability and performance of wind turbines.</p>
+                    </div>
                 </div>
-                <div class="h-[222px] w-[356px]">
-                    <div class="w-[89px] h-[100px] pt-2 pl-2 group">
-                        <svg class="text-[#F06449] group-hover:text-[#FFC005]" width="104" height="109"
+                <div class=" flex md:flex-col md:h-[222px] md:w-[356px]">
+                    <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
+                        <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 104 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M50.8615 82.9857C53.4315 83.4116 53.1861 87.0935 50.5005 87.0429C35.7008 86.0034 19.0603 88.4002 4.48443 87.0502C1.65445 86.7903 0.766477 85.5052 0.362194 82.7113C-2.1357 65.3272 8.52726 51.4733 24.9152 47.1056C33.3473 44.8604 50.5582 44.6077 58.4057 48.5783C61.1346 49.9644 60.9541 53.0832 57.9509 52.7439C56.1605 52.5417 52.6374 50.8741 50.32 50.4048C33.6 47.0262 9.01817 51.2928 4.8454 70.8283C4.10902 74.2864 3.15608 79.8814 4.85984 82.9857H50.8542H50.8615Z"
@@ -68,13 +73,16 @@
                         </svg>
 
                     </div>
-                    <p class="text-[#191919] font-medium pt-4 text-[32px]">Customer Centricity</p>
+                    <div class="px-4 md:pl-0">
+
+                    <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Customer Centricity</p>
                     <p class="text-[#191919] font-medium text-base pt-3">We focus on customer satisfaction by
                         providing professional service and ongoing technical support.</p>
+                    </div>
                 </div>
-                <div class="h-[222px] w-[356px]">
-                    <div class="w-[89px] h-[100px] pt-2 pl-2 group">
-                        <svg class="text-[#F06449] group-hover:text-[#FFC005]" width="80" height="109"
+                <div class=" flex md:flex-col md:h-[222px] md:w-[356px]">
+                    <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
+                        <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 80 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M65.4254 38.2894C65.4254 24.1957 53.9979 12.7607 39.8968 12.7607C25.7957 12.7607 14.3682 24.1883 14.3682 38.2894C14.3682 52.3904 25.7957 63.818 39.8968 63.818C53.9979 63.818 65.4254 52.3904 65.4254 38.2894ZM39.882 60.2631C27.7583 60.2631 17.9305 50.4352 17.9305 38.3116C17.9305 26.1879 27.7583 16.3601 39.882 16.3601C52.0056 16.3601 61.8334 26.1879 61.8334 38.3116C61.8334 50.4352 52.0056 60.2631 39.882 60.2631Z"
@@ -88,10 +96,13 @@
                         </svg>
 
                     </div>
-                    <p class="text-[#191919] font-medium pt-4 text-[32px]">Quality & Innovation</p>
+                    <div class="px-4 md:pl-0">
+
+                    <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Quality & Innovation</p>
                     <p class="text-[#191919] font-medium text-base pt-3">We ensure every product and service meets
                         the highest quality standards, providing reliable and durable solutions for our
                         customers.</p>
+                    </div>
                 </div>
             </div>
         </div>

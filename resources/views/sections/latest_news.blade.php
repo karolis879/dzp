@@ -1,7 +1,7 @@
 <div class="relative overflow-x-visible overflow-y-hidden">
     <div
         class="container mx-auto relative ">
-        <div class="px-[75px] py-10 w-full">
+        <div class="md:px-[75px] py-10 w-full">
             <div class="flex items-center">
                 <h3
                     class="w-1/2 font-normal text-[60px] leading-[68px] tracking-[-0.04em] text-[#818181]">
@@ -228,7 +228,7 @@
             </div>
 
         </div>
-        <img class="w-[162px] h-[430px] absolute right-[-50px] top-[-70px]"
+        <img class="hidden md:flex w-[162px] h-[430px] absolute right-[-50px] top-[-70px]"
              src="{{asset('images/hangin_guy_3.png')}}">
     </div>
 </div>

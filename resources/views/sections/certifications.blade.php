@@ -2,8 +2,8 @@
     class="container mx-auto rounded-[24px] h-[715px] object-cover"
     style="background-image: url('{{ asset('images/our_clients.png') }}')">
 
-    <div class="w-full px-[75px] py-20">
-        <h4 class="font-metrophobic text-6xl text-white font-extralight">Our Certifications & Honors</h4>
+    <div class="w-full md:px-[75px] px-4 py-8 md:py-20">
+        <h4 class="font-metrophobic md:text-6xl text-[32px] text-white md:font-extralight">Our Certifications & Honors</h4>
         <p class="text-white pt-4">Find our ISO certifications and other our services quality assuring
             information.</p>
         <div id="default-carousel" class="relative w-[720px] pt-8" data-carousel="static">

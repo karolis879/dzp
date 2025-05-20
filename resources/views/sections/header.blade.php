@@ -1,27 +1,33 @@
-<header class="hidden w-full border-b-2 border-[#D6DBDB] h-24 md:flex items-center z-20 bg-white">
+<header class="hidden w-full border-b-2 border-[#D6DBDB] h-24 md:flex items-center z-20 bg-white sticky top-0">
     <div class="container mx-auto flex justify-between items-center px-4 z-20">
-        <nav class="flex items-center h-8">
+        <nav class="flex items-center h-8 relative">
             <ul class="flex gap-8 text-base font-medium text-[#191919]">
+                <div class="hidden items-center md:block transition-opacity duration-300 opacity-0 logo-container absolute left-[-145px] top-[-14px]">
+                    <img src="{{ asset('images/dzp_logo.png') }}" alt="Logo"    class="transition-transform duration-500 h-16"
+                         style="transform-origin: center;"
+                         onmouseover="this.style.transform='rotate(180deg)'"
+                         onmouseout="this.style.transform='rotate(0deg)'"/>
+                </div>
                 <li><a href="#"
                        class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center">Home</a>
                 </li>
-                <li><a href="#"
-                       class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center">About
+                <li><a href="#about-us"
+                       class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center scroll-link " data-target="about-us">About
                         Us</a></li>
                 <li><a href="#services"
                        class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center scroll-link " data-target="services">Services</a>
                 </li>
-                <li><a href="#"
-                       class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center">Partners</a>
+                <li><a href="#partners"
+                       class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center scroll-link " data-target="partners">Partners</a>
                 </li>
-                <li><a href="#"
-                       class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center">News</a>
+                <li><a href="#news"
+                       class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center scroll-link " data-target="news">News</a>
                 </li>
                 <li><a href="#"
                        class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center">Project</a>
                 </li>
-                <li><a href="#"
-                       class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center">Contact
+                <li><a href="#contacts"
+                       class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center scroll-link " data-target="contacts">Contact
                         Us</a></li>
             </ul>
         </nav>
@@ -65,3 +71,19 @@
         </div>
     </div>
 </nav>
+<script>
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        const logo = document.querySelector(".logo-container");
+
+        if (window.scrollY > 20) {
+            logo.classList.remove("opacity-0");
+            logo.classList.add("opacity-100");
+        } else {
+            logo.classList.remove("opacity-100");
+            logo.classList.add("opacity-0");
+        }
+    });
+</script>
+
+

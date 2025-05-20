@@ -1,5 +1,5 @@
-<div class="container mx-auto flex-start mb-[52px] mt-2 bg-[#E4E9E9] rounded-[24px]">
-
+<div class="container mx-auto flex-start mb-[52px] mt-2 bg-[#E4E9E9] rounded-[24px] hidden md:flex relative" id="contacts">
+<img src="{{asset('images/turbine_absolute.png')}}" class="absolute z-0 top-0 left-[-135px] w-[866px] h-[1262px]">
     <div class="px-[75px] py-20 w-full flex">
         <div class="flex flex-col items-start w-1/3">
             <h3
@@ -10,7 +10,7 @@
                             form to:
                     </span>
             </h3>
-            <div class="gap-5 flex flex-col mt-4 w-full">
+            <div class="gap-5 flex flex-col mt-4 w-full relative z-10">
                 <div class="flex items-center gap-4 h-[70px] cursor-pointer" id="send-us-your-cv-section">
                     <div class="group pl-7">
                         <svg class="text-[#00403D]" width="28" height="32" viewBox="0 0 28 32" fill="none"
@@ -56,14 +56,14 @@
             </div>
         </div>
 
-        <div class="w-2/3 h-[714px] bg-white rounded-[24px]">
-            <div class="flex flex-col items-start p-8" id="quote-section-form">
+        <div class="w-2/3 h-[714px] bg-white rounded-[24px] relative z-10">
+            <div class="flex flex-col items-start p-8" id="quote-section-form ">
                 <h5
                     class="font-medium text-[24px] text-align-top  text-[#00403D]">
                     Get a quote
                 </h5>
                 <div class="pt-10 w-full">
-                    <form class="flex flex-col items-start">
+                    <form class="flex flex-col items-start ">
                         <div class="flex w-full gap-6">
                             <div class="w-1/2">
                                 <label for="name" class="text-2xl font-semibold">Full
