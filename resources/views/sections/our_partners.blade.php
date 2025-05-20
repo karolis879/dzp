@@ -13,6 +13,15 @@
         'vejo_planas.png',
         'fender.png',
     ];
+
+    $inspectionServicesMobile = [
+        'nordex.png',
+        'bionalis.png',
+        'skywork.png',
+        'kiwa.png',
+         'safeway.png',
+         'ekologix.png',
+    ];
 @endphp
 
 <div class="container mx-auto flex-start flex flex-col justify-between items-center mb-[52px]">
@@ -28,7 +37,7 @@
         <p class="text-medium text-base text-[#818181] pt-2">Expert Tips, News, and Trends in Renewable Energy</p>
     </div>
 
-    <div class="flex justify-between pt-12 px-4" style="width: inherit;">
+    <div class="hidden md:flex justify-between pt-12 px-4" style="width: inherit;">
         @foreach($inspectionServices1 as $service)
             <div class="flex justify-center items-center">
                 <a href="https://www.nordex.com/" target="_blank">
@@ -37,7 +46,7 @@
             </div>
         @endforeach
     </div>
-    <div class="flex justify-between pt-8 px-12" style="width: inherit;">
+    <div class="hidden md:flex justify-between pt-8 px-12" style="width: inherit;">
         @foreach($inspectionServices2 as $service)
             <div class="flex justify-center items-center">
                 <a href="https://www.nordex.com/" target="_blank">
@@ -46,4 +55,15 @@
             </div>
         @endforeach
     </div>
+    <div class="grid grid-cols-2 gap-4 md:hidden pt-8 px-4" style="width: inherit;">
+        @foreach($inspectionServicesMobile as $service)
+            <div class="flex justify-between items-center w-full h-32">
+                <a href="https://www.nordex.com/" target="_blank" class="w-155 h-53">
+                    <img src="{{ asset('images/' . $service) }}" class="w-full h-full object-contain" alt="Service Logo">
+                </a>
+            </div>
+        @endforeach
+    </div>
+
+
 </div>
