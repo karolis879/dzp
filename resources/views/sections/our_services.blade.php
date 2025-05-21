@@ -1,4 +1,5 @@
-<div id="services" class="container mx-auto flex-start mb-[52px] mt-2 flex-col bg-[#E4E9E9] md:h-[911px] rounded-[24px] pb-4 md:pb-0">
+<div id="services"
+     class="container mx-auto flex-start mb-[52px] mt-2 flex-col bg-[#E4E9E9] md:h-[911px] rounded-[24px] pb-4 md:pb-0">
     <div class="md:px-[75px] px-4 md:py-10">
         <h3
             class="font-normal md:text-[60px] text-[32px] pt-8 md:pt-0 md:leading-[68px] tracking-[-0.04em] text-[#818181]">
@@ -16,95 +17,187 @@
 
     <div class=" border-gray-200 dark:border-gray-700 md:px-[75px] md:pt-[42px] px-4 md:px-0 pt-4 md:pt-0">
 
-        <!-- Tabs (custom grid) -->
-        <div class="grid md:grid-cols-4 grid-cols-2 gap-[7px]"
-             id="default-styled-tab"
-             data-tabs-toggle="#default-styled-tab-content"
-             data-tabs-active-classes="bg-white text-[#0D5B60]"
-             data-tabs-inactive-classes="bg-[#5C7071] text-white"
-             role="tablist">
-            <button
-                class="bg-white text-[#0D5B60] aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-bold text-base"
-                id="blade-tab" data-tabs-target="#blade" type="button" role="tab" aria-controls="blade"
-                aria-selected="true">
-                Blade Services
-            </button>
-            <button
-                class="bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-normal text-base"
-                id="inspections-tab" data-tabs-target="#inspections" type="button" role="tab"
-                aria-controls="inspections" aria-selected="false">
-                Inspections & Diagnostics
-            </button>
-            <button
-                class="bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-normal text-base"
-                id="turbine-tab" data-tabs-target="#turbine" type="button" role="tab" aria-controls="turbine"
-                aria-selected="false">
-                Turbine Maintenance & Repair
-            </button>
-            <button
-                class="bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-normal text-base"
-                id="exterior-tab" data-tabs-target="#exterior" type="button" role="tab" aria-controls="exterior"
-                aria-selected="false">
-                Exterior & Construction Services
-            </button>
-        </div>
+        <div class="relative"> <!-- Make this relative so the dropdown can be absolute -->
+            <div class="grid md:grid-cols-4 grid-cols-1 gap-[7px]" id="default-styled-tab" role="tablist"
+                 data-tabs-toggle="#default-styled-tab-content"
+                 data-tabs-active-classes="bg-white text-[#0D5B60]"
+                 data-tabs-inactive-classes="bg-[#5C7071] text-white">
+                <!-- Main button visible on all screens -->
+                <button
+                    id="blade-tab"
+                    data-tabs-target="#blade"
+                    type="button"
+                    role="tab"
+                    aria-controls="blade"
+                    aria-selected="true"
+                    class="bg-white text-[#0D5B60] aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-bold text-base relative"
+                >
+                    Blade Services
+                    <!-- Arrow visible only on mobile -->
+                    <div class="md:hidden flex absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
+                        <i id="arrow-icon" class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </div>
+                </button>
 
-        @php
-            $services = [
-                ['name' => 'services_winds.svg', 'description' => '	Blade Repair <br> (Categories 1–5)'],
-                ['name' => 'services_protection.svg', 'description' => 'Leading Edge Protection <br> (LEP) Repair'],
-                ['name' => 'services_lightening.svg', 'description' => 'Lightning Protection <br> System (LPS) '],
-                ['name' => 'services_rebalancing.svg', 'description' => 'Wind Turbine <br> Blade Rebalancing'],
-                ['name' => 'services_coating.svg' , 'description' => 'Blade Surface <br> Coating'],
-                ['name' => 'services_vortex.svg', 'description' => 'Replacement of <br> Vortex Generators'],
-                ['name' => 'services_serrations.svg', 'description' => 'Serrations <br> Maintenance'],
-                ['name' => 'services_maintanence.svg', 'description' => 'Various other <br> Blade Maintenance'],
-            ];
-        @endphp
-
-
-            <!-- Tab content -->
-        <div id="default-styled-tab-content">
-            <div class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px]" id="blade" role="tabpanel" aria-labelledby="blade-tab">
-                @foreach ($services as $service)
+                <!-- Dropdown menu for mobile, hidden by default -->
+                <div id="dropdown-menu"
+                     class="md:hidden hidden absolute left-0 top-full mt-2 z-50 w-full bg-white rounded shadow-lg flex-col space-y-2">
                     <button
-                        class="text-[#0D5B60] hover:text-[#008983] group bg-white aspect-[4/3] rounded-[4px] h-[273px] w-full flex items-center justify-center font-normal text-base flex-col hover:shadow-lg hover:shadow-black/15">
-                        <div class="w-[62px] h-[97px] flex justify-center items-center">
-                            {!! file_get_contents(public_path('images/' . $service['name'])) !!}
-                        </div>
-                        <p
-                            class="pt-3 text-[20px] font-medium leading-[135%] tracking-[-0.05em] text-center"
-                            style="font-family: 'Space Grotesk', sans-serif;">
-                            {!! $service['description'] !!}
-                        </p>
+                        class="bg-gray-600 bg-opacity-70 text-white aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-normal text-base"
+                        id="inspections-tab"
+                        data-tabs-target="#inspections"
+                        type="button"
+                        role="tab"
+                        aria-controls="inspections"
+                        aria-selected="false"
+                    >
+                        Inspections & Diagnostics
                     </button>
-                @endforeach
+                    <button
+                        class="bg-gray-600 bg-opacity-70 text-white aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-normal text-base"
+                        id="turbine-tab"
+                        data-tabs-target="#turbine"
+                        type="button"
+                        role="tab"
+                        aria-controls="turbine"
+                        aria-selected="false"
+                    >
+                        Turbine Maintenance & Repair
+                    </button>
+                    <button
+                        class="bg-gray-600 bg-opacity-70 text-white aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-normal text-base"
+                        id="exterior-tab"
+                        data-tabs-target="#exterior"
+                        type="button"
+                        role="tab"
+                        aria-controls="exterior"
+                        aria-selected="false"
+                    >
+                        Exterior & Construction Services
+                    </button>
+                </div>
+
+                <!-- Desktop buttons visible from md and up -->
+                <button
+                    class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full items-center justify-center font-normal text-base"
+                    id="inspections-tab-desktop"
+                    data-tabs-target="#inspections"
+                    type="button"
+                    role="tab"
+                    aria-controls="inspections"
+                    aria-selected="false"
+                >
+                    Inspections & Diagnostics
+                </button>
+                <button
+                    class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full items-center justify-center font-normal text-base"
+                    id="turbine-tab-desktop"
+                    data-tabs-target="#turbine"
+                    type="button"
+                    role="tab"
+                    aria-controls="turbine"
+                    aria-selected="false"
+                >
+                    Turbine Maintenance & Repair
+                </button>
+                <button
+                    class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full items-center justify-center font-normal text-base"
+                    id="exterior-tab-desktop"
+                    data-tabs-target="#exterior"
+                    type="button"
+                    role="tab"
+                    aria-controls="exterior"
+                    aria-selected="false"
+                >
+                    Exterior & Construction Services
+                </button>
             </div>
+        </div>
 
 
             @php
-                $inspectionServices = [
-                    'Blade Services',
-                    'Blade Services',
-                    'Blade Services',
-                    'Blade Services',
-                    'Blade Services',
-                    'Blade Services',
-                    'Blade Services',
-                    'Blade Services2',
+                $services = [
+                    ['name' => 'services_winds.svg', 'description' => '	Blade Repair <br> (Categories 1–5)'],
+                    ['name' => 'services_protection.svg', 'description' => 'Leading Edge Protection <br> (LEP) Repair'],
+                    ['name' => 'services_lightening.svg', 'description' => 'Lightning Protection <br> System (LPS) '],
+                    ['name' => 'services_rebalancing.svg', 'description' => 'Wind Turbine <br> Blade Rebalancing'],
+                    ['name' => 'services_coating.svg' , 'description' => 'Blade Surface <br> Coating'],
+                    ['name' => 'services_vortex.svg', 'description' => 'Replacement of <br> Vortex Generators'],
+                    ['name' => 'services_serrations.svg', 'description' => 'Serrations <br> Maintenance'],
+                    ['name' => 'services_maintenance.svg', 'description' => 'Various other <br> Blade Maintenance'],
                 ];
             @endphp
 
 
-            <div class="grid grid-cols-4 mt-2 gap-[7px]" id="inspections" role="tabpanel"
-                 aria-labelledby="inspections-tab">
-                @foreach ($inspectionServices as $service)
-                    <button
-                        class="bg-white text-black aspect-[4/3] rounded-[4px] h-[273px] w-full flex items-center justify-center font-normal text-base">
-                        {{ $service }}
-                    </button>
-                @endforeach
+                <!-- Tab content -->
+            <div id="default-styled-tab-content">
+                <div class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px]" id="blade" role="tabpanel"
+                     aria-labelledby="blade-tab">
+                    @foreach ($services as $service)
+                        <button
+                            class="text-[#0D5B60] hover:text-[#008983] group bg-white aspect-[4/3] rounded-[4px] h-[273px] w-full flex items-center justify-center font-normal text-base flex-col hover:shadow-lg hover:shadow-black/15">
+                            @if($service['name'] ==='services_maintenance.svg')
+                                <div class="w-[95px] h-[97px] flex justify-center items-center">
+                                    {!! file_get_contents(public_path('images/' . $service['name'])) !!}
+                                </div>
+                            @else
+                                <div class="w-[75px] h-[97px] flex justify-center items-center">
+                                    {!! file_get_contents(public_path('images/' . $service['name'])) !!}
+                                </div>
+                            @endif
+                            <p
+                                class="pt-3 text-[20px] font-medium leading-[135%] tracking-[-0.05em] text-center"
+                                style="font-family: 'Space Grotesk', sans-serif;">
+                                {!! $service['description'] !!}
+                            </p>
+                        </button>
+                    @endforeach
+                </div>
+
+
+                @php
+                    $inspectionServices = [
+                        'Blade Services',
+                        'Blade Services',
+                        'Blade Services',
+                        'Blade Services',
+                        'Blade Services',
+                        'Blade Services',
+                        'Blade Services',
+                        'Blade Services2',
+                    ];
+                @endphp
+
+
+                <div class="grid grid-cols-4 mt-2 gap-[7px]" id="inspections" role="tabpanel"
+                     aria-labelledby="inspections-tab">
+                    @foreach ($inspectionServices as $service)
+                        <button
+                            class="bg-white text-black aspect-[4/3] rounded-[4px] h-[273px] w-full flex items-center justify-center font-normal text-base">
+                            {{ $service }}
+                        </button>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <script>
+        const bladeTab = document.getElementById('blade-tab');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        const arrowIcon = document.getElementById('arrow-icon');
+
+        bladeTab.addEventListener('click', () => {
+            const isOpen = !dropdownMenu.classList.contains('hidden');
+            if (isOpen) {
+                dropdownMenu.classList.add('hidden');
+                arrowIcon.classList.remove('fa-arrow-up');
+                arrowIcon.classList.add('fa-arrow-down');
+            } else {
+                dropdownMenu.classList.remove('hidden');
+                arrowIcon.classList.remove('fa-arrow-down');
+                arrowIcon.classList.add('fa-arrow-up');
+            }
+        });
+
+    </script>

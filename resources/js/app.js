@@ -1,99 +1,99 @@
 import './bootstrap';
+import 'flowbite';
+import './main_page.js'
+import Swiper from 'swiper/bundle';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-const tabs = document.querySelectorAll('#default-styled-tab button');
-const contents = document.querySelectorAll('#default-styled-tab-content > div');
-
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        // Reset all tabs buttons styles and aria-selected
-        tabs.forEach(t => {
-            t.classList.remove('bg-white', 'text-[#0D5B60]', 'font-bold');
-            t.classList.add('bg-[#5C7071]', 'text-white', 'font-normal');
-            t.setAttribute('aria-selected', 'false');
-        });
-
-        // Hide all tab contents
-        contents.forEach(c => c.classList.add('hidden'));
-
-// Activate clicked tab
-        tab.classList.add('bg-white', 'text-[#0D5B60]', 'font-bold');
-        tab.classList.remove('bg-[#5C7071]', 'text-white', 'font-normal');
-
-        tab.setAttribute('aria-selected', 'true');
-
-        // Show corresponding tab content
-        const targetSelector = tab.getAttribute('data-tabs-target');
-        const targetContent = document.querySelector(targetSelector);
-        if (targetContent) {
-            targetContent.classList.remove('hidden');
-        }
-    });
+// Initialize Swiper
+var swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    loop: true,
+    // autoplay: {
+    //     delay: 3000,       // Time in milliseconds (3000ms = 3 seconds)
+    //     disableOnInteraction: false, // Keep autoplay running after user interaction
+    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
 });
 
-function updateCarouselIndicators() {
-    const indicators = document.querySelectorAll('[data-carousel-slide-to]');
-    indicators.forEach((btn) => {
-        const isActive = btn.getAttribute('aria-current') === 'true';
-        btn.style.backgroundColor = isActive ? '#00403D' : '#D9D9D9';
-    });
-}
+var certificationsSwiper = new Swiper(".mySwiperCertifications", {
+    cssMode: true,
+    loop: true,
+    // autoplay: {
+    //     delay: 3000,       // Time in milliseconds (3000ms = 3 seconds)
+    //     disableOnInteraction: false, // Keep autoplay running after user interaction
+    // },
 
-// Initial run (in case one is already active)
-updateCarouselIndicators();
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
 
-// MutationObserver to catch aria-current changes
-const observer = new MutationObserver(updateCarouselIndicators);
-document.querySelectorAll('[data-carousel-slide-to]').forEach((btn) => {
-    observer.observe(btn, {attributes: true, attributeFilter: ['aria-current']});
+    mousewheel: true,
+    keyboard: true,
 });
 
-function showForm(formId) {
-    // Hide all forms
-    const allForms = [
-        'quote-section-form',
-        'send-us-your-cv-form',
-        'general-contacts-section-form'
-    ];
 
-    allForms.forEach(id => {
-        const form = document.getElementById(id);
-        if (form) {
-            form.classList.add('hidden');
-        }
-    });
+var newsSwiper = new Swiper(".mySwiperNews", {
+    cssMode: true,
+    loop: true,
+    // autoplay: {
+    //     delay: 3000,       // Time in milliseconds (3000ms = 3 seconds)
+    //     disableOnInteraction: false, // Keep autoplay running after user interaction
+    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    spaceBetween: 16, // Adjust this as needed
 
-    // Show selected form
-    const targetForm = document.getElementById(formId);
-    if (targetForm) {
-        targetForm.classList.remove('hidden');
-    }
-}
-
-// Event listeners
-document.getElementById('quote-section').addEventListener('click', function () {
-    showForm('quote-section-form');
+    breakpoints: {
+        0: {
+            slidesPerView: 1.4, // show a bit of the next slide
+        },
+        768: {
+            slidesPerView: 2, // full 2 slides on tablet/desktop
+        },
+        1024: {
+            slidesPerView: 1, // full 3 slides on tablet/desktop
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
 });
 
-document.getElementById('send-us-your-cv-section').addEventListener('click', function () {
-    showForm('send-us-your-cv-form');
+
+const nextBtn = document.querySelector('.swiper-button-next');
+const prevBtn = document.querySelector('.swiper-button-prev');
+
+// Initial state: nextBtn active, prevBtn inactive
+nextBtn.style.opacity = '1';
+prevBtn.style.opacity = '0.3';
+
+
+nextBtn.addEventListener('click', () => {
+
+    nextBtn.style.opacity = '1';    // active
+    prevBtn.style.opacity = '0.3';  // inactive
 });
 
-document.getElementById('general-contacts-section').addEventListener('click', function () {
-    showForm('general-contacts-section-form');
+prevBtn.addEventListener('click', () => {
+    prevBtn.style.opacity = '1';    // active
+    nextBtn.style.opacity = '0.3';  // inactive
 });
 
-const sections = [
-    document.getElementById('send-us-your-cv-section'),
-    document.getElementById('quote-section'),
-    document.getElementById('general-contacts-section')
-];
-
-sections.forEach(section => {
-    section.addEventListener('click', function () {
-        sections.forEach(sec => {
-            sec.classList.remove('bg-white', 'rounded-l-[60px]');
-        });
-
-        this.classList.add('bg-white', 'rounded-l-[60px]');
-    });
-});

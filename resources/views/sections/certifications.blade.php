@@ -1,25 +1,29 @@
 <div
-    class="container mx-auto rounded-[24px] h-[715px] object-cover"
-    style="background-image: url('{{ asset('images/our_clients.png') }}')">
+    class="container mx-auto rounded-[24px] h-[715px] overflow-hidden z-10 relative">
+    <img src="{{asset('images/our_clients.png')}}" class="z-0 absolute w-full h-full object-cover">
 
-    <div class="w-full md:px-[75px] px-4 py-8 md:py-20">
-        <h4 class="font-metrophobic md:text-6xl text-[32px] text-white md:font-extralight">Our Certifications & Honors</h4>
-        <p class="text-white pt-4">Find our ISO certifications and other our services quality assuring
-            information.</p>
-        <div id="default-carousel" class="relative w-[720px] pt-8" data-carousel="static">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out flex justify-between items-center" data-carousel-item>
+    <div class="w-full md:px-[75px] px-4 py-8 md:py-20 flex flex-col justify-between">
+        <div>
+            <h4 class=" z-10 relative font-metrophobic md:text-6xl text-[32px] text-white md:font-extralight">Our Certifications &
+                Honors</h4>
+            <p class=" z-10 relative text-white pt-4">Find our ISO certifications and other our services quality assuring
+                information.</p>
+        </div>
+
+        <div class="rounded-[24px] swiper mySwiperCertifications w-[800px]" style="margin-left: 0; margin-top: 50px; overflow: visible">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide flex gap-4" style="display: flex">
                     <img src="{{ asset('images/iso1.png') }}" alt="..."
-                         class="w-[236px] h-[333px] rounded-[12px] object-cover"/>
+                         class="w-[236px]] h-[333px] rounded-[12px] object-cover"/>
                     <img src="{{ asset('images/iso2.png') }}" alt="..."
                          class="w-[236px] h-[333px] rounded-[12px] object-cover"/>
                     <img src="{{ asset('images/iso3.png') }}" alt="..."
                          class="w-[236px] h-[333px] rounded-[12px] object-cover"/>
                 </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out flex justify-between items-center" data-carousel-item>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide flex gap-4" style="display: flex">
                     <img src="{{ asset('images/iso1.png') }}" alt="..."
                          class="w-[236px] h-[333px] rounded-[12px] object-cover"/>
                     <img src="{{ asset('images/iso2.png') }}" alt="..."
@@ -28,41 +32,37 @@
                          class="w-[236px] h-[333px] rounded-[12px] object-cover"/>
                 </div>
             </div>
-            <!-- Slider indicators -->
-            <div
-                class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse top-120">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                        data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                        data-carousel-slide-to="1"></button>
+
+            <div class="swiper-pagination" style="top: 400px; left: -87px"></div>
+
+            <div class="swiper-button-next" id="swiper-button-next-news" style="top: 410px; right: 405px; opacity: 0.3; width: 45px">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="1" width="52" height="52" rx="26" stroke="white" stroke-width="2"/>
+                    <path d="M36.2506 26.2494C36.4485 26.4491 36.5596 26.719 36.5596 27.0002C36.5596 27.2814 36.4485 27.5513 36.2506 27.751L29.1672 34.8344C29.07 34.9387 28.9527 35.0225 28.8223 35.0805C28.692 35.1386 28.5513 35.1698 28.4087 35.1724C28.266 35.1749 28.1243 35.1486 27.992 35.0952C27.8597 35.0418 27.7395 34.9622 27.6386 34.8613C27.5377 34.7604 27.4582 34.6402 27.4047 34.5079C27.3513 34.3756 27.3251 34.2339 27.3276 34.0913C27.3301 33.9486 27.3613 33.8079 27.4194 33.6776C27.4775 33.5473 27.5612 33.43 27.6656 33.3327L32.9356 28.0627H18.4997C18.218 28.0627 17.9477 27.9507 17.7484 27.7515C17.5492 27.5522 17.4372 27.282 17.4372 27.0002C17.4372 26.7184 17.5492 26.4481 17.7484 26.2489C17.9477 26.0496 18.218 25.9377 18.4997 25.9377H32.9356L27.6656 20.6677C27.4779 20.4663 27.3757 20.1999 27.3806 19.9246C27.3854 19.6494 27.4969 19.3867 27.6916 19.1921C27.8863 18.9974 28.1489 18.8859 28.4242 18.881C28.6994 18.8762 28.9658 18.9783 29.1672 19.166L36.2506 26.2494Z" fill="white"/>
+                </svg>
             </div>
-            <!-- Slider controls -->
-            <button type="button"
-                    class="absolute top-70 start-70 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-prev>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M5 1 1 5l4 4"/>
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button"
-                    class="absolute top-70 end-70 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                    data-carousel-next>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="m1 9 4-4-4-4"/>
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
+
+            <div class="swiper-button-prev" id="swiper-button-prev-news" style="top: 410px; left:235px; opacity: 0.3; width: 45px">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="-1" y="1" width="52" height="52" rx="26" transform="matrix(-1 0 0 1 52 0)" stroke="white" stroke-width="2"/>
+                        <path d="M17.7494 26.2494C17.5515 26.4491 17.4404 26.719 17.4404 27.0002C17.4404 27.2814 17.5515 27.5513 17.7494 27.751L24.8328 34.8344C24.93 34.9387 25.0473 35.0225 25.1777 35.0805C25.308 35.1386 25.4487 35.1698 25.5913 35.1724C25.734 35.1749 25.8757 35.1486 26.008 35.0952C26.1403 35.0418 26.2605 34.9622 26.3614 34.8613C26.4623 34.7604 26.5418 34.6402 26.5953 34.5079C26.6487 34.3756 26.6749 34.2339 26.6724 34.0913C26.6699 33.9486 26.6387 33.8079 26.5806 33.6776C26.5225 33.5473 26.4388 33.43 26.3344 33.3327L21.0644 28.0627H35.5003C35.782 28.0627 36.0523 27.9507 36.2516 27.7515C36.4508 27.5522 36.5628 27.282 36.5628 27.0002C36.5628 26.7184 36.4508 26.4481 36.2516 26.2489C36.0523 26.0496 35.782 25.9377 35.5003 25.9377H21.0644L26.3344 20.6677C26.5221 20.4663 26.6243 20.1999 26.6194 19.9246C26.6146 19.6494 26.5031 19.3867 26.3084 19.1921C26.1137 18.9974 25.8511 18.8859 25.5758 18.881C25.3006 18.8762 25.0342 18.9783 24.8328 19.166L17.7494 26.2494Z" fill="white"/>
+                </svg>
+            </div>
         </div>
     </div>
 </div>
+
+<script>function updatePaginationPosition() {
+        const pagination = document.querySelector('.swiper-pagination');
+        if (!pagination) return;
+
+        if (window.innerWidth <= 768) {
+            pagination.style.left = '-220px';
+        } else {
+            pagination.style.left = '-87px';
+        }
+    }
+
+    window.addEventListener('resize', updatePaginationPosition);
+    window.addEventListener('load', updatePaginationPosition);
+</script>

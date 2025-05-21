@@ -22,17 +22,17 @@
         </div>
     </div>
     <div class="h-full pb-15 md:px-[75px] flex flex-col-reverse md:flex-row mt-16 gap-16">
-        <div class="bg-[#003538] rounded-[20px] w-full md:w-1/2 px-4">
+        <div class="bg-[#003538] rounded-[20px] w-full md:w-1/2 px-6 md:px-0">
             <div class="md:px-10 md:py-5 flex items-center justify-between md:gap-x-10">
                 <p class="font-metrophobic text-[#D9FF00] md:text-[120px] text-[82px]">15%</p>
-                <div class="font-metrophobic text-[#D9FF00] text-sm md:text-[20px]">Approximate business
+                <div class="font-metrophobic text-[#D9FF00] text-sm md:text-[20px] pl-5 md:pl-0">Approximate business
                     cost savings by choosing
                     doing blade inspections.
                 </div>
             </div>
-            <p class="md:px-10 text-white text-base md:text-[18px] md:leading-[32px] tracking-[0em] font-hanken-grotesk">
-                With our services your company can save significant <br>operational costs of wind turbine
-                business. Read more, <br> download below.
+            <p class="md:px-10 text-white text-sm md:text-[18px] md:leading-[32px] md:tracking-[0em] font-hanken-grotesk">
+                With our services your company can save significant <br class="hidden md:flex">operational costs of wind turbine
+                business. Read more, <br class="hidden md:flex"> download below.
             </p>
             <a href="{{ asset('images/dzp_brochure.pdf') }}" target="_blank"
                class="underline flex items md:px-10 py-8 font-hankenGrotesk md:pt-13 text-white">Download PDF</a>

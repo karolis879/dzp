@@ -1,4 +1,4 @@
-<div class="container md:mx-auto flex-start mb-[52px] mt-2 flex-col bg-[#F9F8F2] md:h-[911px] md:rounded-[24px]">
+<div class="container md:mx-auto flex-start mb-[52px] mt-20 md:mt-2 flex-col bg-[#F9F8F2] md:h-[911px] md:rounded-[24px]">
     <div class="md:px-[75px] md:py-14 px-4 md:px-0 py-4 md:py-0">
         <h3
             class="font-normal md:text-[60px] text-[32px] md:leading-[68px] tracking-[-0.04em] text-[#818181]">

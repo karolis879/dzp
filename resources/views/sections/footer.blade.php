@@ -1,5 +1,5 @@
 <footer class="max-w-[1744px] w-full h-[484px] mx-auto rounded-t-lg md:rounded-t-[90px] bg-[#013538]">
-    <div class="md:pt-[100px] px-4 pt-10 md:px-[150px] flex justify-center md:justify-between">
+    <div class="md:pt-[100px] px-4 pt-10 md:px-[150px] flex justify-start md:justify-between">
         <div>
             <img src="{{ asset('images/dzp_footer.png') }}" alt="logo" class="w-[215px] h-[58px]">
             <div class="pt-15 text-white flex flex-col">
@@ -59,9 +59,9 @@
     <div class="md:px-[150px] md:px-5 px-[4px] pt-20 pb-5">
         <div class="md:flex md:flex-row flex-col justify-between">
             <div>
-                <p class="text-[#649295] text-xs">© 2023 DZP. All rights reserved.</p>
+                <p class="text-[#649295] px-4 md:px-0 text-xs">© 2023 DZP. All rights reserved.</p>
             </div>
-            <div class="flex gap-5 md:pt-0 pt-3">
+            <div class="flex gap-5 md:pt-0 px-4 md:px-0 pt-3">
                 <p class="text-[#649295]  text-xs"><span class="font-semibold">Designed by</span> BrokenPixels in Switzerland </p>
                 <p class="text-[#649295]  text-xs"><span class="font-semibold">Coded by</span> Karolis</p>
             </div>

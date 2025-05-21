@@ -11,7 +11,7 @@
         'kiwa.png',
         'safety_leaders.png',
         'vejo_planas.png',
-        'fender.png',
+        'fender_gray.png',
     ];
 
     $inspectionServicesMobile = [
@@ -37,7 +37,7 @@
         <p class="text-medium text-base text-[#818181] pt-2">Expert Tips, News, and Trends in Renewable Energy</p>
     </div>
 
-    <div class="hidden md:flex justify-between pt-12 px-4" style="width: inherit;">
+    <div class="hidden md:flex justify-between pt-12 px-7" style="width: inherit;">
         @foreach($inspectionServices1 as $service)
             <div class="flex justify-center items-center">
                 <a href="https://www.nordex.com/" target="_blank">
@@ -46,7 +46,7 @@
             </div>
         @endforeach
     </div>
-    <div class="hidden md:flex justify-between pt-8 px-12" style="width: inherit;">
+    <div class="hidden md:flex justify-between pt-8 px-15" style="width: inherit;">
         @foreach($inspectionServices2 as $service)
             <div class="flex justify-center items-center">
                 <a href="https://www.nordex.com/" target="_blank">
@@ -64,6 +64,4 @@
             </div>
         @endforeach
     </div>
-
-
 </div>

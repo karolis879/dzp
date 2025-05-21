@@ -30,41 +30,6 @@
 @include('sections.footer')
 
 </body>
-
-<script>
-    document.querySelectorAll('.scroll-link').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute('data-target');
-            const targetEl = document.getElementById(targetId);
-            if (!targetEl) return;
-
-            // Smooth scroll with offset for fixed header (adjust offset)
-            const headerOffset = 80;
-            const elementPosition = targetEl.getBoundingClientRect().top;
-            const offsetPosition = window.pageYOffset + elementPosition - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-
-            // When scrolling finishes, trigger bounce animation
-            // Since there's no native "scrollend", we use a timeout roughly matching scroll duration
-            setTimeout(() => {
-                targetEl.classList.add('bounce-effect');
-
-                // Remove the class after animation ends to allow re-triggering
-                targetEl.addEventListener('animationend', () => {
-                    targetEl.classList.remove('bounce-effect');
-                }, { once: true });
-
-            }, 600); // timeout ~ scroll duration in ms, adjust if needed
-        });
-    });
-
-</script>
 </html>
 
 
