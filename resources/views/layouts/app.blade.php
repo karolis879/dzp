@@ -14,7 +14,6 @@
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </head>
 <body class="flex flex-col min-h-screen bg-white">
 

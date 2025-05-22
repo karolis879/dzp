@@ -19,7 +19,6 @@
 
         <div class="relative"> <!-- Make this relative so the dropdown can be absolute -->
             <div class="grid md:grid-cols-4 grid-cols-1 gap-[7px]" id="default-styled-tab" role="tablist"
-                 data-tabs-toggle="#default-styled-tab-content"
                  data-tabs-active-classes="bg-white text-[#0D5B60]"
                  data-tabs-inactive-classes="bg-[#5C7071] text-white">
                 <!-- Main button visible on all screens -->
