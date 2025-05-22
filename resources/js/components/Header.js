@@ -39,7 +39,7 @@ export function initHeader() {
         }
     });
 
-    const menuLinks = sideDrawer.querySelectorAll('nav ul li a');
+    const menuLinks = sideDrawer.querySelectorAll('nav a');
 
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
