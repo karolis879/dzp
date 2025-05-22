@@ -10,7 +10,7 @@
                 information.</p>
         </div>
 
-        <div class="rounded-[24px] swiper mySwiperCertifications w-[800px]" style="margin-left: 0; margin-top: 50px; overflow: visible">
+        <div class="rounded-[24px] swiper mySwiper w-[800px]" style="margin-left: 0; margin-top: 50px; overflow: visible">
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide flex gap-4" style="display: flex">

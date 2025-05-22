@@ -16,12 +16,8 @@
 
 
     <div class=" border-gray-200 dark:border-gray-700 md:px-[75px] md:pt-[42px] px-4 md:px-0 pt-4 md:pt-0">
-
         <div class="relative"> <!-- Make this relative so the dropdown can be absolute -->
-            <div class="grid md:grid-cols-4 grid-cols-1 gap-[7px]" id="default-styled-tab" role="tablist"
-                 data-tabs-toggle="#default-styled-tab-content"
-                 data-tabs-active-classes="bg-white text-[#0D5B60]"
-                 data-tabs-inactive-classes="bg-[#5C7071] text-white">
+            <div class="grid md:grid-cols-4 grid-cols-1 gap-[7px]" id="default-styled-tab">
                 <!-- Main button visible on all screens -->
                 <button
                     id="blade-tab"
@@ -39,43 +35,7 @@
                     </div>
                 </button>
 
-                <!-- Dropdown menu for mobile, hidden by default -->
-                <div id="dropdown-menu"
-                     class="md:hidden hidden absolute left-0 top-full mt-2 z-50 w-full bg-white rounded shadow-lg flex-col space-y-2">
-                    <button
-                        class="bg-gray-600 bg-opacity-70 text-white aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-normal text-base"
-                        id="inspections-tab"
-                        data-tabs-target="#inspections"
-                        type="button"
-                        role="tab"
-                        aria-controls="inspections"
-                        aria-selected="false"
-                    >
-                        Inspections & Diagnostics
-                    </button>
-                    <button
-                        class="bg-gray-600 bg-opacity-70 text-white aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-normal text-base"
-                        id="turbine-tab"
-                        data-tabs-target="#turbine"
-                        type="button"
-                        role="tab"
-                        aria-controls="turbine"
-                        aria-selected="false"
-                    >
-                        Turbine Maintenance & Repair
-                    </button>
-                    <button
-                        class="bg-gray-600 bg-opacity-70 text-white aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-normal text-base"
-                        id="exterior-tab"
-                        data-tabs-target="#exterior"
-                        type="button"
-                        role="tab"
-                        aria-controls="exterior"
-                        aria-selected="false"
-                    >
-                        Exterior & Construction Services
-                    </button>
-                </div>
+            @include('mobile_sections.mobile_our_services')
 
                 <!-- Desktop buttons visible from md and up -->
                 <button
@@ -169,7 +129,7 @@
                 @endphp
 
 
-                <div class="grid grid-cols-4 mt-2 gap-[7px]" id="inspections" role="tabpanel"
+                <div class="grid grid-cols-4 mt-2 gap-[7px] hidden" id="inspections" role="tabpanel"
                      aria-labelledby="inspections-tab">
                     @foreach ($inspectionServices as $service)
                         <button
@@ -182,36 +142,3 @@
         </div>
     </div>
 
-{{-- todo--}}
-
-                <div id="inspections" role="tabpanel" class="hidden" aria-labelledby="inspections-tab">
-                    <p class="text-gray-800 p-4">Inspections & Diagnostics content goes here...</p>
-                </div>
-
-                <div id="turbine" role="tabpanel" class="hidden" aria-labelledby="turbine-tab">
-                    <p class="text-gray-800 p-4">Turbine Maintenance & Repair content goes here...</p>
-                </div>
-
-                <div id="exterior" role="tabpanel" class="hidden" aria-labelledby="exterior-tab">
-                    <p class="text-gray-800 p-4">Exterior & Construction Services content goes here...</p>
-                </div>
-
-    <script>
-        const bladeTab = document.getElementById('blade-tab');
-        const dropdownMenu = document.getElementById('dropdown-menu');
-        const arrowIcon = document.getElementById('arrow-icon');
-
-        bladeTab.addEventListener('click', () => {
-            const isOpen = !dropdownMenu.classList.contains('hidden');
-            if (isOpen) {
-                dropdownMenu.classList.add('hidden');
-                arrowIcon.classList.remove('fa-arrow-up');
-                arrowIcon.classList.add('fa-arrow-down');
-            } else {
-                dropdownMenu.classList.remove('hidden');
-                arrowIcon.classList.remove('fa-arrow-down');
-                arrowIcon.classList.add('fa-arrow-up');
-            }
-        });
-
-    </script>

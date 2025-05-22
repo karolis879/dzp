@@ -21,7 +21,7 @@
                  src="{{asset('images/why_choose_us.png')}}" alt="why choose us"/>
         </div>
     </div>
-    <div class="h-full pb-15 md:px-[75px] flex flex-col-reverse md:flex-row mt-16 gap-16">
+    <div class="h-full md:pb-15 md:px-[75px] flex flex-col-reverse md:flex-row mt-4 md:mt-16 gap-16">
         <div class="bg-[#003538] rounded-[20px] w-full md:w-1/2 px-6 md:px-0">
             <div class="md:px-10 md:py-5 flex items-center justify-between md:gap-x-10">
                 <p class="font-metrophobic text-[#D9FF00] md:text-[120px] text-[82px]">15%</p>
