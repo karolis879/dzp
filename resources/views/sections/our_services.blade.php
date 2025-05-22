@@ -19,6 +19,7 @@
 
         <div class="relative"> <!-- Make this relative so the dropdown can be absolute -->
             <div class="grid md:grid-cols-4 grid-cols-1 gap-[7px]" id="default-styled-tab" role="tablist"
+                 data-tabs-toggle="#default-styled-tab-content"
                  data-tabs-active-classes="bg-white text-[#0D5B60]"
                  data-tabs-inactive-classes="bg-[#5C7071] text-white">
                 <!-- Main button visible on all screens -->
@@ -79,10 +80,10 @@
                 <!-- Desktop buttons visible from md and up -->
                 <button
                     class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full items-center justify-center font-normal text-base"
-                    id="inspections-tab-desktop"
+                    id="inspections-tab"
                     data-tabs-target="#inspections"
                     type="button"
-                    role="tab"
+                    role="tabpanel"
                     aria-controls="inspections"
                     aria-selected="false"
                 >
@@ -90,10 +91,10 @@
                 </button>
                 <button
                     class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full items-center justify-center font-normal text-base"
-                    id="turbine-tab-desktop"
+                    id="turbine-tab"
                     data-tabs-target="#turbine"
                     type="button"
-                    role="tab"
+                    role="tabpanel"
                     aria-controls="turbine"
                     aria-selected="false"
                 >
@@ -101,10 +102,10 @@
                 </button>
                 <button
                     class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full items-center justify-center font-normal text-base"
-                    id="exterior-tab-desktop"
+                    id="exterior-tab"
                     data-tabs-target="#exterior"
                     type="button"
-                    role="tab"
+                    role="tabpanel"
                     aria-controls="exterior"
                     aria-selected="false"
                 >
@@ -180,6 +181,20 @@
             </div>
         </div>
     </div>
+
+{{-- todo--}}
+
+                <div id="inspections" role="tabpanel" class="hidden" aria-labelledby="inspections-tab">
+                    <p class="text-gray-800 p-4">Inspections & Diagnostics content goes here...</p>
+                </div>
+
+                <div id="turbine" role="tabpanel" class="hidden" aria-labelledby="turbine-tab">
+                    <p class="text-gray-800 p-4">Turbine Maintenance & Repair content goes here...</p>
+                </div>
+
+                <div id="exterior" role="tabpanel" class="hidden" aria-labelledby="exterior-tab">
+                    <p class="text-gray-800 p-4">Exterior & Construction Services content goes here...</p>
+                </div>
 
     <script>
         const bladeTab = document.getElementById('blade-tab');
