@@ -1,9 +1,9 @@
-<div class="container mx-auto flex justify-between items-center px-4 md:mt-[52px] mb-[52px] relative">
+<div class="container mx-auto flex justify-between items-center px-4 md:mt-[30px] mb-[52px] relative">
 
     <img src="{{ asset('images/guy.png') }}" alt="flying_guy"
          class="md:w-[141px] w-20 top-[40px] right-3 md:h-[905px] absolute md:right-[-140px] hidden md:flex  md:top-[-70px] z-10"/>
 
-    <div class="flex flex-wrap items-center">
+    <div class="flex flex-wrap items-center justify-between w-full">
         <!-- Image (like col-4) -->
         <div class="hidden md:flex md:w-1/4">
             <div class="transition-transform duration-500"
@@ -19,9 +19,9 @@
     </div>
 
     <!-- Text (like col-8) -->
-    <div class="w-full md:w-3/4">
+    <div class="w-full md:w-2/4 ">
         <div>
-            <p class="font-normal text-2xl md:text-[74px] md:leading-[88px] md:tracking-[-0.04em] text-[#00403D] md:text-right">
+            <p class="font-normal text-2xl md:text-[44px] md:tracking-[-0.04em] text-[#00403D] md:text-right">
                 Ensuring that wind turbines blades
                 <span class="text-[#818181]">never stop turning</span>
             </p>
@@ -36,6 +36,7 @@
                 <div class="swiper-slide relative">
                     <img src="{{ asset('images/hero.jpg') }}" alt="Wind Turbine"
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
+                    <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
 
                     <!-- Overlay content -->
                     <div
@@ -79,9 +80,11 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide">
+                <div class="swiper-slide relative">
                     <img src="{{asset('images/hero_2.jpg')}}" alt="Wind Turbine"
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
+                    <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
+
                     <div
                         class="md:p-18 absolute inset-0 flex flex-col items-end justify-end md:w-[900px] ml-auto h-full">
                         <div class="p-10">
@@ -103,9 +106,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide relative">
                     <img src="{{asset('images/hero_3.jpg')}}" alt="Wind Turbine"
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
+                    <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
+
                     <div
                         class="md:p-18 absolute inset-0 flex flex-col items-end justify-end md:w-[900px] ml-auto h-full">
                         <div class="p-10">
@@ -128,9 +133,10 @@
                 {{--                    <img src="{{asset('images/hero_4.jpg')}}" alt="Wind Turbine"--}}
                 {{--                         class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>--}}
                 {{--                </div>--}}
-                <div class="swiper-slide">
+                <div class="swiper-slide relative">
                     <img src="{{asset('images/hero_5.jpg')}}" alt="Wind Turbine"
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
+                    <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
                     <div
                         class="md:p-18 absolute inset-0 flex flex-col items-end justify-end md:w-[900px] ml-auto h-full">
                         <div class="p-10">

@@ -29,151 +29,50 @@
 
             {{--  Desktop swiper --}}
             <div class="swiper mySwiperNews" style="overflow: visible" id="news-desktop-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide relative overflow-hidden rounded-lg md:h-235">
+                <div class="swiper-wrapper flex lg:flex-row md:flex-col">
+                    <div class="swiper-slide w-full relative overflow-hidden rounded-lg md:h-235">
                         <div class="flex md:flex-col gap-10 mt-10">
+                            @foreach($linkedInData1 as $data)
                             <div class="flex ">
                                 <div
-                                    class="w-[240px] h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
-                                    <img src="#" alt="news1"
-                                         class="w-full h-full object-cover"/>
+                                    class="md:w-[240px] w-full h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
+                                    <img src="{{$data->image}}" alt="news1"
+                                         class="rounded-[24px] w-full h-full object-cover"/>
                                 </div>
                                 <div class="flex flex-col pl-12 w-[706px]">
-                                    <p class="text-xl text-[#818181]">3 March, 2025</p>
-                                    <p class="text-[#0A1018] font-medium text-[28px] pt-8">How Do Wind Turbines Save on
-                                        Electricity Bills?</p>
-                                    <p class="pt-4 font-light text-[#0A1018]">Learn how businesses and homes can save up
-                                        to
-                                        40%
-                                        on energy costs with wind turbine solutions. Learn how businesses and homes can
-                                        save
-                                        up
-                                        to 40% on energy costs with wind turbine solutions.</p>
+                                    <p class="text-[#0A1018] font-medium text-[28px] pt-8">{{ \Carbon\Carbon::parse($data->published_at)->format('F j, Y') }}</p>
+                                    <p class="pt-4 font-light text-[#0A1018]">{{$data->description}}</p>
                                 </div>
                                 <div class="ml-70  pt-16">
+                                    <a href="https://www.linkedin.com/company/dzpcompany" target="_blank">
                                     <img src="{{ asset('images/stash_arrow-up.png') }}" alt="news2"
                                          class="w-[34px] h-[34px] object-cover "/>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="flex ">
-                                <div
-                                    class="w-[240px] h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
-                                    <img src="#" alt="news1"
-                                         class="w-full h-full object-cover"/>
-                                </div>
-                                <div class="flex flex-col gap-2 pl-12 w-[706px]">
-                                    <p class="text-xl text-[#818181]">3 March, 2025</p>
-                                    <p class="text-[#0A1018] font-medium text-[28px] pt-8">How Do Wind Turbines Save on
-                                        Electricity Bills?</p>
-                                    <p class="pt-4 font-light text-[#0A1018]">Learn how businesses and homes can save up
-                                        to
-                                        40%
-                                        on energy costs with wind turbine solutions. Learn how businesses and homes can
-                                        save
-                                        up
-                                        to 40% on energy costs with wind turbine solutions.</p>
-                                </div>
-                                <div class="ml-70  pt-16">
-                                    <img src="{{ asset('images/stash_arrow-up.png') }}" alt="news2"
-                                         class="w-[34px] h-[34px] object-cover"/>
-                                </div>
-                            </div>
-                            <div class="flex ">
-                                <div
-                                    class="w-[240px] h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
-                                    <img src="#" alt="news1"
-                                         class="w-full h-full object-cover"/>
-                                </div>
-                                <div class="flex flex-col gap-2 pl-12 w-[706px]">
-                                    <p class="text-xl text-[#818181]">3 March, 2025</p>
-                                    <p class="text-[#0A1018] font-medium text-[28px] pt-8">How Do Wind Turbines Save on
-                                        Electricity Bills?</p>
-                                    <p class="pt-4 font-light text-[#0A1018]">Learn how businesses and homes can save up
-                                        to
-                                        40%
-                                        on energy costs with wind turbine solutions. Learn how businesses and homes can
-                                        save
-                                        up
-                                        to 40% on energy costs with wind turbine solutions.</p>
-                                </div>
-                                <div class="ml-70  pt-16">
-                                    <img src="{{ asset('images/stash_arrow-up.png') }}" alt="news2"
-                                         class="w-[34px] h-[34px] object-cover"/>
-                                </div>
-                            </div>
+                            @endforeach
+
                         </div>
                     </div>
                     <div class="swiper-slide relative overflow-hidden rounded-lg md:h-235">
                         <div class="flex md:flex-col gap-10 mt-10">
-                            <div class="flex ">
-                                <div
-                                    class="w-[240px] h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
-                                    <img src="#" alt="news1"
-                                         class="w-full h-full object-cover"/>
+                            @foreach($linkedInData2 as $data)
+                                <div class="flex ">
+                                    <div
+                                        class="w-[240px] h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
+                                        <img src="{{$data->image}}" alt="news1"
+                                             class="rounded-[24px] w-full h-full object-cover"/>
+                                    </div>
+                                    <div class="flex flex-col pl-12 w-[706px]">
+                                        <p class="text-[#0A1018] font-medium text-[28px] pt-8">{{ \Carbon\Carbon::parse($data->published_at)->format('F j, Y') }}</p>
+                                        <p class="pt-4 font-light text-[#0A1018]">{{ $data->description}}</p>
+                                    </div>
+                                    <div class="ml-70  pt-16">
+                                        <img src="{{ asset('images/stash_arrow-up.png') }}" alt="news2"
+                                             class="w-[34px] h-[34px] object-cover "/>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col pl-12 w-[706px]">
-                                    <p class="text-xl text-[#818181]">3 March, 2025</p>
-                                    <p class="text-[#0A1018] font-medium text-[28px] pt-8">How Do Wind Turbines Save on
-                                        Electricity Bills?</p>
-                                    <p class="pt-4 font-light text-[#0A1018]">Learn how businesses and homes can save up
-                                        to
-                                        40%
-                                        on energy costs with wind turbine solutions. Learn how businesses and homes can
-                                        save
-                                        up
-                                        to 40% on energy costs with wind turbine solutions.</p>
-                                </div>
-                                <div class="ml-70  pt-16">
-                                    <img src="{{ asset('images/stash_arrow-up.png') }}" alt="news2"
-                                         class="w-[34px] h-[34px] object-cover "/>
-                                </div>
-                            </div>
-                            <div class="flex ">
-                                <div
-                                    class="w-[240px] h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
-                                    <img src="#" alt="news1"
-                                         class="w-full h-full object-cover"/>
-                                </div>
-                                <div class="flex flex-col gap-2 pl-12 w-[706px]">
-                                    <p class="text-xl text-[#818181]">3 March, 2025</p>
-                                    <p class="text-[#0A1018] font-medium text-[28px] pt-8">How Do Wind Turbines Save on
-                                        Electricity Bills?</p>
-                                    <p class="pt-4 font-light text-[#0A1018]">Learn how businesses and homes can save up
-                                        to
-                                        40%
-                                        on energy costs with wind turbine solutions. Learn how businesses and homes can
-                                        save
-                                        up
-                                        to 40% on energy costs with wind turbine solutions.</p>
-                                </div>
-                                <div class="ml-70  pt-16">
-                                    <img src="{{ asset('images/stash_arrow-up.png') }}" alt="news2"
-                                         class="w-[34px] h-[34px] object-cover"/>
-                                </div>
-                            </div>
-                            <div class="flex ">
-                                <div
-                                    class="w-[240px] h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
-                                    <img src="#" alt="news1"
-                                         class="w-full h-full object-cover"/>
-                                </div>
-                                <div class="flex flex-col gap-2 pl-12 w-[706px]">
-                                    <p class="text-xl text-[#818181]">3 March, 2025</p>
-                                    <p class="text-[#0A1018] font-medium text-[28px] pt-8">How Do Wind Turbines Save on
-                                        Electricity Bills?</p>
-                                    <p class="pt-4 font-light text-[#0A1018]">Learn how businesses and homes can save up
-                                        to
-                                        40%
-                                        on energy costs with wind turbine solutions. Learn how businesses and homes can
-                                        save
-                                        up
-                                        to 40% on energy costs with wind turbine solutions.</p>
-                                </div>
-                                <div class="ml-70  pt-16">
-                                    <img src="{{ asset('images/stash_arrow-up.png') }}" alt="news2"
-                                         class="w-[34px] h-[34px] object-cover"/>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

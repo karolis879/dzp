@@ -147,5 +147,10 @@ ul {
 }
 
 
+@theme {
+    --breakpoint-2xl: 107rem;
+}
+
+
 
 

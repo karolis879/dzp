@@ -32,7 +32,6 @@ export function initSwipers() {
         spaceBetween: 16,
         breakpoints: {
             0: { slidesPerView: 1.4 },
-            768: { slidesPerView: 2 },
             1024: { slidesPerView: 1 },
         },
         pagination: {

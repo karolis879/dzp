@@ -51,16 +51,14 @@ export function initHeader() {
         const mobileLogo = document.querySelector(".mobile-dzp-logo");
 
         if (window.scrollY > 20) {
-            logo.classList.remove("opacity-0", "translate-y-3");
-            logo.classList.add("opacity-100", "translate-y-0");
-            mobileLogo.classList.add('hidden');
+            logo.classList.remove("opacity-0", "translate-y-3", "hidden");
+            logo.classList.add("opacity-100", "translate-y-0", "w-[100px]");
+            mobileLogo.classList.add("hidden");
         } else {
-            logo.classList.remove("opacity-100", "translate-y-0");
+            logo.classList.remove("opacity-100", "translate-y-0", "w-[100px]");
             logo.classList.add("opacity-0", "translate-y-3");
-            mobileLogo.classList.remove('hidden');
+            mobileLogo.classList.remove("hidden");
         }
     });
-
-
 
 }

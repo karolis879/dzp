@@ -35,4 +35,7 @@ return [
         ],
     ],
 
+    'linkedin' => [
+        'token' => env('LINKEDIN_ACCESS_TOKEN'),
+    ]
 ];

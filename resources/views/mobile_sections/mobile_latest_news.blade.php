@@ -1,51 +1,22 @@
 <div class="swiper mySwiperNews" style="overflow: visible; width: 100%" id="news-mobile-swiper">
     <div class="swiper-wrapper">
+        @foreach($allData as $data)
         <div class="swiper-slide relative overflow-hidden rounded-lg md:h-235">
             <div class="flex md:flex-col gap-10 mt-10 px-4">
                 <div class="flex flex-col">
                     <div
                         class="md:w-[240px] w-[236px] h-[218px] md:h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
-                        <img src="#" alt="news1"
-                             class="w-full h-full object-cover"/>
+                        <img src="{{$data->image}}" alt="news1"
+                             class="w-full h-full object-cover rounded-[20px]"/>
                     </div>
                     <div class="flex flex-col">
-                        <p class="text-xl text-[#818181] pt-2">3 March, 2025</p>
-                        <p class="text-[#0A1018] font-medium text-[28px] pt-8">How Do Wind Turbines Save on
-                            Electricity Bills?</p>
-                        <p class="pt-4 font-light text-[#0A1018]">Learn how businesses and homes can save up
-                            to
-                            40%
-                            on energy costs with wind turbine solutions. Learn how businesses and homes can
-                            save
-                            up
-                            to 40% on energy costs with wind turbine solutions.</p>
+                        <p class="text-[#0A1018] font-medium text-[28px] pt-8">{{ \Carbon\Carbon::parse($data->published_at)->format('F j, Y') }}</p>
+                        <p class="pt-4 font-light text-[#0A1018]">{{$data->description}}</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="swiper-slide relative overflow-hidden rounded-lg md:h-235">
-            <div class="flex md:flex-col gap-10 mt-10 px-4">
-                <div class="flex flex-col">
-                    <div
-                        class="md:w-[240px] w-[236px] h-[218px] md:h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
-                        <img src="#" alt="news1"
-                             class="w-full h-full object-cover"/>
-                    </div>
-                    <div class="flex flex-col">
-                        <p class="text-xl text-[#818181] pt-2">3 March, 2025</p>
-                        <p class="text-[#0A1018] font-medium text-[28px] pt-8">How Do Wind Turbines Save on
-                            Electricity Bills?</p>
-                        <p class="pt-4 font-light text-[#0A1018]">Learn how businesses and homes can save up
-                            to
-                            40%
-                            on energy costs with wind turbine solutions. Learn how businesses and homes can
-                            save
-                            up
-                            to 40% on energy costs with wind turbine solutions.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 
