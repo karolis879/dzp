@@ -10,7 +10,7 @@
                     </h3>
                     <img src="{{asset('images/neptunas_logo.png')}}"
                          class="md:hidden pt-4 md:pt-0 flex md:flex md:order-3 order-2 w-[175px] h-[183px] mx-auto">
-                    <p class="w-3/4 mx-auto md:order-2 order-3 text-lg md:text-[26px] font-bold text text-[#013538] pt-8">
+                    <p class="w-full md:mx-0 mx-auto md:order-2 order-3 text-lg md:text-[26px] font-bold text text-[#013538] pt-8">
                         dzp is proudly supporting
                         this brand and
                         its events.</p>
