@@ -1,7 +1,7 @@
 <div class=" container mx-auto flex-start mb-[52px] mt-2 bg-[#E4E9E9] rounded-[24px] md:flex relative"
      id="contacts">
     <div class="hidden md:flex container mx-auto flex-start mb-[52px] mt-2 bg-[#E4E9E9] rounded-[24px] md:flex relative">
-    <img src="{{asset('images/turbine_absolute.png')}}" class="absolute z-0 top-0 left-[-135px] w-[866px] h-[1262px]">
+    <img src="{{asset('images/turbine_absolute.png')}}" class="absolute z-0 top-[-8px] left-[-135px] w-[866px] h-[1262px]">
         <div class="px-[75px] py-20 w-full flex">
             <div class="flex flex-col items-start w-1/3">
                 <h3
