@@ -1,4 +1,4 @@
-<div class="container md:mx-auto flex-start mb-[52px] mt-20 md:mt-2 flex-col bg-[#F9F8F2] md:h-[911px] md:rounded-[24px]">
+<div class="container md:mx-auto flex-start mb-[52px] mt-20 md:mt-2 flex-col bg-[#F9F8F2] md:full md:rounded-[24px]">
     <div class="md:px-[75px] md:py-14 px-4 md:px-0 py-4 md:py-0">
         <h3
             class="font-normal md:text-[60px] text-[32px] md:leading-[68px] tracking-[-0.04em] text-[#818181]">
@@ -8,10 +8,10 @@
                                 & Mission
                             </span>
         </h3>
-        <div class="flex pt-15 md:gap-25">
-            <img class="hidden md:flex w-1/3" src="{{asset('images/values_and_mission.png')}}">
-            <div class="md:p-4 md:p-0 md:w-2/3 flex flex-wrap gap-10 md:gap-6">
-                <div class=" flex md:flex-col md:h-[222px] md:w-[356px]">
+        <div class="flex md:pt-15 pt-8 md:gap-25">
+            <img class="hidden md:flex w-1/3 object-contain" src="{{asset('images/values_and_mission.png')}}">
+            <div class="md:p-4 md:p-0 md:w-2/3 md:grid md:grid-cols-2 gap-10 md:gap-30">
+                <div class=" flex md:flex-col md:h-[222px] md:pt-8 md:pt-0 md:w-[356px]">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
                         <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 90 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +32,7 @@
                         support the global transition to clean energy.</p>
                     </div>
                 </div>
-                <div class=" flex md:flex-col md:h-[222px] md:w-[356px]">
+                <div class=" flex md:flex-col md:h-[222px] pt-8 md:pt-0 md:w-[356px]">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
                         <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 111 108" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +54,7 @@
                         technologies to improve the efficiency, reliability and performance of wind turbines.</p>
                     </div>
                 </div>
-                <div class=" flex md:flex-col md:h-[222px] md:w-[356px]">
+                <div class=" flex md:flex-col md:h-[222px] pt-8 md:pt-0 md:w-[356px]">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
                         <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 104 109" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
                         providing professional service and ongoing technical support.</p>
                     </div>
                 </div>
-                <div class=" flex md:flex-col md:h-[222px] md:w-[356px]">
+                <div class=" flex md:flex-col md:h-[222px] pt-8 md:pt-0 md:w-[356px]">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
                         <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 80 109" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -179,7 +179,7 @@
                 </div>
                 <div class="swiper-pagination" style="top: 900px; left: -87px"></div>
 
-                <div class="swiper-button-next" style="top: 910px; right: 700px; opacity: 0.3; width: 45px">
+                <div class="swiper-button-next" style="top: 910px; right: 635px; opacity: 0.3; width: 45px">
                     <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="1" y="1" width="52" height="52" rx="26" stroke="#00403D" stroke-width="2"/>
                         <path
@@ -188,7 +188,7 @@
                     </svg>
                 </div>
 
-                <div class="swiper-button-prev" style="top: 910px; left:523px; opacity: 0.3; width: 45px">
+                <div class="swiper-button-prev" style="top: 910px; left:460px; opacity: 0.3; width: 45px">
                     <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="-1" y="1" width="52" height="52" rx="26" transform="matrix(-1 0 0 1 52 0)"
                               stroke="#00403D" stroke-width="2"/>
