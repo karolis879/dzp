@@ -2,8 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/dzp-index-text', function () {
-    return view('welcome');
-});
-
-Route::get('/test', [\App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/dzp-index-text', [\App\Http\Controllers\HomeController::class, 'index']);
