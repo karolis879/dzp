@@ -62,8 +62,10 @@
         <div class="w-1/2 relative hidden md:flex">
             <img src="{{asset('images/leading_the_wind.jpg')}}" alt="leading_the_wind"
                  class=" h-full object-cover  rounded-[20px]"/>
+            <a href="#contacts" class="hidden md:block">
             <button
                 class="
+                                    scroll-link
                             bg-[#F06449]
                             text-white
                             font-normal
@@ -77,9 +79,11 @@
                             cursor-pointer
                             hidden md:flex
                           "
+                data-target="contacts"
             >
                 Get a quote
             </button>
+            </a>
         </div>
         <div class="md:px-0 md:w-1/2 flex flex-col md:ml-[52px]">
             <div class="flex flex-col">
