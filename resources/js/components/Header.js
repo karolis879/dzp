@@ -46,20 +46,21 @@ export function initHeader() {
             closeMenu();
         });
     });
-
     window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
         const logo = document.querySelector(".logo-container");
         const mobileLogo = document.querySelector(".mobile-dzp-logo");
 
         if (window.scrollY > 20) {
-            logo.classList.remove("opacity-0");
-            logo.classList.add("opacity-100");
+            logo.classList.remove("opacity-0", "translate-y-3");
+            logo.classList.add("opacity-100", "translate-y-0");
             mobileLogo.classList.add('hidden');
         } else {
-            logo.classList.remove("opacity-100");
-            logo.classList.add("opacity-0");
+            logo.classList.remove("opacity-100", "translate-y-0");
+            logo.classList.add("opacity-0", "translate-y-3");
             mobileLogo.classList.remove('hidden');
         }
     });
+
+
+
 }
