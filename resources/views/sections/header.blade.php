@@ -2,6 +2,7 @@
     <div class="container mx-auto flex justify-between items-center px-4 z-20">
         <nav class="flex items-center h-8 relative">
             <ul class="flex gap-8 text-base font-medium text-[#191919]">
+                <a href="#">
                 <div
                     class="hidden items-center md:block transition-opacity duration-300 opacity-0 logo-container absolute left-[-145px] top-[-10px]">
                     <div class="transition-transform duration-500"
@@ -14,6 +15,7 @@
                               fill="#003538"/>
                     </svg>
                 </div>
+                </a>
     </div>
 {{--    <li><a href="#"--}}
 {{--           class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[24px] leading-[32px] tracking-[0] text-center">Home</a>--}}
