@@ -1,7 +1,9 @@
 <div class=" container mx-auto flex-start mb-[52px] mt-2 bg-[#E4E9E9] rounded-[24px] md:flex relative"
      id="contacts">
-    <div class="hidden md:flex container mx-auto flex-start mb-[52px] mt-2 bg-[#E4E9E9] rounded-[24px] md:flex relative">
-    <img src="{{asset('images/turbine_absolute.png')}}" class="absolute z-0 top-[-8px] left-[-135px] w-[866px] h-[1262px]">
+    <div
+        class="hidden md:flex container mx-auto flex-start mb-[52px] mt-2 bg-[#E4E9E9] rounded-[24px] md:flex relative">
+        <img src="{{asset('images/turbine_absolute.png')}}"
+             class="absolute z-0 top-[-8px] left-[-135px] w-[866px] h-[1262px]">
         <div class="px-[75px] py-20 w-full flex">
             <div class="flex flex-col items-start w-1/3">
                 <h3
@@ -58,63 +60,76 @@
                 </div>
             </div>
 
-            <div class="w-2/3 h-[714px] bg-white rounded-[24px] relative z-10">
+            <div class="w-2/3 h-full bg-white rounded-[24px] relative z-10">
                 <div class="flex flex-col items-start p-8" id="quote-section-form">
                     <h5
                         class="font-medium text-[24px] text-align-top  text-[#00403D]">
                         Get a quote
                     </h5>
                     <div class="pt-10 w-full">
-                        <form class="flex flex-col items-start ">
+                        <form method="POST" action="{{ route('contact_us.send_mail') }}" enctype="multipart/form-data"
+                              class="space-y-4">
+                            @csrf
                             <div class="flex w-full gap-6">
                                 <div class="w-1/2">
                                     <label for="name" class="text-2xl font-semibold">Full
                                         Name</label>
-                                    <input type="text" id="name" name="name" required placeholder="Enter your name"
+                                    <input type="text" name="name" required placeholder="Enter your name"
                                            class="w-full mt-4 border-[#191919] rounded-[14px]">
                                 </div>
                                 <div class="w-1/2">
-                                    <label for="name" class="text-2xl font-semibold">Email
+                                    <label for="email" class="text-2xl font-semibold">Email
                                     </label>
-                                    <input type="text" id="name" name="name" required placeholder="Enter your email"
+                                    <input type="email" name="email" required placeholder="Enter your email"
                                            class="w-full mt-4 border-[#191919] rounded-[14px]">
                                 </div>
                             </div>
                             <div class="flex w-full gap-6 pt-7">
                                 <div class="w-1/2">
-                                    <label for="name" class="text-2xl font-semibold">Company
+                                    <label for="company" class="text-2xl font-semibold">Company
                                         Name</label>
-                                    <input type="text" id="name" name="name" required
+                                    <input type="text" name="company" required placeholder="Enter your company name"
                                            class="w-full mt-4 border-[#191919] rounded-[14px]">
                                 </div>
                                 <div class="w-1/2">
-                                    <label for="email" class="text-2xl font-semibold">Country</label>
-                                    <input type="email" id="email" name="email" required
+                                    <label for="country" class="text-2xl font-semibold">Country</label>
+                                    <input type="text" name="country" required placeholder="Enter your country"
                                            class="w-full mt-4 border-[#191919] rounded-[14px]">
                                 </div>
                             </div>
                             <div class="w-full pt-7">
-                                <label for="email" class="text-2xl font-semibold">Service type</label>
-                                <input type="email" id="email" name="email" required
-                                       class="w-full mt-4 border-[#191919] rounded-[14px]">
+                                <label for="topic" class="text-2xl font-semibold">Service type</label>
+                                <select id="topic" name="topic"
+                                        class="w-full mt-4 border-[#191919] rounded-[14px]"
+                                        required>
+                                    <option value="marketing" data-email="tautrimas@dzprojects.eu">Marketing/Media
+                                    </option>
+                                    <option value="sponsorship" data-email="tautrimas@dzprojects.eu">Sponsorship
+                                    </option>
+                                    <option value="project-management" data-email="guoda.r@dzprojects.eu">Project
+                                        Management
+                                    </option>
+                                    <option value="hr" data-email="viktorija.p@dzprojects.eu">HR</option>
+                                    <option value="safety" data-email="viktorija.p@dzprojects.eu">Safety</option>
+                                    <option value="career" data-email="info@dzprojects.eu">Career</option>
+                                </select>
                             </div>
 
                             <div class="w-full pt-7">
-                                <label for="email" class="text-2xl font-semibold">Details about service</label>
-                                <input type="text" id="email" name="email" required
+                                <label for="message" class="text-2xl font-semibold">Details about service</label>
+                                <input type="text" name="message" required placeholder="Enter details about service"
                                        class="w-full mt-4 border-[#191919] rounded-[14px] h-24">
                             </div>
 
                             <div class="flex pt-7 gap-7">
                                 <button
                                     type="submit"
-                                    class="bg-[#F06449] text-white font-medium text-base rounded-full h-12 w-[158px] flex items-center justify-center gap-2 font-hankenGrotesk">
+                                    class="bg-[#F06449] text-white font-medium text-base rounded-full h-12 w-[158px] flex items-center justify-center gap-2 font-hankenGrotesk cursor-pointer">
                                     Submit request
                                 </button>
 
                                 <button
-                                    type="submit"
-                                    class="bg-white text-[#00403D] border border-[#00403D] font-medium text-base rounded-full h-12 w-[158px] flex items-center justify-center gap-2 font-hankenGrotesk">
+                                    class="bg-white text-[#00403D] border border-[#00403D] font-medium text-base rounded-full h-12 w-[158px] flex items-center justify-center gap-2 font-hankenGrotesk cursor-pointer" id="clear-form">
                                     Clear
                                 </button>
                             </div>
@@ -130,7 +145,7 @@
             </div>
         </div>
     </div>
-@include('mobile_sections.mobile_contact_us')
+    @include('mobile_sections.mobile_contact_us')
 </div>
 
 {{--Mobile--}}

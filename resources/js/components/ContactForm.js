@@ -91,4 +91,18 @@ export function initContactForm() {
             this.classList.add('bg-white', 'rounded-t-[24px]');
         });
     });
+
+    const clearButton = document.getElementById('clear-form');
+    clearButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        const form = clearButton.closest('form');
+        if (form) form.reset();
+    });
+
+    const mobileClearButton = document.getElementById('mobile-clear-form');
+    mobileClearButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        const form = mobileClearButton.closest('form');
+        if (form) form.reset();
+    });
 }

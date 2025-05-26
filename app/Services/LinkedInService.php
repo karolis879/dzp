@@ -20,12 +20,10 @@ class LinkedInService
             'Linkedin-Version' => '202505',
             'X-Restli-Protocol-Version' => '2.0.0',
         ])->get('https://api.linkedin.com/rest/posts?q=author&author=urn%3Ali%3Aorganization%3A86854077&count=9&sortBy=LAST_MODIFIED');
-//        dd($response->json());
 
         if ($response->successful()) {
             return $response->json();
         }
-
 
         throw new \Exception('Linkedin API error: ' . $response->body());
     }

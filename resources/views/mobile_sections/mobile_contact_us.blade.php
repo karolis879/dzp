@@ -34,39 +34,48 @@
             </div>
         </div>
         <div class="px-4 pt-5 w-full bg-white h-[850px]" id="mobile-quote-section-form">
-            <form class="flex flex-col items-start ">
+            <form method="POST" action="{{ route('contact_us.send_mail') }}" enctype="multipart/form-data"
+                  class="flex flex-col items-start ">
+                @csrf
                 <div class="w-full">
                     <label for="name" class="text-2xl font-semibold">Full
                         Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your name"
+                    <input type="text" name="name" required placeholder="Enter your name"
                            class="w-full mt-4 border-[#191919] rounded-[14px]">
                 </div>
                 <div class="w-full pt-5">
-                    <label for="name" class="text-2xl font-semibold">Email
+                    <label for="email" class="text-2xl font-semibold">Email
                     </label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your email"
+                    <input type="email" name="email" required placeholder="Enter your email"
                            class="w-full mt-4 border-[#191919] rounded-[14px]">
                 </div>
                 <div class="w-full pt-5">
-                    <label for="name" class="text-2xl font-semibold">Company
+                    <label for="company" class="text-2xl font-semibold">Company
                         Name</label>
-                    <input type="text" id="name" name="name" required placeholder="Enter your company name"
+                    <input type="text" name="company" required placeholder="Enter your company name"
                            class="w-full mt-4 border-[#191919] rounded-[14px]">
                 </div>
                 <div class="w-full pt-5">
-                    <label for="email" class="text-2xl font-semibold">Country</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your country"
-                           class="w-full mt-4 border-[#191919] rounded-[14px]">
-                </div>
-                <div class="w-full pt-5">
-                    <label for="email" class="text-2xl font-semibold">Service type</label>
-                    <input type="email" id="email" name="email" required placeholder="Enter your service type"
-                           class="w-full mt-4 border-[#191919] rounded-[14px]">
+                    <label for="topic" class="text-2xl font-semibold">Service type</label>
+                    <select id="topic" name="topic"
+                            class="w-full mt-4 border-[#191919] rounded-[14px]"
+                            required>
+                        <option value="marketing" data-email="tautrimas@dzprojects.eu">Marketing/Media
+                        </option>
+                        <option value="sponsorship" data-email="tautrimas@dzprojects.eu">Sponsorship
+                        </option>
+                        <option value="project-management" data-email="guoda.r@dzprojects.eu">Project
+                            Management
+                        </option>
+                        <option value="hr" data-email="viktorija.p@dzprojects.eu">HR</option>
+                        <option value="safety" data-email="viktorija.p@dzprojects.eu">Safety</option>
+                        <option value="career" data-email="info@dzprojects.eu">Career</option>
+                    </select>
                 </div>
 
                 <div class="w-full pt-5">
-                    <label for="email" class="text-2xl font-semibold">Details about service</label>
-                    <input type="text" id="email" name="email" required placeholder="Enter details about service"
+                    <label for="message" class="text-2xl font-semibold">Details about service</label>
+                    <input type="text" name="message" required placeholder="Enter details about service"
                            class="w-full mt-4 border-[#191919] rounded-[14px] h-24">
                 </div>
 
@@ -78,7 +87,7 @@
                     </button>
 
                     <button
-                        type="submit"
+                        id="mobile-clear-form"
                         class="bg-white text-[#00403D] font-medium text-base h-12  flex items-center justify-center gap-2 underline">
                         Clear
                     </button>

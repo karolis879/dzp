@@ -1,27 +1,62 @@
 @php
     $inspectionServices1 = [
-        'nordex.png',
-        'bionalis.png',
-        'skywork.png',
-        'ekologix.png',
+        ['image' => 'nordex.png', 'link' => 'https://www.nordex.com/'],
+        ['image' => 'bionalis.png', 'link' => 'https://www.bionalis.lt/'],
+        ['image' => 'skywork.png', 'link' => 'https://www.skywork.dk/'],
+        ['image' => 'ekologix.png', 'link' => 'https://eologix-ping.com/en'],
+
     ];
 
     $inspectionServices2 = [
-        'safeway.png',
-        'kiwa.png',
-        'safety_leaders.png',
-        'vejo_planas.png',
-        'fender_gray.png',
-    ];
+        [
+            'image' => 'safeway.png',
+            'link' => 'https://www.safeway.com/'
+        ],
+        [
+            'image' => 'kiwa.png',
+            'link' => 'https://www.kiwa.lt/'
+        ],
+        [
+            'image' => 'safety_leaders.png',
+            'link' => 'https://www.safetyleaders.com/'
+        ],
+        [
+            'image' => 'vejo_planas.png',
+            'link' => 'https://rekvizitai.vz.lt/imone/vejo_planas/juridinis-asmuo/'
+        ],
+         [
+            'image' => 'fender_gray.png',
+            'link' => 'https://www.fenderbv.nl/'
+        ],
+];
 
     $inspectionServicesMobile = [
-        'nordex.png',
-        'bionalis.png',
-        'skywork.png',
-        'kiwa.png',
-         'safeway.png',
-         'ekologix.png',
-    ];
+        [
+            'image' => 'nordex.png',
+            'link' => 'https://www.nordex.com/'
+        ],
+        [
+            'image' => 'bionalis.png',
+            'link' => 'https://www.bionalis.lt/'
+        ],
+        [
+            'image' => 'skywork.png',
+            'link' => 'https://www.skywork.dk/'
+        ],
+        [
+            'image' => 'kiwa.png',
+            'link' => 'https://www.kiwa.com/'
+        ],
+        [
+            'image' => 'safeway.png',
+            'link' => 'https://www.safeway.com/'
+        ],
+        [
+            'image' => 'ekologix.png',
+            'link' => 'https://eologix-ping.com/en'
+        ],
+]
+
 @endphp
 
 <div id="partners" class="container mx-auto flex-start flex flex-col justify-between items-center mb-[52px]">
@@ -40,8 +75,8 @@
     <div class="hidden md:flex justify-between pt-12 px-7" style="width: inherit;">
         @foreach($inspectionServices1 as $service)
             <div class="flex justify-center items-center">
-                <a href="https://www.nordex.com/" target="_blank">
-                    <img class="color-[#0D5B60]" src="{{ asset('images/' . $service) }}">
+                <a href="{{$service['link']}}" target="_blank">
+                    <img class="color-[#0D5B60]" src="{{ asset('images/' . $service['image']) }}">
                 </a>
             </div>
         @endforeach
@@ -49,8 +84,8 @@
     <div class="hidden md:flex justify-between pt-8 px-15" style="width: inherit;">
         @foreach($inspectionServices2 as $service)
             <div class="flex justify-center items-center">
-                <a href="https://www.nordex.com/" target="_blank">
-                    <img class="color-[#0D5B60]" src="{{ asset('images/' . $service) }}">
+                <a href="{{$service['link']}}" target="_blank">
+                    <img class="color-[#0D5B60]" src="{{ asset('images/' . $service['image']) }}">
                 </a>
             </div>
         @endforeach
@@ -58,8 +93,8 @@
     <div class="grid grid-cols-2 gap-4 md:hidden pt-8 px-4" style="width: inherit;">
         @foreach($inspectionServicesMobile as $service)
             <div class="flex justify-between items-center w-full h-32">
-                <a href="https://www.nordex.com/" target="_blank" class="w-155 h-53">
-                    <img src="{{ asset('images/' . $service) }}" class="w-full h-full object-contain" alt="Service Logo">
+                <a href="{{$service['link']}}" target="_blank">
+                    <img src="{{ asset('images/' . $service['image']) }}" class="w-full h-full object-contain" alt="Service Logo">
                 </a>
             </div>
         @endforeach
