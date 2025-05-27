@@ -9,7 +9,7 @@ class Kernel extends ConsoleKernel
 {
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('linkedin:fetch')->dailyAt('00:00');
+        $schedule->command('linkedin:fetch')->dailyAt('12:00');
     }
 
     protected function commands()

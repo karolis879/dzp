@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Models\Linkedin;
 use Illuminate\Console\Command;
 use App\Services\LinkedInService;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 
 class FetchLinkedInData extends Command
@@ -42,6 +43,11 @@ class FetchLinkedInData extends Command
             // Fetch image URLs only for valid IDs
             $imageUrlsResponse = $linkedin->fetchImageUrls($validImageIds);
 
+            Log::channel('linkedin')->info('LinkedIn images fetched successfully', [
+                'total_images' => count($validImageIds),
+                'received_urls' => count($imageUrlsResponse['results'] ?? [])
+            ]);
+
             // Map full urns to simple IDs for quick lookup
             $imageUrlMap = [];
             foreach ($imageUrlsResponse['results'] ?? [] as $fullUrn => $info) {
@@ -62,11 +68,16 @@ class FetchLinkedInData extends Command
                 ]);
             }
 
+            Log::channel('linkedin')->info('LinkedIn data saved to database', [
+                'total_records' => count($descriptions)
+            ]);
 
             $this->info('LinkedIn data fetched and saved successfully.');
-            logger($data);
         } catch (\Exception $e) {
-            logger()->error('LinkedIn fetch failed: ' . $e->getMessage());
+            Log::channel('linkedin')->error('LinkedIn fetch failed', [
+                'error' => $e->getMessage(),
+                'trace' => $e->getTraceAsString()
+            ]);
         }
     }
 }
