@@ -9,7 +9,7 @@ class Kernel extends ConsoleKernel
 {
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('linkedin:fetch')->dailyAt('12:11')->timezone('Europe/Vilnius');
+        $schedule->command('linkedin:fetch')->dailyAt('12:00')->timezone('Europe/Vilnius');
     }
 
     protected function commands()
