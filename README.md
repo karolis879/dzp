@@ -8,11 +8,14 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Deployed-brightgreen" alt="Status Badge">
-  <img src="https://img.shields.io/badge/Tech-Tailwind%20CSS-blue" alt="Tailwind CSS">
-  <img src="https://img.shields.io/badge/API-LinkedIn-lightgrey" alt="LinkedIn API">
-  <img src="https://img.shields.io/badge/Maintained%20by-Karolis-orange" alt="Maintainer">
+  <img src="https://img.shields.io/badge/Tech-Laravel-red" alt="Laravel">
+  <img src="https://img.shields.io/badge/Tech-PHP-777bb4" alt="PHP">
+  <img src="https://img.shields.io/badge/Tech-JavaScript-yellow" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Tech-Tailwind%20CSS-38bdf8" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/Library-Swiper.js-purple" alt="Swiper.js">
+  <img src="https://img.shields.io/badge/API-LinkedIn-blue" alt="LinkedIn API">
 </p>
+
 
 ---
 
@@ -26,6 +29,7 @@ The site showcases company services and includes a live LinkedIn post feed power
 
 ## ⚙️ Tech Stack
 
+- **Laravel** – PHP web application framework (backend & routing)
 - **Tailwind CSS** – Utility-first CSS framework
 - **Plain JavaScript** – Lightweight interactivity
 - **Swiper.js** – Mobile-friendly sliders/carousels
