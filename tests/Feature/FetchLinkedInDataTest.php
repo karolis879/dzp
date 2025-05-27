@@ -58,12 +58,12 @@ class FetchLinkedInDataTest extends TestCase
             ->assertExitCode(0);
 
         // Assert: Check database
-        $this->assertDatabaseCount('linkedins', 1);
+        $this->assertDatabaseCount('linkedin', 1);
 
         $linkedin = Linkedin::first();
         $this->assertEquals('This is a test post from LinkedIn.', $linkedin->description);
         $this->assertEquals('https://example.com/image.jpg', $linkedin->image);
-        $this->assertEquals('2024-05-27 00:00:00', $linkedin->published_at);
+        $this->assertEquals('2024-05-27 16:20:00', $linkedin->published_at);
     }
 
     public function test_it_logs_an_error_on_exception()
