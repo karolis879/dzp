@@ -33,7 +33,7 @@
 
             </div>
         </div>
-        <div class="px-4 pt-5 w-full bg-white h-[850px]" id="mobile-quote-section-form">
+        <div class="px-4 pt-5 w-full bg-white h-full md:h-[850px]" id="mobile-quote-section-form">
             <form method="POST" action="{{ route('contact_us.send_mail') }}" enctype="multipart/form-data"
                   class="flex flex-col items-start ">
                 @csrf

@@ -15,8 +15,24 @@ export function initSwipers() {
             delay: 3000,
             disableOnInteraction: false,
         },
-        pagination: {
-            el: ".swiper-pagination",
+        mousewheel: true,
+        keyboard: true,
+    });
+
+    const certificationsSwiper = new Swiper(".myCertificationsSwiper", {
+        cssMode: true,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            0: { slidesPerView: 1.4 },
+            770: { slidesPerView: 1 },
         },
         mousewheel: true,
         keyboard: true,
@@ -40,23 +56,4 @@ export function initSwipers() {
         mousewheel: true,
         keyboard: true,
     });
-
-    // Control opacity
-    const nextBtn = document.querySelector('.swiper-button-next');
-    const prevBtn = document.querySelector('.swiper-button-prev');
-
-    if (nextBtn && prevBtn) {
-        nextBtn.style.opacity = '1';
-        prevBtn.style.opacity = '0.3';
-
-        nextBtn.addEventListener('click', () => {
-            nextBtn.style.opacity = '1';
-            prevBtn.style.opacity = '0.3';
-        });
-
-        prevBtn.addEventListener('click', () => {
-            prevBtn.style.opacity = '1';
-            nextBtn.style.opacity = '0.3';
-        });
-    }
 }

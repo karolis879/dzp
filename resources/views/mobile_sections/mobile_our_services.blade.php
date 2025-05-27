@@ -52,5 +52,11 @@
             arrowIcon.classList.remove('fa-arrow-down');
             arrowIcon.classList.add('fa-arrow-up');
         }
+
+        dropdownMenu.addEventListener('click', (e) => {
+            dropdownMenu.classList.add('hidden');
+            arrowIcon.classList.remove('fa-arrow-up');
+            arrowIcon.classList.add('fa-arrow-down');
+        })
     });
 </script>

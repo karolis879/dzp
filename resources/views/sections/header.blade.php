@@ -60,5 +60,3 @@
 </header>
 
 @include('mobile_sections.mobile_header')
-
-

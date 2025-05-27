@@ -1,7 +1,7 @@
 <div class="container mx-auto flex-col  flex-start mb-[52px] mt-2 flex bg-[#E4E9E9] md:rounded-[24px]">
     <div class="h-full md:pt-15 md:px-[75px]  md:flex gap-10">
         <div class="flex justify-center md:justify-between items-center h-full md:w-1/2 w-full">
-            <div class="pt-8 w-full px-4 md:px-0">
+            <div class=" w-full px-4 md:px-0">
                 <div class=" flex items-center">
                     <h3
                         class="text-4xl md:text-[60px] md:leading-[68px] md:tracking-[-0.04em] text-[#818181]">

@@ -106,13 +106,13 @@ ul {
 }
 
 
-/* Base styles for pagination */
-.swiper-pagination {
-    position: absolute;
-    top: 400px;
-    left: -87px;
-    /* Add other necessary styles if missing */
-}
+/*!* Base styles for pagination *!*/
+/*.swiper-pagination {*/
+/*    position: absolute;*/
+/*    top: 400px;*/
+/*    left: -87px;*/
+/*    !* Add other necessary styles if missing *!*/
+/*}*/
 
 /* Base styles for buttons */
 #swiper-button-next-news,

@@ -13,15 +13,21 @@
                     <p class="md:hidden text-base">Discover the latest trends, technologies, and solutions shaping the future of wind energy.</p>
                 </h3>
                 <div class="hidden md:flex items-center w-1/2 justify-end">
-                    <button
-                        class="border-[#F06449] border-[2px]  text-[#F06449] font-light text-base rounded-full h-12 w-[255px] flex items-center justify-center gap-2 font-hankenGrotesk">
-                        Read more on <span class="font-medium"> Linkedin</span>
-                    </button>
+                    <a href="https://www.linkedin.com/company/dzpcompany" target="_blank">
+                        <button
+                            class="border-[#F06449] border-[2px]  hover:text-white hover:bg-[#F06449] cursor-pointer text-[#F06449] font-light text-base rounded-full h-12 w-[255px] flex items-center justify-center gap-2 font-hankenGrotesk">
+                            Read more on <span class="font-medium"> Linkedin</span>
+                        </button>
+                    </a>
                     <p class="text-[#818181] pl-8 pr-3 font-light">also follow us on:</p>
-                    <div class="flex gap-2">
-                        <i class="text-[#F06449] text-[21px] hover:text-[#FFC005]  fab fa-youtube border-[2px] rounded-full p-3"></i>
-                        <i class="text-[#F06449] text-[21px] hover:text-[#FFC005] fab fa-twitter border-[2px] rounded-full p-3"></i>
-                        <i class="text-[#F06449] text-[21px] hover:text-[#FFC005] fab fa-facebook border-[2px] rounded-full p-3"></i>
+                    <div class="flex gap-2 hover:text-[#FFC005]">
+                        <a href="https://www.youtube.com/@DZP-ropeaccessprofessionals/videos" target="_blank"> <i
+                                class="text-[#F06449] text-[21px] hover:text-[#FFC005]  fab fa-youtube border-[2px] rounded-full p-3"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/dzprepair" target="_blank"> <i
+                                class="text-[#F06449] text-[21px] hover:text-[#FFC005] fab fa-facebook border-[2px] rounded-full p-3 z-200"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -34,11 +40,13 @@
                         <div class="flex md:flex-col gap-10 mt-10">
                             @foreach($linkedInData1 as $data)
                             <div class="flex ">
+                                <a href="https://www.linkedin.com/company/dzpcompany" target="_blank">
                                 <div
                                     class="md:w-[240px] w-full h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
                                     <img src="{{$data->image}}" alt="news1"
                                          class="rounded-[24px] w-full h-full object-cover"/>
                                 </div>
+                                </a>
                                 <div class="flex flex-col pl-12 w-[706px]">
                                     <p class="text-[#0A1018] font-medium text-[28px] pt-8">{{ \Carbon\Carbon::parse($data->published_at)->format('F j, Y') }}</p>
                                     <p class="pt-4 font-light text-[#0A1018]">{{$data->description}}</p>
@@ -58,11 +66,14 @@
                         <div class="flex md:flex-col gap-10 mt-10">
                             @foreach($linkedInData2 as $data)
                                 <div class="flex ">
+                                    <a href="https://www.linkedin.com/company/dzpcompany" target="_blank">
+
                                     <div
                                         class="w-[240px] h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
                                         <img src="{{$data->image}}" alt="news1"
                                              class="rounded-[24px] w-full h-full object-cover"/>
                                     </div>
+                                    </a>
                                     <div class="flex flex-col pl-12 w-[706px]">
                                         <p class="text-[#0A1018] font-medium text-[28px] pt-8">{{ \Carbon\Carbon::parse($data->published_at)->format('F j, Y') }}</p>
                                         <p class="pt-4 font-light text-[#0A1018]">{{ $data->description}}</p>
@@ -76,6 +87,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination" style="top: 900px; left: -87px"></div>
                 <div class="swiper-pagination" style="top: 900px; left: -87px"></div>
 
                 <div class="swiper-button-next" style="top: 910px; right: 635px; opacity: 0.3; width: 45px">
@@ -102,7 +114,7 @@
 
            @include('mobile_sections.mobile_latest_news')
 
-    <img class="hidden absolute md:flex w-[162px] h-[430px] right-[-50px] top-[-60px]"
+    <img class="hidden absolute md:flex w-[162px] h-[430px] right-[-50px] top-[-60px] pointer-events-none"
          src="{{asset('images/hangin_guy_3.png')}}">
     </div>
 </div>

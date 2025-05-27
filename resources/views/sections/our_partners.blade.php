@@ -1,58 +1,58 @@
 @php
     $inspectionServices1 = [
-        ['image' => 'nordex.png', 'link' => 'https://www.nordex.com/'],
-        ['image' => 'bionalis.png', 'link' => 'https://www.bionalis.lt/'],
-        ['image' => 'skywork.png', 'link' => 'https://www.skywork.dk/'],
-        ['image' => 'ekologix.png', 'link' => 'https://eologix-ping.com/en'],
+        ['image' => 'nordex.svg', 'link' => 'https://www.nordex-online.com/en/'],
+        ['image' => 'bionalis.svg', 'link' => 'https://www.bionalis.lt/'],
+        ['image' => 'skywork.svg', 'link' => 'https://www.skywork.dk/'],
+        ['image' => 'ekologix.svg', 'link' => 'https://eologix-ping.com/en'],
 
     ];
 
     $inspectionServices2 = [
         [
-            'image' => 'safeway.png',
-            'link' => 'https://www.safeway.com/'
+            'image' => 'brand-safeway.svg',
+            'link' => 'https://brandsafway.com/'
         ],
         [
-            'image' => 'kiwa.png',
+            'image' => 'kiwa.svg',
             'link' => 'https://www.kiwa.lt/'
         ],
         [
-            'image' => 'safety_leaders.png',
-            'link' => 'https://www.safetyleaders.com/'
+            'image' => 'safety.svg',
+            'link' => 'https://www.safetyleaders.no/en'
         ],
         [
-            'image' => 'vejo_planas.png',
+            'image' => 'vejo_planas.svg',
             'link' => 'https://rekvizitai.vz.lt/imone/vejo_planas/juridinis-asmuo/'
         ],
          [
-            'image' => 'fender_gray.png',
+            'image' => 'fender.svg',
             'link' => 'https://www.fenderbv.nl/'
         ],
 ];
 
     $inspectionServicesMobile = [
         [
-            'image' => 'nordex.png',
-            'link' => 'https://www.nordex.com/'
+            'image' => 'nordex.svg',
+            'link' => 'https://www.nordex-online.com/en/'
         ],
         [
-            'image' => 'bionalis.png',
+            'image' => 'bionalis.svg',
             'link' => 'https://www.bionalis.lt/'
         ],
         [
-            'image' => 'skywork.png',
+            'image' => 'skywork.svg',
             'link' => 'https://www.skywork.dk/'
         ],
         [
-            'image' => 'kiwa.png',
+            'image' => 'kiwa.svg',
             'link' => 'https://www.kiwa.com/'
         ],
         [
-            'image' => 'safeway.png',
-            'link' => 'https://www.safeway.com/'
+            'image' => 'brand-safeway.svg',
+            'link' => 'https://brandsafway.com/'
         ],
         [
-            'image' => 'ekologix.png',
+            'image' => 'ekologix.svg',
             'link' => 'https://eologix-ping.com/en'
         ],
 ]
@@ -72,20 +72,22 @@
         <p class="text-medium text-base text-[#818181] pt-2">Expert Tips, News, and Trends in Renewable Energy</p>
     </div>
 
-    <div class="hidden md:flex justify-between pt-12 px-7" style="width: inherit;">
+    <div class="hidden md:flex justify-between pt-12 px-15 flex-wrap gap-4" style="width: inherit;">
         @foreach($inspectionServices1 as $service)
-            <div class="flex justify-center items-center">
-                <a href="{{$service['link']}}" target="_blank">
-                    <img class="color-[#0D5B60]" src="{{ asset('images/' . $service['image']) }}">
+            <div class="flex justify-center items-center p-4 rounded transition-all duration-300">
+                <a href="{{ $service['link'] }}" target="_blank" class="block w-[200px] h-[140px] flex items-center justify-center">
+                    <img src="{{ asset('images/' . $service['image']) }}" alt="Partner Logo"
+                         class="grayscale contrast-0 brightness-[0.4] hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition-all duration-300">
                 </a>
             </div>
         @endforeach
     </div>
     <div class="hidden md:flex justify-between pt-8 px-15" style="width: inherit;">
         @foreach($inspectionServices2 as $service)
-            <div class="flex justify-center items-center">
-                <a href="{{$service['link']}}" target="_blank">
-                    <img class="color-[#0D5B60]" src="{{ asset('images/' . $service['image']) }}">
+            <div class="flex justify-center items-center p-4 rounded transition-all duration-300">
+                <a href="{{ $service['link'] }}" target="_blank" class="block w-[200px] h-[140px] flex items-center justify-center">
+                    <img src="{{ asset('images/' . $service['image']) }}" alt="Partner Logo"
+                         class="grayscale contrast-0 brightness-[0.4] hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition-all duration-300">
                 </a>
             </div>
         @endforeach

@@ -1,4 +1,4 @@
-<div class=" container mx-auto flex-start mb-[52px] mt-2 bg-[#E4E9E9] rounded-[24px] md:flex relative"
+<div class=" container mx-auto flex-start md:mb-[52px] mb-4 mt-2 bg-[#E4E9E9] rounded-[24px] md:flex relative"
      id="contacts">
     <div
         class="hidden md:flex container mx-auto flex-start mb-[52px] mt-2 bg-[#E4E9E9] rounded-[24px] md:flex relative">
