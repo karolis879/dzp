@@ -12,8 +12,7 @@ class ContactUsController extends Controller
 {
     public function sendMail(ContactUsFormRequest $request)
     {
-        $recipientEmail = config("contact_topics.$request->input('topic')", 'default@dzprojects.eu');
-
+        $recipientEmail = config("contact_topics." . $request->input('topic'), 'default@dzprojects.eu');
         $attachment = $request->hasFile('attachment')
             ? $request->file('attachment')?->store('attachments')
             : null;
