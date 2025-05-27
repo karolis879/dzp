@@ -73,6 +73,7 @@ class FetchLinkedInData extends Command
             ]);
 
             $this->info('LinkedIn data fetched and saved successfully.');
+            logger($data);
         } catch (\Exception $e) {
             Log::channel('linkedin')->error('LinkedIn fetch failed', [
                 'error' => $e->getMessage(),
