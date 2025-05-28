@@ -16,9 +16,9 @@ export function initSwipers() {
             shadowOffset: 20,
             shadowScale: 0.94,
         },
-        // autoplay: {
-        //     delay: 4500,
-        // },
+        autoplay: {
+            delay: 4500,
+        },
         pagination: {
             el: ".swiper-pagination",
         },
