@@ -86,23 +86,25 @@
             <div class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px]" id="blade" role="tabpanel"
                  aria-labelledby="blade-tab">
                 @foreach ($services as $service)
-                    <button
-                        class="text-[#0D5B60] hover:text-[#008983] group bg-white aspect-[4/3] rounded-[4px] h-[273px] w-full flex items-center justify-center font-normal text-base flex-col hover:shadow-lg hover:shadow-black/15">
-                        @if($service['name'] ==='services_maintenance.svg')
-                            <div class="w-[95px] h-[97px] flex justify-center items-center">
-                                {!! file_get_contents(public_path('images/' . $service['name'])) !!}
-                            </div>
-                        @else
-                            <div class="w-[75px] h-[97px] flex justify-center items-center">
-                                {!! file_get_contents(public_path('images/' . $service['name'])) !!}
-                            </div>
-                        @endif
-                        <p
-                            class="pt-3 text-[20px] font-medium leading-[135%] tracking-[-0.05em] text-center"
-                            style="font-family: 'Space Grotesk', sans-serif;">
-                            {!! $service['description'] !!}
-                        </p>
-                    </button>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <button
+                            class="text-[#0D5B60] hover:text-[#008983] group bg-white aspect-[4/3] rounded-[4px] h-[273px] w-full flex items-center justify-center font-normal text-base flex-col hover:shadow-lg hover:shadow-black/15">
+                            @if($service['name'] ==='services_maintenance.svg')
+                                <div class="w-[95px] h-[97px] flex justify-center items-center">
+                                    {!! file_get_contents(public_path('images/' . $service['name'])) !!}
+                                </div>
+                            @else
+                                <div class="w-[75px] h-[97px] flex justify-center items-center">
+                                    {!! file_get_contents(public_path('images/' . $service['name'])) !!}
+                                </div>
+                            @endif
+                            <p
+                                class="pt-3 text-[20px] font-medium leading-[135%] tracking-[-0.05em] text-center"
+                                style="font-family: 'Space Grotesk', sans-serif;">
+                                {!! $service['description'] !!}
+                            </p>
+                        </button>
+                    </div>
                 @endforeach
             </div>
 

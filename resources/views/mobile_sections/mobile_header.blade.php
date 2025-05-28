@@ -63,10 +63,11 @@
     <!-- Side drawer -->
     <div
         id="side-drawer"
-        class="fixed top-0 left-0 z-50 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out"
+        class="fixed top-0 right-0 z-50 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out"
         aria-hidden="true"
     >
-        <button
+
+    <button
             id="close-btn"
             aria-label="Close menu"
             class="absolute top-4 right-4 p-2 text-gray-500 rounded focus:outline-none dark:text-gray-400"

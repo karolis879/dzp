@@ -1,6 +1,6 @@
 <div class="container mx-auto flex justify-between items-center px-4 md:mt-[30px] mb-[52px] relative">
 
-    <img src="{{ asset('images/guy.png') }}" alt="flying_guy"
+    <img src="{{ asset('images/guy.png') }}" alt="flying_guy" data-aos="fade-down"
          class="md:w-[141px] w-20 top-[40px] right-3 md:h-[905px] absolute md:right-[-140px] hidden md:flex  md:top-[-70px] z-10"/>
 
     <div class="flex flex-wrap items-center justify-between w-full">
@@ -19,20 +19,21 @@
     </div>
 
     <!-- Text (like col-8) -->
-    <div class="w-full md:w-2/4 ">
+    <div class="w-full md:w-2/4">
         <div>
-            <p class="font-normal text-2xl md:text-[44px] md:tracking-[-0.04em] text-[#00403D] md:text-right">
+            <p class="wind-text font-normal text-2xl md:text-[44px] md:tracking-[-0.04em] text-[#00403D] md:text-right">
                 Ensuring that wind turbines blades
-                <span class="text-[#818181]">never stop turning</span>
+                <span class="wind-span text-[#818181]">never stop turning</span>
             </p>
         </div>
     </div>
+
 </div>
 </div>
 <div class="relative md:mx-4 mx-2">
     <div class="container mx-auto flex justify-between items-center relative ">
-        <div class="w-full relative swiper mySwiper">
-            <div class="swiper-wrapper gap-4">
+        <div class="w-full relative swiper mySwiper" data-swiper-parallax="50%">
+            <div class="swiper-wrapper">
                 <div class="swiper-slide relative">
                     <img src="{{ asset('images/hero.jpg') }}" alt="Wind Turbine"
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
@@ -40,41 +41,46 @@
 
                     <!-- Overlay content -->
                     <div
-                        class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full">
+                        class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full overlay-content opacity-0 translate-y-4 transition-all duration-500 ease-out">
+                        <!-- inside stays the same -->
                         <div
-                            class=" md:py-43 px-8 py-12 w-full px-2 flex flex-col items-center justify-between md:w-min h-full">
-                            <div class="flex justify-center items-center">
-                                <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
-                                    500 +
-                                </h2>
-                                <p class="md:w-[300px] w-[180px] text-white text-sm md:text-2xl text-left">Wind Turbines
-                                    Serviced
-                                    in last 365 days</p>
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
-                                    4 yrs
-                                </h2>
-                                <p class="md:w-[300px] w-[180px] text-white md:text-2xl text-left">Wind Turbines
-                                    Serviced
-                                    rope access industry</p>
-                            </div>
+                            class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full">
+                            <div
+                                class=" md:py-43 px-8 py-12 w-full px-2 flex flex-col items-center justify-between md:w-min h-full">
+                                <div class="flex justify-center items-center">
+                                    <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
+                                        500 +
+                                    </h2>
+                                    <p class="md:w-[300px] w-[180px] text-white text-sm md:text-2xl text-left">Wind
+                                        Turbines
+                                        Serviced
+                                        in last 365 days</p>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
+                                        4 yrs
+                                    </h2>
+                                    <p class="md:w-[300px] w-[180px] text-white md:text-2xl text-left">Wind Turbines
+                                        Serviced
+                                        rope access industry</p>
+                                </div>
 
-                            <div class="flex justify-center items-center">
-                                <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
-                                    85+
-                                </h2>
-                                <p class="md:w-[300px] w-[180px] text-white md:text-2xl text-left">Wind Turbines
-                                    Serviced
-                                    rope access team.</p>
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
-                                    Low
-                                </h2>
-                                <p class="md:w-[300px] w-[180px] text-white md:text-2xl text-left">Wind Turbines
-                                    Serviced
-                                    access team.</p>
+                                <div class="flex justify-center items-center">
+                                    <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
+                                        85+
+                                    </h2>
+                                    <p class="md:w-[300px] w-[180px] text-white md:text-2xl text-left">Wind Turbines
+                                        Serviced
+                                        rope access team.</p>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
+                                        Low
+                                    </h2>
+                                    <p class="md:w-[300px] w-[180px] text-white md:text-2xl text-left">Wind Turbines
+                                        Serviced
+                                        access team.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -84,24 +90,27 @@
                     <img src="{{asset('images/hero_2.jpg')}}" alt="Wind Turbine"
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
                     <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
-
                     <div
-                        class="md:p-18 absolute inset-0 flex flex-col items-end justify-end md:w-[900px] ml-auto h-full">
-                        <div class="p-10">
-                            <h2 class="md:text-6xl text-white md:pb-40">
-                                Keeping wind turbines
-                                at peak performance
-                                all year round?<br>
-                                <span class="font-bold"> No problem.</span>
-                            </h2>
-                            <div class="flex gap-20">
-                                <div class="flex flex-col leading-none">
-                                    <p class="md:text-[52px] font-light text-white">IRATA</p>
-                                    <p class="md:text-[35px] font-light text-white">certified</p>
-                                </div>
+                        class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full overlay-content opacity-0 translate-y-4 transition-all duration-500 ease-out">
+                        <div
+                            class="md:p-18 absolute inset-0 flex flex-col items-end md:justify-end md:w-[900px] ml-auto h-full">
+                            <div class="p-10 flex flex-col justify-around md:h-auto h-full">
+                                <h2 class="md:text-6xl text-white md:pb-40">
+                                    Keeping wind turbines
+                                    at peak performance
+                                    all year round?<br>
+                                    <span class="font-bold"> No problem.</span>
+                                </h2>
+                                <div class="flex gap-20">
+                                    <div class="flex flex-col justify-end leading-none">
+                                        <p class="md:text-[52px] font-light text-white">IRATA</p>
+                                        <p class="md:text-[35px] font-light text-white">certified</p>
+                                    </div>
 
-                                <p class="text-2xl text-white">In house employeed, professionals with extensive field
-                                    experience.</p>
+                                    <p class="md:text-2xl text-white">In house employeed, professionals with extensive
+                                        field
+                                        experience.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -110,21 +119,24 @@
                     <img src="{{asset('images/hero_3.jpg')}}" alt="Wind Turbine"
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
                     <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
-
                     <div
-                        class="md:p-18 absolute inset-0 flex flex-col items-end justify-end md:w-[900px] ml-auto h-full">
-                        <div class="p-10">
-                            <h2 class="md:text-6xl text-white md:pb-40">
-                                High safety standards, rapid mobilization and efficient execution.<br>
-                            </h2>
-                            <div class="flex gap-20">
-                                <div class="flex flex-col leading-none">
-                                    <p class="md:text-[52px] font-light text-white">IRATA</p>
-                                    <p class="md:text-[35px] font-light text-white">certified</p>
-                                </div>
+                        class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full overlay-content opacity-0 translate-y-4 transition-all duration-500 ease-out">
+                        <div
+                            class="md:p-18 absolute inset-0 flex flex-col items-end md:justify-end md:w-[900px] ml-auto h-full">
+                            <div class="p-10 flex flex-col justify-around md:h-auto h-full">
+                                <h2 class="md:text-6xl text-white md:pb-40">
+                                    High safety standards, rapid mobilization and efficient execution.<br>
+                                </h2>
+                                <div class="flex gap-20">
+                                    <div class="flex flex-col justify-end leading-none">
+                                        <p class="md:text-[52px] font-light text-white">IRATA</p>
+                                        <p class="md:text-[35px] font-light text-white">certified</p>
+                                    </div>
 
-                                <p class="text-2xl text-white">In house employeed, professionals with extensive field
-                                    experience.</p>
+                                    <p class="md:text-2xl text-white">In house employeed, professionals with extensive
+                                        field
+                                        experience.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -138,19 +150,23 @@
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
                     <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
                     <div
-                        class="md:p-18 absolute inset-0 flex flex-col items-end justify-end md:w-[900px] ml-auto h-full">
-                        <div class="p-10">
-                            <h2 class="md:text-6xl text-white md:pb-40">
-                                Powering the future with innovative rope access solutions
-                            </h2>
-                            <div class="flex gap-20">
-                                <div class="flex flex-col leading-none">
-                                    <p class="md:text-[52px] font-light text-white">IRATA</p>
-                                    <p class="md:text-[35px] font-light text-white">certified</p>
-                                </div>
+                        class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full overlay-content opacity-0 translate-y-4 transition-all duration-500 ease-out">
+                        <div
+                            class="md:p-18 absolute inset-0 flex flex-col items-end md:justify-end md:w-[900px] ml-auto h-full">
+                            <div class="p-10 flex flex-col justify-around md:h-auto h-full">
+                                <h2 class="md:text-6xl text-white md:pb-40">
+                                    Powering the future with innovative rope access solutions
+                                </h2>
+                                <div class="flex gap-20">
+                                    <div class="flex flex-col justify-end leading-none">
+                                        <p class="md:text-[52px] font-light text-white">IRATA</p>
+                                        <p class="md:text-[35px] font-light text-white">certified</p>
+                                    </div>
 
-                                <p class="text-2xl text-white">In house employeed, professionals with extensive field
-                                    experience.</p>
+                                    <p class="md:text-2xl text-white">In house employeed, professionals with extensive
+                                        field
+                                        experience.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

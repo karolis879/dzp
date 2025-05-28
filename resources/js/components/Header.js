@@ -7,7 +7,8 @@ export function initHeader() {
     const backdrop = document.getElementById('backdrop');
 
     function openMenu() {
-        sideDrawer.classList.remove('-translate-x-full');
+        sideDrawer.classList.remove('translate-x-full');
+        sideDrawer.classList.add('translate-x-0');
         backdrop.classList.remove('hidden');
         hamburgerBtn.setAttribute('aria-expanded', 'true');
         sideDrawer.setAttribute('aria-hidden', 'false');
@@ -15,7 +16,8 @@ export function initHeader() {
     }
 
     function closeMenu() {
-        sideDrawer.classList.add('-translate-x-full');
+        sideDrawer.classList.add('translate-x-full');
+        sideDrawer.classList.remove('translate-x-0');
         backdrop.classList.add('hidden');
         hamburgerBtn.setAttribute('aria-expanded', 'false');
         sideDrawer.setAttribute('aria-hidden', 'true');
@@ -23,7 +25,7 @@ export function initHeader() {
     }
 
     hamburgerBtn.addEventListener('click', () => {
-        if (sideDrawer.classList.contains('-translate-x-full')) {
+        if (sideDrawer.classList.contains('translate-x-full')) {
             openMenu();
         } else {
             closeMenu();

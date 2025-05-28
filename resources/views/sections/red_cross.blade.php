@@ -3,10 +3,10 @@
         <div
             class="flex-start mb-[52px] mt-2 flex md:h-[253px] border-[2px] border-gray-200 rounded-[24px] justify-between">
             <div class="px-6 flex md:flex-row flex-col gap-10">
-                <div class="hidden md:order-1 order-2 md:flex items-end w-1/2 md:w-1/4 font-thin">
+                <div class="hidden md:order-1 order-2 md:flex items-end w-1/2 md:w-1/4 font-thin" data-aos="fade-up">
                     <img src="{{ asset('images/comitee_hands.png') }}" class="w-[323px] h-[212px]" alt="hand_wing"/>
                 </div>
-                <div class="hidden order-1 md:order-3 w-1/4 md:flex items-center justify-center">
+                <div class="hidden order-1 md:order-3 w-1/4 md:flex items-center justify-center" data-aos="zoom-out">
                     <img src="{{ asset('images/cross_comitee.png') }}" class="w-[158] h-[155px]" alt="hand_wing"/>
                 </div>
 
@@ -14,7 +14,7 @@
                     <div class="md:order-1 order-2 flex items-end w-1/2 md:w-1/4 font-thin">
                         <img src="{{ asset('images/comitee_hands.png') }}" class="w-[173px] h-[113px]" alt="hand_wing"/>
                     </div>
-                    <div class="order-1 md:order-3 w-1/2 flex items-center justify-center">
+                    <div class="order-1 md:order-3 w-1/2 flex items-center justify-center" >
                         <img src="{{ asset('images/cross_comitee.png') }}" class="w-[122px] h-[120px] object-cover"
                              alt="hand_wing"/>
                     </div>

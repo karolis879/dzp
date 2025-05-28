@@ -59,7 +59,7 @@
 
 
     <div class="w-full mt-[52px] md:px-[75px] flex">
-        <div class="w-1/2 relative hidden md:flex">
+        <div class="w-1/2 relative hidden md:flex" data-aos="flip-right">
             <img src="{{asset('images/leading_the_wind.jpg')}}" alt="leading_the_wind"
                  class=" h-full object-cover  rounded-[20px]"/>
             <a href="#contacts" class="hidden md:block">
@@ -89,7 +89,7 @@
             <div class="flex flex-col">
                 @foreach ($timeline as $item)
                     <div
-                        class="flex {{ $loop->last ? 'pt-[36px]' : 'border-b-2 border-[#D6DBDB] pb-[36px] pt-[36px]' }}">
+                        class="flex {{ $loop->last ? 'pt-[36px]' : 'border-b-2 border-[#D6DBDB] pb-[36px] pt-[36px]' }}" data-aos="fade-up" data-aos-duration="1500">
 
                         <div
                             class="text-[#F06449] hover:text-[#FFC005] md:w-1/4 px-3 {{ $item['pt_img'] }} md:pt-0 flex md:flex-row flex-col gap-4 md:items-start items-center justify-start">

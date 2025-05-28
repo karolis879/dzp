@@ -1,5 +1,5 @@
 <div class="container mx-auto flex-col  flex-start mb-[52px] mt-2 flex bg-[#E4E9E9] md:rounded-[24px]">
-    <div class="h-full md:pt-15 md:px-[75px]  md:flex gap-10">
+    <div class="h-full md:pt-15 pt-12 md:px-[75px]  md:flex gap-10">
         <div class="flex justify-center md:justify-between items-center h-full md:w-1/2 w-full">
             <div class=" w-full px-4 md:px-0">
                 <div class=" flex items-center">
@@ -16,13 +16,13 @@
                 </p>
             </div>
         </div>
-        <div class="md:w-1/2 relative w-full">
+        <div class="md:w-1/2 relative w-full" data-aos="fade-left">
             <img class="md:absolute px-4 md-px-0 top-[-110px] right-10 md:right-0 w-full object-cover"
                  src="{{asset('images/why_choose_us.png')}}" alt="why choose us"/>
         </div>
     </div>
     <div class="h-full md:pb-15 md:px-[75px] flex flex-col-reverse md:flex-row mt-4 md:mt-16 gap-16">
-        <div class="bg-[#003538] rounded-[20px] w-full md:w-1/2 px-6 md:px-0">
+        <div class="bg-[#003538] rounded-[20px] w-full md:w-1/2 px-6 md:px-0" data-aos="fade-right">
             <div class="md:px-10 md:py-5 flex items-center justify-between md:gap-x-10">
                 <p class="font-metrophobic text-[#D9FF00] md:text-[120px] text-[82px]">15%</p>
                 <div class="font-metrophobic text-[#D9FF00] text-sm md:text-[20px] pl-5 md:pl-0">Approximate business
@@ -47,19 +47,19 @@
                     in-house—no freelancers or contractors—ensuring <br> quality, safety, and consistency on every
                     project. </p>
             </div>
-            <div class="pt-5">
+            <div class="pt-8">
                 <p class="text-xl text-[#003538] font-bold">Efficient, Flexible & Cost-Effective</p>
                 <p class="text-[#003538] ">We follow strict safety protocols and use low-impact <br> methods that
                     minimize environmental disruption compared to traditional solutions.</p>
             </div>
 
-            <div class="pt-5">
+            <div class="pt-8">
                 <p class="text-xl text-[#003538] font-bold">Safety & Sustainability First</p>
                 <p class="text-[#003538] ">Rope access enables fast mobilization, reduced downtime, <br> and
                     eliminates the need for expensive cranes or lifts—even in hard-to-reach locations.</p>
             </div>
 
-            <div class="pt-5">
+            <div class="pt-8">
                 <p class="text-xl text-[#003538] font-bold">Proven, Comprehensive Services</p>
                 <p class="text-[#003538] ">With a strong track record across multiple regions, we deliver<br>end-to-end
                     turbine solutions—from blade repairs and LEP coating to inspections and drone services.</p>

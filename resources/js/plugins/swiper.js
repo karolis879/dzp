@@ -4,20 +4,63 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 export function initSwipers() {
-    const mainSwiper = new Swiper(".mySwiper", {
-        cssMode: true,
+    const swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        slidesPerView: 1,
         loop: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+        speed: 1000, // <-- Slide transition duration in milliseconds (default is 300ms)
+        cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
         },
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
+        // autoplay: {
+        //     delay: 4500,
+        // },
+        pagination: {
+            el: ".swiper-pagination",
         },
-        mousewheel: true,
-        keyboard: true,
+        on: {
+            init: function () {
+                this.slides.forEach(slide => {
+                    const content = slide.querySelector('.overlay-content');
+                    if (content) {
+                        content.classList.add('opacity-0', 'translate-y-4', 'transition-all', 'duration-700');
+                    }
+                });
+
+                const firstSlide = this.slides[this.activeIndex];
+                const content = firstSlide.querySelector('.overlay-content');
+                if (content) {
+                    content.classList.remove('opacity-0', 'translate-y-4');
+                    content.classList.add('opacity-100', 'translate-y-0');
+                }
+            },
+
+            slideChange: function () {
+                this.slides.forEach(slide => {
+                    const content = slide.querySelector('.overlay-content');
+                    if (content) {
+                        content.classList.remove('opacity-100', 'translate-y-0');
+                        content.classList.add('opacity-0', 'translate-y-4');
+                    }
+                });
+
+                const activeSlide = this.slides[this.activeIndex];
+                const content = activeSlide.querySelector('.overlay-content');
+                if (content) {
+                    // Wait a moment to ensure slide is fully active
+                    setTimeout(() => {
+                        content.classList.remove('opacity-0', 'translate-y-4');
+                        content.classList.add('opacity-100', 'translate-y-0');
+                    }, 500);
+                }
+            }
+        }
     });
+
 
     const certificationsSwiper = new Swiper(".myCertificationsSwiper", {
         cssMode: true,
@@ -31,8 +74,8 @@ export function initSwipers() {
             disableOnInteraction: false,
         },
         breakpoints: {
-            0: { slidesPerView: 1.4 },
-            770: { slidesPerView: 1 },
+            0: {slidesPerView: 1.4},
+            770: {slidesPerView: 1},
         },
         mousewheel: true,
         keyboard: true,
@@ -47,8 +90,8 @@ export function initSwipers() {
         },
         spaceBetween: 16,
         breakpoints: {
-            0: { slidesPerView: 1.4 },
-            770: { slidesPerView: 1 },
+            0: {slidesPerView: 1.4},
+            770: {slidesPerView: 1},
         },
         pagination: {
             el: ".swiper-pagination",
