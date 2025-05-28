@@ -127,11 +127,6 @@
                                     class="bg-[#F06449] text-white font-medium text-base rounded-full h-12 w-[158px] flex items-center justify-center gap-2 font-hankenGrotesk cursor-pointer">
                                     Submit request
                                 </button>
-
-                                <button
-                                    class="bg-white text-[#00403D] border border-[#00403D] font-medium text-base rounded-full h-12 w-[158px] flex items-center justify-center gap-2 font-hankenGrotesk cursor-pointer" id="clear-form">
-                                    Clear
-                                </button>
                             </div>
                         </form>
                     </div>

@@ -85,12 +85,6 @@
                         class="bg-[#F06449] text-white font-medium text-base rounded-full h-12 flex items-center justify-center gap-2">
                         Submit request
                     </button>
-
-                    <button
-                        id="mobile-clear-form"
-                        class="bg-white text-[#00403D] font-medium text-base h-12  flex items-center justify-center gap-2 underline">
-                        Clear
-                    </button>
                 </div>
             </form>
         </div>

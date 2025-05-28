@@ -59,10 +59,6 @@
                     <i class="hover:bg-white hover:text-[#0D5B60] p-3 rounded-full border bg-[#0D5B60] border-[#0D5B60] fab fa-linkedin"
                        aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank">
-                    <i class="hover:bg-white hover:text-[#0D5B60] p-3 rounded-full border bg-[#0D5B60] border-[#0D5B60] fab fa-instagram"
-                       aria-hidden="true"></i>
-                    </a>
                 </div>
             </div>
         </div>

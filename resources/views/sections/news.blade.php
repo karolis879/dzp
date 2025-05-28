@@ -40,7 +40,7 @@
                         <div class="flex md:flex-col gap-10 mt-10">
                             @foreach($linkedInData1 as $data)
                             <div class="flex ">
-                                <a href="https://www.linkedin.com/company/dzpcompany" target="_blank">
+                                <a href="https://www.linkedin.com/feed/update/{{$data->post_id}}" target="_blank">
                                 <div
                                     class="md:w-[240px] w-full h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
                                     <img src="{{$data->image}}" alt="news1"
@@ -66,7 +66,7 @@
                         <div class="flex md:flex-col gap-10 mt-10">
                             @foreach($linkedInData2 as $data)
                                 <div class="flex ">
-                                    <a href="https://www.linkedin.com/company/dzpcompany" target="_blank">
+                                    <a href="https://www.linkedin.com/feed/update/{{$data->post_id}}" target="_blank">
 
                                     <div
                                         class="w-[240px] h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">

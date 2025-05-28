@@ -11,7 +11,8 @@ class Linkedin extends Model
     protected $fillable = [
         'description',
         'image',
-        'published_at'
+        'published_at',
+        'post_id'
     ];
 
     public $timestamps = true;

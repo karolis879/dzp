@@ -34,8 +34,10 @@
                 With our services your company can save significant <br class="hidden md:flex">operational costs of wind turbine
                 business. Read more, <br class="hidden md:flex"> download below.
             </p>
-            <a href="{{ asset('images/dzp_brochure.pdf') }}" target="_blank"
-               class="underline flex items md:px-10 py-8 font-hankenGrotesk md:pt-13 text-white">Download PDF</a>
+            <a href="{{ asset('pdfs/why_you_need_dzp.pdf')}}" download="DZP-Brochure-2025.pdf"
+               class="underline flex items md:px-10 py-8 font-hankenGrotesk md:pt-13 text-white">
+                Download PDF
+            </a>
         </div>
         <div class="md:w-1/2 w-full px-4 md:px-0">
             <div>

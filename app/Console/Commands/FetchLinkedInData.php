@@ -15,6 +15,7 @@ class FetchLinkedInData extends Command
 
     public function handle(LinkedInService $linkedin)
     {
+//        dd('asd');
         try {
             $data = $linkedin->fetchData();
 
@@ -23,6 +24,7 @@ class FetchLinkedInData extends Command
             $imageIds = [];
             $descriptions = [];
             $publishedDates = [];
+            $postIds = [];
 
             // Collect all descriptions & image IDs (null if no image)
             foreach ($data['elements'] as $item) {
@@ -31,6 +33,7 @@ class FetchLinkedInData extends Command
 
                 $imageIds[] = $imageId; // could be null
                 $descriptions[] = Str::limit($item['commentary'] ?? '', 210);
+                $postIds[] = $item['id'];
 
                 // Convert publishedAt from ms to a datetime string
                 $publishedAtTimestamp = isset($item['publishedAt']) ? (int)($item['publishedAt'] / 1000) : null;
@@ -58,12 +61,14 @@ class FetchLinkedInData extends Command
             // Save all records; if image ID is null or not found, image will be null
             foreach ($descriptions as $index => $desc) {
                 $imgId = $imageIds[$index];
+                $postId = $postIds[$index];
                 $imgUrl = $imgId && isset($imageUrlMap[$imgId]) ? $imageUrlMap[$imgId] : null;
                 $publishedAt = $publishedDates[$index] ?? null;
 
                 Linkedin::create([
                     'description' => $desc,
                     'image' => $imgUrl,
+                    'post_id' => $postId,
                     'published_at' => $publishedAt,
                 ]);
             }
