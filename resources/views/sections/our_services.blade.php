@@ -37,9 +37,9 @@
                 >
                     <span id="blade-tab-label">Blade Services</span>
                     <!-- Arrow visible only on mobile -->
-                    <div class="md:hidden flex absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
-                        <i id="arrow-icon" class="fa fa-arrow-down" aria-hidden="true"></i>
-                    </div>
+{{--                    <div class="md:hidden flex absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">--}}
+{{--                        <i id="arrow-icon" class="fa fa-arrow-down" aria-hidden="true"></i>--}}
+{{--                    </div>--}}
                 </button>
 
                 @include('mobile_sections.mobile_our_services')
