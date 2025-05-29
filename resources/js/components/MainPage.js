@@ -1,29 +1,34 @@
 export function initMainPage() {
 
-    // const tabs = document.querySelectorAll('#default-styled-tab button');
-    // const contents = document.querySelectorAll('#default-styled-tab-content > div');
-    //
-    // tabs.forEach(tab => {
-    //     tab.addEventListener('click', () => {
-    //         tabs.forEach(t => {
-    //             t.classList.remove('bg-white', 'text-[#0D5B60]', 'font-bold');
-    //             t.classList.add('bg-[#5C7071]', 'text-white', 'font-normal');
-    //             t.setAttribute('aria-selected', 'false');
-    //         });
-    //
-    //         contents.forEach(c => c.classList.add('hidden'));
-    //
-    //         tab.classList.add('bg-white', 'text-[#0D5B60]', 'font-bold');
-    //         tab.classList.remove('bg-[#5C7071]', 'text-white', 'font-normal');
-    //         tab.setAttribute('aria-selected', 'true');
-    //
-    //         const targetSelector = tab.getAttribute('data-tabs-target');
-    //         const targetContent = document.querySelector(targetSelector);
-    //         if (targetContent) {
-    //             targetContent.classList.remove('hidden');
-    //         }
-    //     });
-    // });
+    const tabs = document.querySelectorAll('#default-styled-tab button');
+    const contents = document.querySelectorAll('#default-styled-tab-content > div');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => {
+                t.classList.remove('bg-white', 'text-[#0D5B60]', 'font-bold');
+                t.classList.add('bg-[#5C7071]', 'text-white', 'font-normal');
+                t.setAttribute('aria-selected', 'false');
+            });
+
+            contents.forEach(c => {
+                c.classList.add('hidden');
+                c.classList.remove('fade-in'); // Clean up any previous animations
+            });
+
+            tab.classList.add('bg-white', 'text-[#0D5B60]', 'font-bold');
+            tab.classList.remove('bg-[#5C7071]', 'text-white', 'font-normal');
+            tab.setAttribute('aria-selected', 'true');
+
+            const targetSelector = tab.getAttribute('data-tabs-target');
+            const targetContent = document.querySelector(targetSelector);
+            if (targetContent) {
+                targetContent.classList.remove('hidden');
+                void targetContent.offsetWidth; // Reflow to restart animation
+                targetContent.classList.add('fade-in');
+            }
+        });
+    });
 
     document.querySelectorAll('.scroll-link').forEach(link => {
         link.addEventListener('click', function (e) {

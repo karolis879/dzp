@@ -37,26 +37,26 @@
 </div>
 
 <script>
-    // const bladeTab = document.getElementById('blade-tab');
-    // const dropdownMenu = document.getElementById('dropdown-menu');
-    // const arrowIcon = document.getElementById('arrow-icon');
-    //
-    // bladeTab.addEventListener('click', () => {
-    //     const isOpen = !dropdownMenu.classList.contains('hidden');
-    //     if (isOpen) {
-    //         dropdownMenu.classList.add('hidden');
-    //         arrowIcon.classList.remove('fa-arrow-up');
-    //         arrowIcon.classList.add('fa-arrow-down');
-    //     } else {
-    //         dropdownMenu.classList.remove('hidden');
-    //         arrowIcon.classList.remove('fa-arrow-down');
-    //         arrowIcon.classList.add('fa-arrow-up');
-    //     }
-    //
-    //     dropdownMenu.addEventListener('click', (e) => {
-    //         dropdownMenu.classList.add('hidden');
-    //         arrowIcon.classList.remove('fa-arrow-up');
-    //         arrowIcon.classList.add('fa-arrow-down');
-    //     })
-    // });
+    const bladeTab = document.getElementById('blade-tab');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const arrowIcon = document.getElementById('arrow-icon');
+
+    bladeTab.addEventListener('click', () => {
+        const isOpen = !dropdownMenu.classList.contains('hidden');
+        if (isOpen) {
+            dropdownMenu.classList.add('hidden');
+            arrowIcon.classList.remove('fa-arrow-up');
+            arrowIcon.classList.add('fa-arrow-down');
+        } else {
+            dropdownMenu.classList.remove('hidden');
+            arrowIcon.classList.remove('fa-arrow-down');
+            arrowIcon.classList.add('fa-arrow-up');
+        }
+
+        dropdownMenu.addEventListener('click', (e) => {
+            dropdownMenu.classList.add('hidden');
+            arrowIcon.classList.remove('fa-arrow-up');
+            arrowIcon.classList.add('fa-arrow-down');
+        })
+    });
 </script>

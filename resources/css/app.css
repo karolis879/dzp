@@ -177,7 +177,21 @@ ul {
     filter: brightness(0) !important;
 }
 
+/* In your Tailwind config or global CSS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
 
 @theme {
     --breakpoint-2xl: 107rem;

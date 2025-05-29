@@ -37,9 +37,9 @@
                 >
                     <span id="blade-tab-label">Blade Services</span>
                     <!-- Arrow visible only on mobile -->
-{{--                    <div class="md:hidden flex absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">--}}
-{{--                        <i id="arrow-icon" class="fa fa-arrow-down" aria-hidden="true"></i>--}}
-{{--                    </div>--}}
+                    <div class="md:hidden flex absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
+                        <i id="arrow-icon" class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </div>
                 </button>
 
                 @include('mobile_sections.mobile_our_services')
@@ -108,7 +108,8 @@
                 @endforeach
             </div>
 
-            <div id="blade" role="tabpanel" aria-labelledby="blade-tab" class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px] hidden">
+            <div id="blade" role="tabpanel" aria-labelledby="blade-tab"
+                 class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px] hidden">
                 @foreach ($services as $service)
                     <x-service-card
                         :icon="$service['name']"
@@ -118,21 +119,35 @@
                 @endforeach
             </div>
 
-            <div id="inspections" role="tabpanel" aria-labelledby="inspections-tab" class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px] hidden">
+            <div id="inspections" role="tabpanel" aria-labelledby="inspections-tab"
+                 class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px] hidden">
                 @foreach ($inspectionServices as $service)
-                    <x-service-card :description="$service" />
+                    <x-service-card
+                        :icon="$service['name']"
+                        :description="$service['description']"
+                        :isLargeIcon="$service['name'] === 'Various inspections & Diagnostics.svg' || $service['name'] === 'Drone-Assisted Blade & Turbine Inspection.svg'  || $service['name'] === 'End-of-Warranty (EOW) Blade Inspection.svg'"
+                    />
                 @endforeach
             </div>
 
-            <div id="turbine" role="tabpanel" aria-labelledby="turbine-tab" class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px] hidden">
+            <div id="turbine" role="tabpanel" aria-labelledby="turbine-tab"
+                 class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px] hidden">
                 @foreach ($turbineServices as $service)
-                    <x-service-card :description="$service" />
+                    <x-service-card
+                        :icon="$service['name']"
+                        :description="$service['description']"
+                        :isLargeIcon="$service['name'] === 'Painting and Sandblasting.svg'"
+                    />
                 @endforeach
             </div>
 
-            <div id="exterior" role="tabpanel" aria-labelledby="exterior-tab" class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px] hidden">
+            <div id="exterior" role="tabpanel" aria-labelledby="exterior-tab"
+                 class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px] hidden">
                 @foreach ($exteriorServices as $service)
-                    <x-service-card :description="$service" />
+                    <x-service-card
+                        :icon="$service['name']"
+                        :description="$service['description']"
+                    />
                 @endforeach
             </div>
         </div>

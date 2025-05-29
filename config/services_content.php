@@ -35,22 +35,61 @@ return [
             'description' => 'Various other <br> Blade Maintenance',
         ],
     ],
+
     'inspection' => [
-        'End-of-Warranty (EOW) Blade Inspection',
-        'Drone-Assisted Blade & Turbine Inspection',
-        'Lightning Protection System (LPS) Measurements',
-        'Various inspections & Diagnostics',
+        [
+            'name' => 'End-of-Warranty (EOW) Blade Inspection.svg',
+            'description' => 'End-of-Warranty (EOW) Blade Inspection'
+        ],
+        [
+            'name' => 'Drone-Assisted Blade & Turbine Inspection.svg',
+            'description' =>'Drone-Assisted Blade & Turbine Inspection'
+        ],
+        [
+            'name' => 'Lightning Protection System (LPS) measurements.svg',
+           'description' => 'Lightning Protection System (LPS) Measurements'
+        ],
+        [
+            'name' => 'Various inspections & Diagnostics.svg',
+            'description' =>'Various inspections <br> & Diagnostics'
+        ],
     ],
+
     'turbine' => [
-        'Nacelle and Spinner Repair',
-        'AIS System Troubleshooting & Repair',
-        'Painting & Sandblasting',
-        'Other and maintenance jobs',
+        [
+            'name' => 'Nacelle and Spinner Repair.svg',
+            'description' => 'Nacelle and Spinner Repair'
+        ],
+        [
+            'name' => 'Nacelle and Spinner Repair.svg',
+            'description' => 'AIS System Troubleshooting & Repair'
+        ],
+        [
+            'name' => 'Painting and Sandblasting.svg',
+            'description' => 'Painting & Sandblasting'
+        ],
+        [
+            'name' => 'Other and maintenance jobs.svg',
+            'description' => 'Other and maintenance jobs'
+        ],
     ],
+
     'exterior' => [
-        'Frame Construction Works',
-        'Frame Construction Maintenance',
-        'Windows and Facade Cleanings',
-        'Window Exchange or Repair',
+        [
+            'name' => 'Frame Construction Works.svg',
+            'description' => 'Frame Construction Works'
+        ],
+        [
+            'name' => 'Frame Construction Maintenance.svg',
+            'description' => 'Frame Construction Maintenance'
+        ],
+        [
+            'name' => 'Windows and Facade Cleanings.svg',
+            'description' => 'Windows and Facade Cleanings'
+        ],
+        [
+            'name' => 'Window Exchange or Repair.svg',
+            'description' => 'Window Exchange or Repair'
+        ],
     ],
 ];
