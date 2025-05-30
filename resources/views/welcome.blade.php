@@ -10,7 +10,7 @@
     @include('sections/certifications')
     @include('sections.news')
     @include('sections/neptunas')
-    @include('sections.projects')
+{{--    @include('sections.projects')--}}
     @include('sections/mission')
     @include('sections/contact_us')
     @include('sections/customer_say')

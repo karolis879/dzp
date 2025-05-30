@@ -57,11 +57,11 @@ return [
 
     'turbine' => [
         [
-            'name' => 'Nacelle and Spinner Repair.svg',
+            'name' => 'Nacelle-and-Spinner-Repair.svg',
             'description' => 'Nacelle and Spinner Repair'
         ],
         [
-            'name' => 'Nacelle and Spinner Repair.svg',
+            'name' => 'ais.svg',
             'description' => 'AIS System Troubleshooting & Repair'
         ],
         [

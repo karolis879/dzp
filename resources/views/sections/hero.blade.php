@@ -1,6 +1,6 @@
 <div class="container mx-auto flex justify-between items-center px-4 md:mt-[30px] mb-[52px] relative">
 
-    <img src="{{ asset('images/guy.png') }}" alt="flying_guy" data-aos="fade-down"
+    <img src="{{ asset('images/guy.svg') }}" alt="flying_guy" data-aos="fade-down"
          class="md:w-[141px] w-20 top-[40px] right-3 md:h-[905px] absolute md:right-[-140px] hidden md:flex  md:top-[-70px] z-10"/>
 
     <div class="flex flex-wrap items-center justify-between w-full">
@@ -173,7 +173,7 @@
                 </div>
             </div>
         </div>
-        <img src="{{ asset('images/hangin_guy_2.png') }}" alt="flying_guy"
+        <img src="{{ asset('images/hangin_guy_2.svg') }}" alt="flying_guy"
              class="hidden md:flex md:w-[128px] md:h-[1430px] object-cover absolute left-[-50px] top-[876px] z-10"/>
     </div>
 </div>

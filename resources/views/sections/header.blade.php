@@ -39,10 +39,10 @@
                        class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[20px] leading-[32px] tracking-[0] text-center scroll-link "
                        data-target="news">News</a>
                 </li>
-                <li><a href="#projects"
-                       class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[20px] leading-[32px] tracking-[0] text-center scroll-link"
-                       data-target="projects">Projects</a>
-                </li>
+{{--                <li><a href="#projects"--}}
+{{--                       class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[20px] leading-[32px] tracking-[0] text-center scroll-link"--}}
+{{--                       data-target="projects">Projects</a>--}}
+{{--                </li>--}}
                 <li><a href="#contacts"
                        class="hover:text-[#008983] transition-colors font-spaceGrotesk font-medium text-[20px] leading-[32px] tracking-[0] text-center scroll-link "
                        data-target="contacts">Contact

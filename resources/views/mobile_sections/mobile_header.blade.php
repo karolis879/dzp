@@ -101,9 +101,9 @@
                 <div class="border-b-2 border-[#D8DFDE] w-full py-4">
                     <a href="#news" class="block px-4 text-[#191919] py-2 rounded-md">News</a>
                 </div>
-                <div class="border-b-2 border-[#D8DFDE] w-full py-4">
-                    <a href="#projects" class="block px-4 text-[#191919] py-2 rounded-md">Projects</a>
-                </div>
+{{--                <div class="border-b-2 border-[#D8DFDE] w-full py-4">--}}
+{{--                    <a href="#projects" class="block px-4 text-[#191919] py-2 rounded-md">Projects</a>--}}
+{{--                </div>--}}
                 <div class="border-b-2 border-[#D8DFDE] w-full py-4">
                     <a href="#contacts" class="block px-4 text-[#191919] py-2 rounded-md">Contact</a>
                 </div>
