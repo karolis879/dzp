@@ -40,7 +40,6 @@ export function initContactForm() {
 
     if (cvSection) {
         cvSection.addEventListener('click', function () {
-            console.log('cvSection clicked');
             showForm('send-us-your-cv-form');
         });
     }
@@ -90,5 +89,29 @@ export function initContactForm() {
 
             this.classList.add('bg-white', 'rounded-t-[24px]');
         });
+    });
+
+    const fileInput = document.getElementById('cv');
+    const fileNameDisplay = document.getElementById('file-name');
+
+    fileInput.addEventListener('change', function () {
+        if (fileInput.files.length > 0) {
+            fileNameDisplay.textContent = fileInput.files[0].name;
+        } else {
+            fileNameDisplay.textContent = '';
+        }
+    });
+
+    const mobileFileInput = document.getElementById('mobile-cv');
+    const mobileFileNameDisplay = document.getElementById('mobile-file-name');
+
+    mobileFileInput.addEventListener('change', function () {
+        console.log('asd1')
+        if (mobileFileInput.files.length > 0) {
+            console.log('asd111')
+            mobileFileNameDisplay.textContent = mobileFileInput.files[0].name;
+        } else {
+            mobileFileNameDisplay.textContent = '';
+        }
     });
 }

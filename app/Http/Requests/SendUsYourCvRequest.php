@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ContactUsFormRequest extends FormRequest
+class SendUsYourCvRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,11 +22,9 @@ class ContactUsFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'topic' => 'nullable|string',
-            'email' => 'required|email',
             'name' => 'required|string|max:255',
             'company' => 'nullable|string|max:255',
-            'country' => 'nullable|string|max:255',
+            'cv' => 'required|file|mimes:pdf,doc,docx,txt,rtf|max:10240',
             'message' => 'required|string',
         ];
     }

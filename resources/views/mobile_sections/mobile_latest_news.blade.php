@@ -21,13 +21,16 @@
 </div>
 
 <div class="md:hidden flex flex-col items-center w-full px-4 pb-15 pt-8">
+    <a href="https://www.linkedin.com/company/dzpcompany" target="_blank" class="w-full">
+
     <button
         class="border-[#F06449] border-[2px] w-full  text-[#F06449] font-light text-base rounded-full h-12  flex items-center justify-center gap-2 font-hankenGrotesk">
         Read more on <span class="font-medium"> Linkedin</span>
     </button>
+    </a>
     <div class="flex justify-between w-full gap-2 pt-7">
         <i class="text-[#F06449] text-[21px] hover:text-[#FFC005]  fab fa-youtube border-[2px] rounded-full p-3"></i>
-        <i class="text-[#F06449] text-[21px] hover:text-[#FFC005] fab fa-twitter border-[2px] rounded-full p-3"></i>
+{{--        <i class="text-[#F06449] text-[21px] hover:text-[#FFC005] fab fa-twitter border-[2px] rounded-full p-3"></i>--}}
         <i class="text-[#F06449] text-[21px] hover:text-[#FFC005] fab fa-facebook border-[2px] rounded-full p-3"></i>
     </div>
 </div>

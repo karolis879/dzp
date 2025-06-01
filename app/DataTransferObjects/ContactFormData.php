@@ -5,7 +5,7 @@ namespace App\DataTransferObjects;
 class ContactFormData
 {
     public function __construct(
-        public string  $topic,
+        public ?string  $topic = null,
         public string  $email,
         public string  $message,
         public string  $name,
