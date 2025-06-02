@@ -1,6 +1,7 @@
 <?php
 
 namespace App\DataTransferObjects;
+use Illuminate\Http\UploadedFile;
 
 class ContactFormData
 {
@@ -11,7 +12,7 @@ class ContactFormData
         public string  $name,
         public ?string $company = null,
         public ?string $country = null,
-        public ?string $attachment = null
+        public ?UploadedFile $attachment = null
     )
     {
     }

@@ -1,4 +1,4 @@
-<footer class="max-w-[1744px] w-full h-[484px] mx-auto rounded-t-lg md:rounded-t-[90px] bg-[#013538]">
+<footer class="max-w-[1744px] w-full h-auto mx-auto rounded-t-lg md:rounded-t-[90px] bg-[#013538]">
     <div class="md:pt-[100px] px-4 pt-10 md:px-[150px] flex justify-start md:justify-between">
         <div>
             <div>
@@ -46,17 +46,25 @@
                               stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <p class="pl-4">
-                        <a href="mailto:info@bladerepair.eu" class="text-white hover:underline">info@bladerepair.eu</a>
+                        <a href="mailto:info@dzprojects.eu" class="text-white hover:underline">info@dzprojects.eu</a>
                     </p>
                 </div>
+                <div class="pt-3 text-white text-sm">
+                    <p class="cursor-pointer hover:opacity-80"  onclick="copyToClipboard('306089980')">Company code: 306089980</p>
+                    <p class="cursor-pointer hover:opacity-80" onclick="copyToClipboard('LT100015145112')">VAT number: LT100015145112</p>
+                </div>
+
                 <div class="flex pt-8 gap-4">
                     <a href="https://www.facebook.com/dzprepair" target="_blank">
                         <i class="hover:bg-white hover:text-[#0D5B60] p-3 rounded-full border bg-[#0D5B60] border-[#0D5B60] fab fa-facebook"
                            aria-hidden="true"></i>
                     </a>
                     <a href="https://www.linkedin.com/company/dzpcompany/" target="_blank">
-
                     <i class="hover:bg-white hover:text-[#0D5B60] p-3 rounded-full border bg-[#0D5B60] border-[#0D5B60] fab fa-linkedin"
+                       aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/dzpcompany/" target="_blank">
+                    <i class="hover:bg-white hover:text-[#0D5B60] p-3 rounded-full border bg-[#0D5B60] border-[#0D5B60] fab fa-youtube"
                        aria-hidden="true"></i>
                     </a>
                 </div>
@@ -97,3 +105,15 @@
         </div>
     </div>
 </footer>
+
+<script>
+    function copyToClipboard(text) {
+        console.log(text)
+        navigator.clipboard.writeText(text).then(() => {
+            // Optional: show feedback (you can replace this with a toast)
+            alert(`Copied: ${text}`);
+        }).catch(err => {
+            console.error('Failed to copy!', err);
+        });
+    }
+</script>

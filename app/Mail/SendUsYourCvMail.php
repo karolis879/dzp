@@ -6,7 +6,7 @@ use App\DataTransferObjects\ContactFormData;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Attachment;
+use Illuminate\Mail\Mailables\Attachment as MailAttachment; // alias if needed
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
@@ -46,8 +46,16 @@ class SendUsYourCvMail extends Mailable
         );
     }
 
-    public function attachments(): string
+    public function attachments(): array
     {
-        return $this->data->attachment;
+        if ($this->data->attachment) {
+            return [
+                MailAttachment::fromPath($this->data->attachment->getRealPath())
+                    ->as($this->data->attachment->getClientOriginalName())
+                    ->withMime($this->data->attachment->getMimeType()),
+            ];
+        }
+
+        return [];
     }
 }
