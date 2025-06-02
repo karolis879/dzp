@@ -3,7 +3,7 @@
     <img src="{{ asset('images/guy.svg') }}" alt="flying_guy" data-aos="fade-down"
          class="md:w-[141px] w-20 top-[40px] right-3 md:h-[905px] absolute md:right-[-140px] hidden md:flex  md:top-[-70px] z-10"/>
 
-    <div class="flex flex-wrap items-center justify-between w-full">
+    <div class="flex flex-wrap items-center md:justify-around lg:justify-between w-full">
         <!-- Image (like col-4) -->
         <div class="hidden md:flex md:w-1/4">
             <div class="transition-transform duration-500"
@@ -21,7 +21,7 @@
     <!-- Text (like col-8) -->
     <div class="w-full md:w-2/4">
         <div>
-            <p class="wind-text font-normal text-2xl md:text-[44px] md:tracking-[-0.04em] text-[#00403D] md:text-right">
+            <p class="wind-text font-normal text-2xl md:text-[27px] lg:text-[44px] md:tracking-[-0.04em] text-[#00403D] md:text-right">
                 Ensuring that wind turbines blades
                 <span class="wind-span text-[#818181]">never stop turning</span>
             </p>
@@ -116,6 +116,32 @@
                     </div>
                 </div>
                 <div class="swiper-slide relative">
+                    <img src="{{asset('images/hero_4.jpg')}}" alt="Wind Turbine"
+                         class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
+                    <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
+                    <div
+                        class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full overlay-content opacity-0 translate-y-4 transition-all duration-500 ease-out">
+                        <div
+                            class="md:p-18 absolute inset-0 flex flex-col items-end md:justify-end md:w-[900px] ml-auto h-full">
+                            <div class="p-10 flex flex-col justify-around md:h-auto h-full">
+                                <h2 class="md:text-6xl text-white md:pb-40">
+                                    High safety standards, rapid mobilization and efficient execution.<br>
+                                </h2>
+                                <div class="flex gap-20">
+                                    <div class="flex flex-col justify-end leading-none">
+                                        <p class="md:text-[52px] font-light text-white">IRATA</p>
+                                        <p class="md:text-[35px] font-light text-white">certified</p>
+                                    </div>
+
+                                    <p class="md:text-2xl text-white">In house employeed, professionals with extensive
+                                        field
+                                        experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
                     <img src="{{asset('images/hero_3.jpg')}}" alt="Wind Turbine"
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
                     <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
@@ -141,10 +167,6 @@
                         </div>
                     </div>
                 </div>
-                {{--                <div class="swiper-slide">--}}
-                {{--                    <img src="{{asset('images/hero_4.jpg')}}" alt="Wind Turbine"--}}
-                {{--                         class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>--}}
-                {{--                </div>--}}
                 <div class="swiper-slide relative">
                     <img src="{{asset('images/hero_5.jpg')}}" alt="Wind Turbine"
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>

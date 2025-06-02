@@ -1,5 +1,5 @@
 <header class="hidden w-full border-b-2 border-[#D6DBDB] h-20 md:flex items-center z-20 bg-white sticky top-0">
-    <div class=" container mx-auto flex justify-between items-center z-20">
+    <div class="container lg:px-0 md:px-4 mx-auto flex justify-between items-center z-20">
         <nav class="flex items-start h-8 relative">
             <ul class="flex gap-8 text-base font-medium text-[#191919]">
 

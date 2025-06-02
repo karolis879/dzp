@@ -1,5 +1,5 @@
 <footer class="max-w-[1744px] w-full h-auto mx-auto rounded-t-lg md:rounded-t-[90px] bg-[#013538]">
-    <div class="md:pt-[100px] px-4 pt-10 md:px-[150px] flex justify-start md:justify-between">
+    <div class="md:pt-[100px] px-4 pt-10 md:px-12 lg:px-[150px] flex justify-start md:justify-between">
         <div>
             <div>
                 <a href="#">

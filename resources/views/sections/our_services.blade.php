@@ -6,7 +6,7 @@
 @endphp
 
 <div id="services"
-     class="container mx-auto flex-start mb-[52px] mt-2 flex-col bg-[#E4E9E9] md:h-[911px] rounded-[24px] pb-4 md:pb-0">
+     class="container mx-auto flex-start mb-[52px] mt-2 flex-col bg-[#E4E9E9] md:h-full md:pb-8 lg:pb-0 lg:h-[911px] rounded-[24px] pb-4 md:pb-0">
     <div class="md:px-[75px] px-4 md:py-10">
         <h3
             class="font-normal md:text-[60px] text-[32px] pt-8 md:pt-0 md:leading-[68px] tracking-[-0.04em] text-[#818181]">
@@ -33,7 +33,7 @@
                     role="tab"
                     aria-controls="blade"
                     aria-selected="true"
-                    class="bg-white text-[#0D5B60] aspect-[4/3] rounded-[4px] h-[50px] w-full flex items-center justify-center font-bold text-base relative"
+                    class="bg-white text-[#0D5B60] aspect-[4/3] rounded-[4px] h-[50px] md:h-full lg:h-[50px] w-full flex items-center justify-center font-bold text-base relative"
                 >
                     <span id="blade-tab-label">Blade Services</span>
                     <!-- Arrow visible only on mobile -->
@@ -46,7 +46,7 @@
 
                 <!-- Desktop buttons visible from md and up -->
                 <button
-                    class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full items-center justify-center font-normal text-base"
+                    class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] ] h-[50px] md:h-full lg:h-[50px] w-full items-center justify-center font-normal text-base"
                     id="inspections-tab"
                     data-tabs-target="#inspections"
                     type="button"
@@ -57,7 +57,7 @@
                     Inspections & Diagnostics
                 </button>
                 <button
-                    class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full items-center justify-center font-normal text-base"
+                    class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] ] h-[50px] md:h-full lg:h-[50px] w-full items-center justify-center font-normal text-base"
                     id="turbine-tab"
                     data-tabs-target="#turbine"
                     type="button"
@@ -68,7 +68,7 @@
                     Turbine Maintenance & Repair
                 </button>
                 <button
-                    class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] h-[50px] w-full items-center justify-center font-normal text-base"
+                    class="hidden md:flex bg-[#5C7071] text-white aspect-[4/3] rounded-[4px] ] h-[50px] md:h-full lg:h-[50px] w-full items-center justify-center font-normal text-base"
                     id="exterior-tab"
                     data-tabs-target="#exterior"
                     type="button"

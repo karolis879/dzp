@@ -10,7 +10,7 @@
         </h3>
         <div class="flex md:pt-15 md:gap-25">
             <img class="hidden md:flex w-1/3 object-contain" src="{{asset('images/values_and_mission.png')}}" data-aos="fade-up-right">
-            <div class=" md:w-2/3 pt-10 md:grid md:grid-cols-2 gap-10 md:gap-20" data-aos="fade-up" data-aos-duration="800">
+            <div class=" md:w-2/3 pt-10 md:grid lg:grid-cols-2 gap-10 md:gap-20" data-aos="fade-up" data-aos-duration="800">
                 <div class=" flex md:flex-col md:pt-0 md:w-[360px]">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
                         <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "

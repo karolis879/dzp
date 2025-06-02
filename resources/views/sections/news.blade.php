@@ -2,9 +2,9 @@
     <div
         class="container mx-auto relative">
         <div class="md:px-[75px]  md:py-18 w-full">
-            <div class="flex items-center p-4 md:p-0">
+            <div class="flex lg:flex-row md:flex-col items-center p-4 md:p-0">
                 <h3
-                    class="md:w-1/2 font-normal text-[32px] md:text-[60px] md:leading-[68px] tracking-[-0.04em] text-[#818181]">
+                    class="md:w-full lg:w-1/2 font-normal text-[32px] md:text-[60px] md:leading-[68px] tracking-[-0.04em] text-[#818181]">
                     Our Latest
                     <span
                         class="font-normal ext-[32px] md:text-[60px] leading-[68px] tracking-[-0.04em] text-[#00403D] text-right">
@@ -12,7 +12,7 @@
                                        </span>
                     <p class="md:hidden text-base">Discover the latest trends, technologies, and solutions shaping the future of wind energy.</p>
                 </h3>
-                <div class="hidden md:flex items-center w-1/2 justify-end">
+                <div class="hidden md:flex items-center md:w-full lg:w-1/2 lg:justify-end justify-between py-4 lg:py-0">
                     <a href="https://www.linkedin.com/company/dzpcompany" target="_blank">
                         <button
                             class="border-[#F06449] border-[2px]  hover:text-white hover:bg-[#F06449] cursor-pointer text-[#F06449] font-light text-base rounded-full h-12 w-[255px] flex items-center justify-center gap-2 font-hankenGrotesk">
@@ -21,7 +21,7 @@
                     </a>
                     <p class="text-[#818181] pl-8 pr-3 font-light">also follow us on:</p>
                     <div class="flex gap-2 hover:text-[#FFC005]">
-                        <a href="https://www.youtube.com/@DZP-ropeaccessprofessionals/videos" target="_blank"> <i
+                            <a href="https://www.youtube.com/@DZP-ropeaccessprofessionals/videos" target="_blank"> <i
                                 class="text-[#F06449] text-[21px] hover:text-[#FFC005]  fab fa-youtube border-[2px] rounded-full p-3"></i>
                         </a>
 
@@ -35,7 +35,7 @@
 
             {{--  Desktop swiper --}}
             <div class="swiper mySwiperNews" style="overflow: visible" id="news-desktop-swiper">
-                <div class="swiper-wrapper flex lg:flex-row md:flex-col">
+                <div class="swiper-wrapper flex md:flex-row">
                     <div class="swiper-slide w-full relative overflow-hidden rounded-lg md:h-235">
                         <div class="flex md:flex-col gap-10 mt-10">
                             @foreach($linkedInData1 as $data)
@@ -47,11 +47,11 @@
                                          class="rounded-[24px] w-full h-full object-cover"/>
                                 </div>
                                 </a>
-                                <div class="flex flex-col pl-12 w-[706px]">
+                                <div class="flex flex-col pl-12 w-full lg:w-[706px]">
                                     <p class="text-[#0A1018] font-medium text-[28px] pt-8">{{ \Carbon\Carbon::parse($data->published_at)->format('F j, Y') }}</p>
                                     <p class="pt-4 font-light text-[#0A1018]">{{$data->description}}</p>
                                 </div>
-                                <div class="ml-70  pt-16">
+                                <div class="ml-70  pt-16 hidden lg:flex">
                                     <a href="https://www.linkedin.com/company/dzpcompany" target="_blank">
                                     <img src="{{ asset('images/stash_arrow-up.png') }}" alt="news2"
                                          class="w-[34px] h-[34px] object-cover "/>
@@ -74,21 +74,24 @@
                                              class="rounded-[24px] w-full h-full object-cover"/>
                                     </div>
                                     </a>
-                                    <div class="flex flex-col pl-12 w-[706px]">
+                                    <div class="flex flex-col pl-12 w-full lg:w-[706px]">
                                         <p class="text-[#0A1018] font-medium text-[28px] pt-8">{{ \Carbon\Carbon::parse($data->published_at)->format('F j, Y') }}</p>
-                                        <p class="pt-4 font-light text-[#0A1018]">{{ $data->description}}</p>
+                                        <p class="pt-4 font-light text-[#0A1018]">{{$data->description}}</p>
                                     </div>
-                                    <div class="ml-70  pt-16">
-                                        <img src="{{ asset('images/stash_arrow-up.png') }}" alt="news2"
-                                             class="w-[34px] h-[34px] object-cover "/>
+                                    <div class="ml-70  pt-16 hidden lg:flex">
+                                        <a href="https://www.linkedin.com/company/dzpcompany" target="_blank">
+                                            <img src="{{ asset('images/stash_arrow-up.png') }}" alt="news2"
+                                                 class="w-[34px] h-[34px] object-cover "/>
+                                        </a>
                                     </div>
                                 </div>
                             @endforeach
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination" style="top: 900px; left: -87px"></div>
-                <div class="swiper-pagination" style="top: 900px; left: -87px"></div>
+                <div class="hidden lg:flex">
+                    <div class="swiper-pagination" style="top: 900px; left: -87px"></div>
+                    <div class="swiper-pagination" style="top: 900px; left: -87px"></div>
 
                 <div class="swiper-button-next" style="top: 910px; right: 635px; opacity: 0.3; width: 45px">
                     <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,6 +111,8 @@
                             fill="#00403D"/>
                     </svg>
                 </div>
+                </div>
+
             </div>
 
             {{--  Mobile swiper --}}
