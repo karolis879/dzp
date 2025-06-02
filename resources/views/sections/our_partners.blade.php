@@ -1,54 +1,59 @@
 @php
     $inspectionServices1 = [
-        ['image' => 'nordex.svg', 'link' => 'https://www.nordex-online.com/en/'],
-        ['image' => 'bionalis.svg', 'link' => 'https://www.bionalis.lt/'],
-        ['image' => 'skywork.svg', 'link' => 'https://www.skywork.dk/'],
-        ['image' => 'ekologix.svg', 'link' => 'https://eologix-ping.com/en'],
+        ['image' => 'nordex.png', 'link' => 'https://www.nordex-online.com/en/'],
+        ['image' => 'bionalis.png', 'link' => 'https://www.bionalis.lt/'],
+        ['image' => 'sky-work.png', 'link' => 'https://www.skywork.dk/'],
+        ['image' => 'ekologix.png', 'link' => 'https://eologix-ping.com/en'],
+        ['image' => 've-servisas.png', 'link' => 'https://eologix-ping.com/en'],
 
     ];
 
     $inspectionServices2 = [
         [
-            'image' => 'brand-safeway.svg',
+            'image' => 'safeway.png',
             'link' => 'https://brandsafway.com/'
         ],
         [
-            'image' => 'kiwa.svg',
+            'image' => 'kiwa.png',
             'link' => 'https://www.kiwa.lt/'
         ],
         [
-            'image' => 'safety.svg',
+            'image' => 'safety-leaders.png',
             'link' => 'https://www.safetyleaders.no/en'
         ],
          [
-            'image' => 'fender.svg',
+            'image' => 'fender.png',
+            'link' => 'https://www.fenderbv.nl/'
+        ],
+            [
+            'image' => 'vejo-planas.png',
             'link' => 'https://www.fenderbv.nl/'
         ],
 ];
 
     $inspectionServicesMobile = [
         [
-            'image' => 'nordex.svg',
+            'image' => 'nordex.png',
             'link' => 'https://www.nordex-online.com/en/'
         ],
         [
-            'image' => 'bionalis.svg',
+            'image' => 'bionalis.png',
             'link' => 'https://www.bionalis.lt/'
         ],
         [
-            'image' => 'skywork.svg',
+            'image' => 'sky-work.png',
             'link' => 'https://www.skywork.dk/'
         ],
         [
-            'image' => 'kiwa.svg',
+            'image' => 'kiwa.png',
             'link' => 'https://www.kiwa.com/'
         ],
         [
-            'image' => 'brand-safeway.svg',
+            'image' => 'safeway.png',
             'link' => 'https://brandsafway.com/'
         ],
         [
-            'image' => 'ekologix.svg',
+            'image' => 'ekologix.png',
             'link' => 'https://eologix-ping.com/en'
         ],
 ]
@@ -56,7 +61,7 @@
 @endphp
 
 <div id="partners" class="container mx-auto flex-start flex flex-col justify-between items-center mb-[52px]">
-    <div class=" w-full px-4 md:px-[75px]" data-aos="fade-left">
+    <div class=" w-full  px-4 md:px-[75px]" data-aos="fade-left">
         <h3
             class=" md:text-[60px] text-[32px] md:leading-[68px] tracking-[-0.04em] text-[#818181]">
             Our
@@ -68,40 +73,95 @@
         <p class="text-medium text-base text-[#818181] pt-2">Expert Tips, News, and Trends in Renewable Energy</p>
     </div>
 
-    <div class="hidden md:flex justify-between pt-12 px-8 flex-wrap gap-4" style="width: inherit;" data-aos="fade-right">
+    @php
+        $logoBoxClass = 'w-[200px] h-[140px]';
+        $imageClass = 'w-full h-full object-contain';
+    @endphp
+
+    <div class="hidden md:flex justify-between pt-12 md:px-[75px] px-8 flex-wrap gap-4" style="width: inherit;" data-aos="fade-right">
         @foreach($inspectionServices1 as $service)
             @php
-                $isLightLogo = in_array($service['image'], ['skywork.svg']);
+                $smallerLogos = ['ve-servisas.png', 'vejo-planas.png'];
+                $isOversized = in_array($service['image'], $smallerLogos);
+                $imageClass = $isOversized
+                    ? 'w-[50%] h-[80%] object-contain pt-6' // scale down big logos
+                    : 'w-full h-full object-contain';
             @endphp
-            <div class="flex justify-center items-center p-4 rounded transition-all duration-300">
-                <a href="{{ $service['link'] }}" target="_blank" class="block w-[200px] h-[140px] flex items-center justify-center">
-                    <img src="{{ asset('images/' . $service['image']) }}" alt="Partner Logo"
-                         class="grayscale contrast-75 brightness-90 hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition-all duration-300 {{ $isLightLogo ? 'light-logo' : '' }}">
+
+            <div class="relative w-[200px] h-[140px] group">
+                <a href="{{ $service['link'] }}" target="_blank" class="w-full h-full flex justify-center items-center">
+                    <!-- Grayscale -->
+                    <img
+                        src="{{ asset('images/logos/nocolors/' . $service['image']) }}"
+                        data-rjs="2"
+                        alt="Partner Logo"
+                        class="absolute inset-0 transition-opacity duration-300 opacity-100 group-hover:opacity-0 {{ $imageClass }}">
+
+
+                    <!-- Color -->
+                    <img
+                        src="{{ asset('images/logos/colors/' . $service['image']) }}"
+                        data-rjs="2"
+                        alt="Partner Logo"
+                        class="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100 {{ $imageClass }}">
 
                 </a>
             </div>
+
         @endforeach
     </div>
-    <div class="hidden md:flex justify-between pt-8 px-12" style="width: inherit;">
+
+    <div class="hidden md:flex justify-between pt-8 md:px-[75px] px-12" style="width: inherit;">
         @foreach($inspectionServices2 as $service)
             @php
-                $isLightLogo = in_array($service['image'], ['safety.svg']);
+                $smallerLogos = ['ve-servisas.png', 'vejo-planas.png'];
+                $isOversized = in_array($service['image'], $smallerLogos);
+                $imageClass = $isOversized
+                    ? 'w-[50%] h-[70%] object-contain pt-10' // scale down big logos
+                    : 'w-full h-full object-contain';
             @endphp
-            <div class="flex justify-center items-center p-4 rounded transition-all duration-300" data-aos="fade-left">
-                <a href="{{ $service['link'] }}" target="_blank"
-                   class="block w-[200px] h-[140px] flex items-center justify-center">
-                    <img src="{{ asset('images/' . $service['image']) }}" alt="Partner Logo"
-                         class="h-[100px] object-contain grayscale contrast-75 brightness-90 hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition-all duration-300 {{ $isLightLogo ? 'light-logo' : '' }}">
+
+            <div class="relative w-[200px] h-[140px] group">
+                <a href="{{ $service['link'] }}" target="_blank" class="w-full h-full flex justify-center items-center">
+                    <!-- Grayscale -->
+                    <img
+                        src="{{ asset('images/logos/nocolors/' . $service['image']) }}"
+                        data-rjs="2"
+                        alt="Partner Logo"
+                        class="absolute inset-0 transition-opacity duration-300 opacity-100 group-hover:opacity-0 {{ $imageClass }}">
+
+
+                    <!-- Color -->
+                    <img
+                        src="{{ asset('images/logos/colors/' . $service['image']) }}"
+                        data-rjs="2"
+                        alt="Partner Logo"
+                        class="absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100 {{ $imageClass }}">
+
                 </a>
             </div>
-        @endforeach
 
+        @endforeach
     </div>
-    <div class="grid grid-cols-2 gap-4 md:hidden pt-8 px-4" style="width: inherit;">
+
+    <div class="grid grid-cols-2 gap-4 md:hidden pt-8 px-4 gap-12" style="width: inherit;">
         @foreach($inspectionServicesMobile as $service)
-            <div class="flex justify-between items-center w-full h-32">
-                <a href="{{$service['link']}}" target="_blank">
-                    <img src="{{ asset('images/' . $service['image']) }}" class="w-full h-[50px] object-contain grayscale contrast-0 brightness-[0.4] hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition-all duration-300" alt="Service Logo">
+            @php
+                $smallerLogos = ['ve-servisas.png', 'vejo-planas.png'];
+                $isOversized = in_array($service['image'], $smallerLogos);
+                $imageClass = $isOversized
+                    ? 'w-[50%] h-[70%] object-contain pt-10' // scale down big logos
+                    : 'w-full h-full object-contain';
+            @endphp
+
+            <div class="relative w-[155px] h-[53px] group">
+                <a href="{{ $service['link'] }}" target="_blank" class="w-full h-full flex justify-center items-center">
+                    <!-- Grayscale -->
+
+                    <img src="{{ asset('images/logos/colors/' . $service['image']) }}"
+                         alt="Partner Logo"
+                         data-rjs="2"
+                         class="absolute inset-0 transition-opacity duration-300 opacity-100 group-hover:opacity-0 {{ $imageClass }}">
                 </a>
             </div>
         @endforeach
