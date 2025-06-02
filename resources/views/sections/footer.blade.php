@@ -63,7 +63,7 @@
                     <i class="hover:bg-white hover:text-[#0D5B60] p-3 rounded-full border bg-[#0D5B60] border-[#0D5B60] fab fa-linkedin"
                        aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.linkedin.com/company/dzpcompany/" target="_blank">
+                    <a href="https://www.youtube.com/@DZP-ropeaccessprofessionals/videos" target="_blank">
                     <i class="hover:bg-white hover:text-[#0D5B60] p-3 rounded-full border bg-[#0D5B60] border-[#0D5B60] fab fa-youtube"
                        aria-hidden="true"></i>
                     </a>

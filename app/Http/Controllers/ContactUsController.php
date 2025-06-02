@@ -45,7 +45,6 @@ class ContactUsController extends Controller
             attachment: $attachment,
         );
 
-//dd($data);
         Mail::to('Info@dzprojects.eu')->send(new SendUsYourCvMail($data));
 
         return redirect()->back()->with('success', 'Your message has been sent.');
