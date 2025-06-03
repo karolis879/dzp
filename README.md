@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/images/dzp_logo.png" width="100" alt="DZP Logo">
+  <img src="./public/images/dzp_logo.svg" width="100" alt="DZP Logo">
 </p>
 
 <p align="center">
