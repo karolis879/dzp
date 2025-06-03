@@ -4,7 +4,7 @@
         ['image' => 'bionalis.png', 'link' => 'https://www.bionalis.lt/'],
         ['image' => 'sky-work.png', 'link' => 'https://www.skywork.dk/'],
         ['image' => 'ekologix.png', 'link' => 'https://eologix-ping.com/en'],
-        ['image' => 've-servisas.png', 'link' => 'https://eologix-ping.com/en'],
+        ['image' => 've-servisas.png', 'link' => 'https://rekvizitai.vz.lt/imone/ve_servisas/'],
 
     ];
 
@@ -27,7 +27,7 @@
         ],
             [
             'image' => 'vejo-planas.png',
-            'link' => 'https://www.fenderbv.nl/'
+            'link' => 'https://rekvizitai.vz.lt/imone/vejo_planas/'
         ],
 ];
 
