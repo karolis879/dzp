@@ -32,15 +32,12 @@ class LinkedInService
     {
         $filteredIds = array_filter($imageIds, fn($id) => !is_null($id) && $id !== '');
 
-        // Encode each urn
         $encodedUrns = array_map(function($id) {
             return urlencode('urn:li:image:' . $id);
         }, $filteredIds);
 
-        // Join with commas
         $joinedUrns = implode(',', $encodedUrns);
 
-        // Wrap in List(...)
         $paramValue = "List({$joinedUrns})";
 
         $response = Http::withHeaders([

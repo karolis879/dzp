@@ -33,7 +33,6 @@
                 </div>
             </div>
 
-
             {{--  Desktop swiper --}}
             <div class="swiper mySwiperNews" style="overflow: visible" id="news-desktop-swiper">
                 <div class="swiper-wrapper flex md:flex-row">
@@ -116,7 +115,6 @@
 
             </div>
         </div>
-
 
         {{--  Mobile swiper --}}
 

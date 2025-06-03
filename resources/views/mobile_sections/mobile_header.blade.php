@@ -1,6 +1,6 @@
 <nav class="md:hidden sticky top-0 z-50">
     <div class="max-w-screen-xl flex items-center justify-between mx-auto pt-5 md:pt-10 px-6 relative">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse pb-5">
             <div class="transition-transform duration-500 mobile-dzp-logo"
                  style="transform-origin: center;"
                  onmouseover="this.style.transform='rotate(180deg)'"

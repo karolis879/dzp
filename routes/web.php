@@ -2,10 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-
-//Route::get('/', function () {
-//    return view('welcome');
-//})->name('home');
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index']);
 Route::prefix('/contact-us')->name('contact_us.')->group(function () {
     Route::post('/get-quote', [\App\Http\Controllers\ContactUsController::class, 'getQuote'])->name('get_quote');

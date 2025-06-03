@@ -15,7 +15,6 @@ class FetchLinkedInData extends Command
 
     public function handle(LinkedInService $linkedin)
     {
-//        dd('asd');
         try {
             $data = $linkedin->fetchData();
 

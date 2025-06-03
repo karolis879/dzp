@@ -33,7 +33,7 @@ class ContactUsController extends Controller
 
     public function sendCV(SendUsYourCvRequest $request)
     {
-        $attachment = $request->file('cv'); // directly get the uploaded file from the request
+        $attachment = $request->file('cv');
 
         $data = new ContactFormData(
             topic: null,

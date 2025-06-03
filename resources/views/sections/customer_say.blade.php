@@ -34,6 +34,8 @@
                     <div class="flex justify-between">
                         <div class="h-[196px] flex flex-col justify-between">
                             <img src="{{ asset('images/fender.png') }}" alt="quote"
+                                 data-rjs="2"
+
                                  class="w-[118px] h-[44px] my-4">
                             <img class="w-[61px] h-[46px] object-cover mt-15"
                                  src="{{asset('images/brackets_up.png')}}"

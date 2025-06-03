@@ -17,46 +17,8 @@
     </div>
 
     @php
-        $timeline = [
-            [
-                'year' => '2022',
-                'img' => 'leading_the_wind_hand.svg',
-                'title' => 'The Beginning of dzp with 7 employees',
-                'description' => 'With a vision to deliver innovative and sustainable wind energy solutions.',
-                'pt_img' => 'pt-4', // spacing tweaks for image container
-                'pt_title' => 'pt-2',
-                'pt_desc' => 'pt-4',
-            ],
-            [
-                'year' => '2023',
-                'img' => 'leading_the_wind_turbine.svg',
-                'title' => 'First 100 wind turbine projects and 72 employees in the company.',
-                'description' => 'Started the first project in TA 41, NY which was the first step towards global expansion.',
-                'pt_img' => 'pt-5',
-                'pt_title' => 'pt-4',
-                'pt_desc' => 'pt-2',
-            ],
-            [
-                'year' => '2024',
-                'img' => 'leading_the_wind_certificate.svg',
-                'title' => 'Award-Winning Innovations and our ISO Certifications',
-                'description' => 'Started the first project in TA 41, NY which was the first step towards global expansion.',
-                'pt_img' => 'pt-4',
-                'pt_title' => 'pt-2',
-                'pt_desc' => 'pt-4',
-            ],
-            [
-                'year' => '2025',
-                'img' => 'leading_the_wind_house.svg',
-                'title' => 'Growth & Expansion',
-                'description' => 'Within a few years, the company expanded rapidly, installing more than 50 wind turbines in various countries.',
-                'pt_img' => 'pt-4',
-                'pt_title' => 'pt-4',
-                'pt_desc' => 'pt-2',
-            ],
-        ];
+        $timeline = config('timeline')
     @endphp
-
 
     <div class="w-full mt-[52px] md:px-[75px] flex">
         <div class="w-1/2 relative hidden md:flex" data-aos="flip-right">
@@ -64,23 +26,8 @@
                  class=" h-full object-cover  rounded-[20px]"/>
             <a href="#contacts" class="hidden md:block">
             <button
-                class="
-                                    scroll-link
-                            bg-[#F06449]
-                            text-white
-                            font-normal
-                            text-[24px]
-                            rounded-full
-                            h-[68px]
-                            w-[203px]
-                            items-center justify-center gap-
-                            font-hankenGrotesk
-                            absolute top-10 left-10
-                            cursor-pointer
-                            hidden md:flex
-                          "
-                data-target="contacts"
-            >
+                class="scroll-link bg-[#F06449] text-white font-normal text-[24px] rounded-full h-[68px] w-[203px] items-center justify-center font-hankenGrotesk absolute top-10 left-10 cursor-pointer hidden md:flex"
+                data-target="contacts">
                 Get a quote
             </button>
             </a>
@@ -90,12 +37,9 @@
                 @foreach ($timeline as $item)
                     <div
                         class="flex {{ $loop->last ? 'pt-[36px]' : 'border-b-2 border-[#D6DBDB] pb-[36px] pt-[36px]' }}" data-aos="fade-up" data-aos-duration="1500">
-
                         <div
                             class="text-[#F06449] hover:text-[#FFC005] md:w-1/4 px-3 {{ $item['pt_img'] }} md:pt-0 flex md:flex-row flex-col gap-4 md:items-start items-center justify-start">
                             {!! file_get_contents(public_path('images/' . $item['img'])) !!}
-
-                            {{--                            <img src="{{ asset('images/' . $item['img']) }}" class="w-[79px] h-[80px]" alt="{{ $item['year'] }}" />--}}
                             <p class="md:hidden text-[15px] font-bold">{{ $item['year'] }}</p>
                         </div>
                         <div class="w-3/4 flex flex-col px-3">

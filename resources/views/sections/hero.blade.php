@@ -18,7 +18,6 @@
         </div>
     </div>
 
-    <!-- Text (like col-8) -->
     <div class="w-full md:w-2/4">
         <div>
             <p class="wind-text font-normal text-2xl md:text-[27px] lg:text-[44px] md:tracking-[-0.04em] text-[#00403D] md:text-right">
@@ -39,10 +38,8 @@
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
                     <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
 
-                    <!-- Overlay content -->
                     <div
                         class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full overlay-content opacity-0 translate-y-4 transition-all duration-500 ease-out">
-                        <!-- inside stays the same -->
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full">
                             <div
