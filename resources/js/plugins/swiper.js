@@ -64,14 +64,9 @@ export function initSwipers() {
 
     const certificationsSwiper = new Swiper(".myCertificationsSwiper", {
         cssMode: true,
-        loop: true,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
         },
         breakpoints: {
             0: {slidesPerView: 1.4},
