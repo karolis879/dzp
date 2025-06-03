@@ -111,7 +111,7 @@
         @endforeach
     </div>
 
-    <div class="hidden md:flex justify-between pt-8 md:px-[75px] px-12" style="width: inherit;">
+    <div class="hidden md:flex justify-between pt-8 md:px-[75px] px-12" style="width: inherit;" data-aos="fade-left">
         @foreach($inspectionServices2 as $service)
             @php
                 $smallerLogos = ['ve-servisas.png', 'vejo-planas.png'];

@@ -119,7 +119,7 @@
 
            @include('mobile_sections.mobile_latest_news')
 
-    <img class="hidden absolute md:flex w-[162px] h-[430px] right-[-50px] top-[-60px]" style="pointer-events: none" data-aos="fade-down"
+    <img class="hidden absolute md:flex w-[162px] h-[430px] right-[-50px] top-[-60px]" style="pointer-events: none" data-aos="fade-down"  data-aos-delay="300"
          src="{{asset('images/hangin_guy_3.svg')}}">
     </div>
 </div>
