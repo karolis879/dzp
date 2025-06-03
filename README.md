@@ -34,6 +34,7 @@ The site showcases company services and includes a live LinkedIn post feed power
 - **Plain JavaScript** – Lightweight interactivity
 - **Swiper.js** – Mobile-friendly sliders/carousels
 - **LinkedIn API** – Integrated to fetch and display daily posts
+- **Retina.js** – Image optimization for high DPI displays
 - **Cron Job (Server)** – Regular updates to the LinkedIn feed
 
 ---
