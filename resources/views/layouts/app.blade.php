@@ -6,7 +6,7 @@
 
     <meta property="og:title" content="DZP">
     <meta property="og:description" content="Blade, turbine, and construction services from professionals.">
-    <meta property="og:image" content="https://dzp.eu/images/why_choose_us.png">
+    <meta property="og:image" content="{{ asset('images/why_choose_us.png') }}">
     <meta property="og:url" content="https://dzp.eu">
     <meta property="og:type" content="website">
 
