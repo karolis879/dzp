@@ -83,7 +83,7 @@
 
         <!-- Tab content -->
         <div id="default-styled-tab-content">
-            <div class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px]" id="blade" role="tabpanel"
+            <div class="grid md:grid-cols-4 grid-cols-2 mt-2 gap-[7px]" role="tabpanel"
                  aria-labelledby="blade-tab">
                 @foreach ($services as $service)
                     <div data-aos="fade-up" data-aos-duration="1000">

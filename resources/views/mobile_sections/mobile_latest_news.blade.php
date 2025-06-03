@@ -29,8 +29,11 @@
     </button>
     </a>
     <div class="flex justify-between w-full gap-2 pt-7">
-        <i class="text-[#F06449] text-[21px] hover:text-[#FFC005]  fab fa-youtube border-[2px] rounded-full p-3"></i>
-{{--        <i class="text-[#F06449] text-[21px] hover:text-[#FFC005] fab fa-twitter border-[2px] rounded-full p-3"></i>--}}
-        <i class="text-[#F06449] text-[21px] hover:text-[#FFC005] fab fa-facebook border-[2px] rounded-full p-3"></i>
+        <a href="https://www.youtube.com/@DZP-ropeaccessprofessionals/videos" target="_blank"> <i
+                class="text-[#F06449] text-[21px] hover:text-[#FFC005]  fab fa-youtube border-[2px] rounded-full p-3"></i>
+        </a>
+        <a href="https://www.facebook.com/dzprepair" target="_blank"> <i
+                class="text-[#F06449] text-[21px] hover:text-[#FFC005] fab fa-facebook border-[2px] rounded-full p-3 z-200"></i>
+        </a>
     </div>
 </div>

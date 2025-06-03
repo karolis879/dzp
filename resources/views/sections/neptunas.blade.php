@@ -1,7 +1,7 @@
 <div data-aos="fade-up">
     <a href="https://bcneptunas.lt/" target="_blank">
         <div class="px-4 md:px-0">
-            <div class="container md:mx-auto md:h-120 rounded-[24px] md:mt-25"
+            <div class="container md:mx-auto md:h-120 rounded-[24px] md:mt-10 md:mb-20"
                  style="background-image: url('{{ asset('images/neptunas.png') }}'); background-size: cover; background-repeat: no-repeat; background-position: center;">
                 <div class="md:px-[75px] px-4 py-7 text-center md:text-left md:py-10 w-full">
                     <div class="flex md:flex-row flex-col items-center">

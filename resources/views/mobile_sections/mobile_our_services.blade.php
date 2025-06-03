@@ -38,25 +38,40 @@
 
 <script>
     const bladeTab = document.getElementById('blade-tab');
+    const bladeTabLabel = document.getElementById('blade-tab-label');
     const dropdownMenu = document.getElementById('dropdown-menu');
     const arrowIcon = document.getElementById('arrow-icon');
 
-    bladeTab.addEventListener('click', () => {
-        const isOpen = !dropdownMenu.classList.contains('hidden');
-        if (isOpen) {
-            dropdownMenu.classList.add('hidden');
-            arrowIcon.classList.remove('fa-arrow-up');
-            arrowIcon.classList.add('fa-arrow-down');
-        } else {
-            dropdownMenu.classList.remove('hidden');
-            arrowIcon.classList.remove('fa-arrow-down');
-            arrowIcon.classList.add('fa-arrow-up');
-        }
+    bladeTab.onclick = () => {
+        dropdownMenu.classList.toggle('hidden');
+        arrowIcon.classList.toggle('fa-arrow-up');
+        arrowIcon.classList.toggle('fa-arrow-down');
+    };
 
-        dropdownMenu.addEventListener('click', (e) => {
+    dropdownMenu.querySelectorAll('button').forEach(btn => {
+        btn.onclick = () => {
+            // Swap text
+            [bladeTabLabel.textContent, btn.textContent] = [btn.textContent.trim(), bladeTabLabel.textContent.trim()];
+
+            // Swap tab targets
+            const bladeTarget = bladeTab.getAttribute('data-tabs-target');
+            const bladeControl = bladeTab.getAttribute('aria-controls');
+
+            bladeTab.setAttribute('data-tabs-target', btn.getAttribute('data-tabs-target'));
+            bladeTab.setAttribute('aria-controls', btn.getAttribute('aria-controls'));
+
+            btn.setAttribute('data-tabs-target', bladeTarget);
+            btn.setAttribute('aria-controls', bladeControl);
+
+            // Toggle dropdown
             dropdownMenu.classList.add('hidden');
             arrowIcon.classList.remove('fa-arrow-up');
             arrowIcon.classList.add('fa-arrow-down');
-        })
+
+            // Optional: show tab content immediately
+            document.querySelectorAll('[role="tabpanel"]').forEach(p => p.classList.add('hidden'));
+            document.querySelector(bladeTab.getAttribute('data-tabs-target')).classList.remove('hidden');
+        };
     });
 </script>
+
