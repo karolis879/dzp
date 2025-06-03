@@ -17,7 +17,7 @@
                                 this brand and
                                 its events.</p>
                         </div>
-                        <img src="{{asset('images/neptunas_logo.png')}}" data-aos="zoom-in-down"
+                        <img src="{{asset('images/neptunas_logo.png')}}" data-aos="zoom-in-down" data-rjs="2"
                              class="hidden md:flex md:order-3 order-2 pt-20 pl-8">
                     </div>
                 </div>
