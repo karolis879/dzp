@@ -9,7 +9,7 @@
                     </h3>
                     <img
                         class="md:h-[55px] w-[70px] h-12 md:w-[96px] object-contain md:pl-4 pl-2 pt-2"
-                        src="{{ asset('images/dzp_logo.png') }}" alt="Wind Turbine"/>
+                        src="{{ asset('images/dzp_logo.svg') }}" alt="Wind Turbine"/>
                 </div>
                 <p class=" text-[#00403D] md:text-3xl text-2xl lg:text-[45px] lg    :leading-[67px] font-semibold tracking-[-0.04em]">
                     and how you can save <br> on your wind turbine costs.
