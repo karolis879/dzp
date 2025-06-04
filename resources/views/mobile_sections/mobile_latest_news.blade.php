@@ -4,11 +4,13 @@
             <div class="swiper-slide relative overflow-hidden rounded-lg md:h-235">
                 <div class="flex md:flex-col gap-10 mt-10 px-4">
                     <div class="flex flex-col">
-                        <div
-                            class="md:w-[240px] w-[236px] h-[218px] md:h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
-                            <img src="{{$data->image}}" alt="news1"
-                                 class="w-full h-full object-cover rounded-[20px]"/>
-                        </div>
+                        <a href="https://www.linkedin.com/feed/update/{{$data->post_id}}" target="_blank">
+                            <div
+                                class="md:w-[240px] w-[236px] h-[218px] md:h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
+                                <img src="{{$data->image}}" alt="news1"
+                                     class="w-full h-full object-cover rounded-[20px]"/>
+                            </div>
+                        </a>
                         <div class="flex flex-col">
                             <p class="text-[#0A1018] font-medium text-[28px] pt-8">{{ \Carbon\Carbon::parse($data->published_at)->format('F j, Y') }}</p>
                             <p class="pt-4 font-light text-[#0A1018]">{{$data->description}}</p>

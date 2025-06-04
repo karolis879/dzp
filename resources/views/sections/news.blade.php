@@ -98,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden lg:flex">
+                <div class="hidden lg:flex" id="pagination-news-desktop-swiper">
                     <div class="swiper-pagination" style="top: 900px; left: -87px"></div>
                     <div class="swiper-pagination" style="top: 900px; left: -87px"></div>
 
@@ -139,7 +139,14 @@
     function updatePaginationPosition() {
         const pagination = document.querySelector('#news-desktop-swiper');
         const paginationMobile = document.querySelector('#news-mobile-swiper');
+        const paginationDesktop = document.querySelector('#pagination-news-desktop-swiper');
         if (!pagination) return;
+
+        if (window.innerWidth <= 1400){
+            paginationDesktop.style.display = 'none';
+        } else {
+            paginationDesktop.style.display = 'flex';
+        }
 
         if (window.innerWidth <= 768) {
             pagination.style.display = 'none';
