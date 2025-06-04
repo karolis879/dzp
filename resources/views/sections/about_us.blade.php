@@ -1,7 +1,5 @@
 <div
     class="container mx-auto flex justify-between items-center md:mt-[35px] mb-[52px] flex-col overflow-hidden relative" id="about-us">
-    <img src="{{ asset('images/guy.png') }}" alt="flying_guy"
-         class="md:w-[141px] w-20 top-[-350px] right-3 md:h-[905px] absolute md:right-[-140px] md:hidden  md:top-[-70px] z-10"/>
     <div class="w-full pt-6 md:pt-2 px-4 md:px-[75px]">
         <h3 class="font-normal text-4xl md:text-[60px] md:leading-[68px] tracking-[-0.04em] text-[#818181]">
             Leading
