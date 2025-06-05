@@ -24,6 +24,7 @@ class SendUsYourCvRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',
             'company' => 'nullable|string|max:255',
+            'profession' => 'nullable|string|max:255',
             'cv' => 'required|file|mimes:pdf,doc,docx,txt,rtf|max:10240',
             'message' => 'required|string',
         ];

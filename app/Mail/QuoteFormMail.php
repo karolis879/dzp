@@ -10,7 +10,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ContactFormMail extends Mailable
+class QuoteFormMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -25,7 +25,7 @@ class ContactFormMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: "New Contact Form Submission: {$this->data->topic}"
+            subject: "New Quote Form Submission: {$this->data->topic}"
         );
     }
 
@@ -35,7 +35,7 @@ class ContactFormMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'mail.contact_form',
+            markdown: 'mail.get_quote',
             with: [
                 'data' => $this->data,
             ]

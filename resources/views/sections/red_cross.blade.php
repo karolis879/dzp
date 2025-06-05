@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                <div class="md:order-2 order-3 w-full md:w-2/4 flex flex-col items-start justify-center">
+                <div class="md:order-2 order-3 w-full md:w-3/4 flex flex-col items-start justify-center">
                     <h4 class="md:text-[#8EA2A0] text-[#627678] font-medium md:font-light text-[28px] lg:text-[40px] md:leading-[50px]">
                         By Doing business with us
                         you support RED

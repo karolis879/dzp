@@ -6,7 +6,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
-use App\Mail\ContactFormMail;
+use App\Mail\QuoteFormMail;
 use App\Mail\SendUsYourCvMail;
 use App\Mail\GeneralContactsMail;
 
@@ -31,7 +31,7 @@ class ContactUsControllerTest extends TestCase
         $response->assertRedirect();
         $response->assertSessionHas('success');
 
-        Mail::assertSent(ContactFormMail::class, function ($mail) {
+        Mail::assertSent(QuoteFormMail::class, function ($mail) {
             return $mail->hasTo(config('contact_topics.marketing'));
         });
     }

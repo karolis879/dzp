@@ -9,14 +9,14 @@
     **📧 Email:**
     {{ $data->email }}
 
-    **🏢 Company Name:**
-    {{ $data->company }}
+    **🏢 Profession Name:**
+    {{ $data->profession }}
 
     **🌍 Country:**
     {{ $data->country }}
 
     **💬 Motivation:**
-    > {{ $data->message }}
+  {{ $data->message }}
 
     @if($data->attachment)
         **📎 CV Attachment:**
@@ -25,6 +25,5 @@
 
     ---
 
-    Thanks,
     **{{ config('app.name') }}**
 </x-mail::message>

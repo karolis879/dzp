@@ -43,40 +43,37 @@
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full">
                             <div
-                                class=" md:py-43 px-8 py-12 w-full px-2 flex flex-col items-center justify-between md:w-min h-full">
+                                class=" md:py-43 py-12 w-full px-8 flex flex-col items-center justify-between md:w-min h-full">
                                 <div class="flex justify-center items-center">
-                                    <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
+                                    <h2 class="w-[115px] md:w-[255px] text-white text-[40px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
                                         500 +
                                     </h2>
-                                    <p class="md:w-[300px] w-[180px] text-white text-sm md:text-2xl text-left">Wind
-                                        Turbines
-                                        Serviced
-                                        in last 365 days</p>
+                                    <p class="md:w-[365px] w-[213px] text-white text-sm md:text-2xl text-left">Serviced in last 365 days</p>
                                 </div>
                                 <div class="flex justify-center items-center">
-                                    <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
+                                    <h2 class="w-[115px] md:w-[255px] text-white text-[40px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
                                         4 yrs
                                     </h2>
-                                    <p class="md:w-[300px] w-[180px] text-white md:text-2xl text-left">Wind Turbines
-                                        Serviced
-                                        rope access industry</p>
+                                    <p class="md:w-[365px] w-[213px] text-sm text-white md:text-2xl text-left">
+                                        Over 3 years of experience in the
+                                        wind industry</p>
                                 </div>
 
                                 <div class="flex justify-center items-center">
-                                    <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
+                                    <h2 class="w-[115px] md:w-[255px] text-white text-[40px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
                                         85+
                                     </h2>
-                                    <p class="md:w-[300px] w-[180px] text-white md:text-2xl text-left">Wind Turbines
-                                        Serviced
-                                        rope access team.</p>
+                                    <p class="md:w-[365px] w-[213px] text-sm text-white md:text-2xl text-left">
+                                        A dedicated in-house team of
+                                        90+ professionals</p>
                                 </div>
                                 <div class="flex justify-center items-center">
-                                    <h2 class="w-[130px] md:w-[255px] text-white text-[46px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
+                                    <h2 class="w-[115px] md:w-[255px] text-white text-[40px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
                                         Low
                                     </h2>
-                                    <p class="md:w-[300px] w-[180px] text-white md:text-2xl text-left">Wind Turbines
-                                        Serviced
-                                        access team.</p>
+                                    <p class="md:w-[365px] w-[213px] text-sm text-white md:text-2xl text-left">
+                                        Low employee turnover,
+                                        reflecting strong team stability</p>
                                 </div>
                             </div>
                         </div>

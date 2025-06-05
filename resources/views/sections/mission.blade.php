@@ -11,7 +11,7 @@
         <div class="flex md:pt-15 md:gap-25">
             <img class="hidden md:flex w-1/3 object-contain" src="{{asset('images/values_and_mission.png')}}" data-aos="fade-up-right">
             <div class=" md:w-2/3 pt-10 md:grid lg:grid-cols-2 gap-10 md:gap-20" data-aos="fade-up" data-aos-duration="800">
-                <div class=" flex md:flex-col md:pt-0 md:w-[360px]">
+                <div class=" flex md:flex-col md:pt-0 md:w-full xl:w-[360px]">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
                         <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 90 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,12 +27,12 @@
                         </svg>
                     </div>
                     <div class="px-4 md:pl-0">
-                        <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Safety First</p>
-                        <p class="text-[#191919] font-medium text-base pt-3">We work to reduce carbon emissions and
-                        support the global transition to clean energy.</p>
+                        <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px] md:h-[101px]">Safety First</p>
+                        <p class="text-[#191919] font-medium text-base pt-3">Our top priority is the safety of our team and clients, ensuring every operation is
+                            conducted with the highest safety standards.</p>
                     </div>
                 </div>
-                <div class=" flex md:flex-col pt-8 md:pt-0 md:w-[360px]" data-aos="fade-up" data-aos-duration="800">
+                <div class=" flex md:flex-col pt-8 md:pt-0 md:w-full xl:w-[360px]" data-aos="fade-up" data-aos-duration="800">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
                         <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 111 108" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,12 +49,12 @@
                     </div>
                     <div class="px-4 md:pl-0">
 
-                    <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Advanced Technology</p>
-                    <p class="text-[#191919] font-medium text-base pt-3">We continue to innovate with the latest
-                        technologies to improve the efficiency, reliability and performance of wind turbines.</p>
+                    <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Driving the Clean Energy Future</p>
+                    <p class="text-[#191919] font-medium text-base pt-3">We are committed to reducing carbon emissions and actively supporting the global shift
+                        towards sustainable, clean energy solutions.</p>
                     </div>
                 </div>
-                <div class=" flex md:flex-col md:pt-0 pt-6 md:w-[360px]" data-aos="fade-up" data-aos-duration="1000">
+                <div class=" flex md:flex-col md:pt-0 pt-6 md:w-full xl:w-[360px]" data-aos="fade-up" data-aos-duration="1000">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
                         <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 104 109" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,11 +76,11 @@
                     <div class="px-4 md:pl-0">
 
                     <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Customer Centricity</p>
-                    <p class="text-[#191919] font-medium text-base pt-3">We focus on customer satisfaction by
-                        providing professional service and ongoing technical support.</p>
+                    <p class="text-[#191919] font-medium text-base pt-3">We put our customers at the heart of everything we do, delivering professional services
+                        backed by clear and fast communication.</p>
                     </div>
                 </div>
-                <div class=" flex md:flex-col pt-8 md:pt-0 md:w-[360px]" data-aos="fade-up" data-aos-duration="1000">
+                <div class=" flex md:flex-col pt-8 md:pt-0 md:w-full xl:w-[360px]" data-aos="fade-up" data-aos-duration="1000">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
                         <svg class="text-[#F06449] group-hover:text-[#FFC005] w-[47px] h-[53px] md:w-[90px] md:h-[100px] "
                              viewBox="0 0 80 109" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,9 +98,9 @@
                     </div>
                     <div class="px-4 md:pl-0">
 
-                    <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Quality & Innovation</p>
-                    <p class="text-[#191919] font-medium text-base pt-3">We ensure every product and service meets
-                        the highest quality standards, providing reliable and durable solutions for our
+                    <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Reliability at the Core</p>
+                    <p class="text-[#191919] font-medium text-base pt-3">We apply modern methods and expertise to enhance the efficiency, reliability, and
+                        performance of wind turbines—fueling the transition to clean energy.
                         customers.</p>
                     </div>
                 </div>

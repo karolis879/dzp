@@ -25,44 +25,42 @@
         <div class="bg-[#003538] rounded-[20px] w-full md:w-1/2 px-6 md:px-0" data-aos="fade-right">
             <div class="md:px-10 md:py-5 flex lg:flex-row  md:flex-col items-center justify-between md:gap-x-10">
                 <p class="font-metrophobic text-[#D9FF00] md:text-[120px] text-[82px]">15%</p>
-                <div class="font-metrophobic text-[#D9FF00] text-sm md:text-[20px] pl-5 md:pl-0">Approximate business
-                    cost savings by choosing
-                    doing blade inspections.
+                <div class="font-metrophobic text-[#D9FF00] text-sm md:text-[20px] pl-5 md:pl-0">Estimated cost savings
+                    when choosing DZP for blade inspections and maintenance.
                 </div>
             </div>
             <p class="md:px-10 text-white text-sm md:text-[18px] md:leading-[32px] md:tracking-[0em] font-hanken-grotesk">
-                With our services your company can save significant <br class="hidden md:flex">operational costs of wind turbine
-                business. Read more, <br class="hidden md:flex"> download below.
+                By working with DZP, operators reduce operational expenses and downtime through
+                expert rope access services. Our approach is efficient, safe, and built to deliver long-
+                term value.<br class="hidden md:flex">Discover how
             </p>
             <a href="{{ asset('pdfs/why_you_need_dzp.pdf')}}" download="DZP-Brochure-2025.pdf"
-               class="underline flex items md:px-10 py-8 font-hankenGrotesk md:pt-13 text-white">
-                Download PDF
+               class="hover:underline flex items md:px-10 py-8 font-hankenGrotesk md:pt-13 text-white">
+                [ Download PDF ]
             </a>
         </div>
         <div class="md:w-1/2 w-full px-4 md:px-0">
             <div>
-                <p class="text-xl text-[#003538] font-bold leading-[24px]">Expert In-House Team</p>
-                <p class="text-[#003538] leading-[24px]">Our IRATA-certified technicians are highly experienced and
-                    <br> fully
-                    in-house—no freelancers or contractors—ensuring <br> quality, safety, and consistency on every
-                    project. </p>
+                <p class="text-xl text-[#003538] font-bold leading-[24px]">Fully In-House, Expert Team</p>
+                <p class="text-[#003538] leading-[24px]">DZP’s IRATA-certified technicians work exclusively in-house — no subcontractors —
+                    ensuring top-level quality, safety, and consistency on every project. </p>
             </div>
             <div class="pt-8">
-                <p class="text-xl text-[#003538] font-bold">Efficient, Flexible & Cost-Effective</p>
-                <p class="text-[#003538] ">We follow strict safety protocols and use low-impact <br> methods that
-                    minimize environmental disruption compared to traditional solutions.</p>
+                <p class="text-xl text-[#003538] font-bold">Lean, Reliable, Cost-Smart</p>
+                <p class="text-[#003538] ">We reduce turbine downtime and environmental impact through efficient rope access
+                    methods, saving clients time and money without compromising safety.</p>
             </div>
 
             <div class="pt-8">
-                <p class="text-xl text-[#003538] font-bold">Safety & Sustainability First</p>
-                <p class="text-[#003538] ">Rope access enables fast mobilization, reduced downtime, <br> and
-                    eliminates the need for expensive cranes or lifts—even in hard-to-reach locations.</p>
+                <p class="text-xl text-[#003538] font-bold">Safety and Sustainability at the Core</p>
+                <p class="text-[#003538] ">At DZP, safety is at the heart of everything we do. Our strong in-house team enables fast
+                    and efficient mobilization across multiple sites, even in remote areas.</p>
             </div>
 
             <div class="pt-8">
-                <p class="text-xl text-[#003538] font-bold">Proven, Comprehensive Services</p>
-                <p class="text-[#003538] ">With a strong track record across multiple regions, we deliver<br>end-to-end
-                    turbine solutions—from blade repairs and LEP coating to inspections and drone services.</p>
+                <p class="text-xl text-[#003538] font-bold">End-to-End Wind Turbine Services</p>
+                <p class="text-[#003538] ">From blade inspections and LEP coating to complex repairs and drone services, DZP
+                    delivers full-scope solutions across Europe with a growing global presence.</p>
             </div>
         </div>
     </div>

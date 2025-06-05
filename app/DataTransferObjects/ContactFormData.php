@@ -11,6 +11,7 @@ class ContactFormData
         public string  $message,
         public string  $name,
         public ?string $company = null,
+        public ?string $profession = null,
         public ?string $country = null,
         public ?UploadedFile $attachment = null
     )

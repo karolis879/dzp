@@ -25,7 +25,7 @@
                             </svg>
                         </div>
                         <h6 class="text-[#00403D] text-xl font-bold">
-                            Send Us your cv
+                            Send us your CV
                         </h6>
                     </div>
                     <div class="flex items-center gap-4 h-[70px] bg-white rounded-l-[60px] cursor-pointer"
@@ -97,23 +97,6 @@
                                            class="w-full mt-4 border-[#191919] rounded-[14px]">
                                 </div>
                             </div>
-                            <div class="w-full pt-7">
-                                <label for="topic" class="text-2xl font-semibold">Service type</label>
-                                <select id="topic" name="topic"
-                                        class="w-full mt-4 border-[#191919] rounded-[14px]"
-                                        required>
-                                    <option value="marketing">Marketing/Media
-                                    </option>
-                                    <option value="sponsorship" >Sponsorship
-                                    </option>
-                                    <option value="project-management">Project
-                                        Management
-                                    </option>
-                                    <option value="hr">HR</option>
-                                    <option value="safety">Safety</option>
-                                    <option value="career" >Career</option>
-                                </select>
-                            </div>
 
                             <div class="w-full pt-7">
                                 <label for="message" class="text-2xl font-semibold">Details about service</label>
@@ -135,7 +118,7 @@
                     <div class="flex flex-col items-start p-8">
                         <h5
                             class="font-medium text-[24px] text-align-top  text-[#00403D]">
-                            Send us your cv
+                            Send us your CV
                         </h5>
                         <div class="pt-10 w-full">
                             <form method="POST" action="{{ route('contact_us.send_cv') }}" enctype="multipart/form-data"
@@ -157,9 +140,8 @@
                                 </div>
                                 <div class="flex w-full gap-6 pt-7">
                                     <div class="w-1/2">
-                                        <label for="company" class="text-2xl font-semibold">Company
-                                            Name</label>
-                                        <input type="text" name="company" required placeholder="Enter your company name"
+                                        <label for="profession" class="text-2xl font-semibold">Your profession</label>
+                                        <input type="text" name="profession" required placeholder="Enter your profession name"
                                                class="w-full mt-4 border-[#191919] rounded-[14px]">
                                     </div>
                                     <div class="w-1/2">
@@ -237,6 +219,24 @@
                                         <input type="text" name="country" required placeholder="Enter your country"
                                                class="w-full mt-4 border-[#191919] rounded-[14px]">
                                     </div>
+                                </div>
+
+                                <div class="w-full pt-7">
+                                    <label for="topic" class="text-2xl font-semibold">Topic</label>
+                                    <select id="topic" name="topic"
+                                            class="w-full mt-4 border-[#191919] rounded-[14px]"
+                                            required>
+                                        <option value="marketing">Marketing/Media
+                                        </option>
+                                        <option value="sponsorship" >Sponsorship
+                                        </option>
+                                        <option value="project-management">Project
+                                            Management
+                                        </option>
+                                        <option value="hr">HR</option>
+                                        <option value="safety">Safety</option>
+                                        <option value="career" >Career</option>
+                                    </select>
                                 </div>
 
                                 <div class="w-full pt-7">
