@@ -48,22 +48,22 @@
                                     <h2 class="w-[115px] md:w-[255px] text-white text-[40px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
                                         500 +
                                     </h2>
-                                    <p class="md:w-[365px] w-[213px] text-white text-sm md:text-2xl text-left">Serviced in last 365 days</p>
+                                    <p class="md:w-[365px] w-[213px] text-white text-md md:text-2xl text-left">Serviced in last 365 days</p>
                                 </div>
                                 <div class="flex justify-center items-center">
                                     <h2 class="w-[115px] md:w-[255px] text-white text-[40px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
-                                        4 yrs
+                                        3 yrs
                                     </h2>
-                                    <p class="md:w-[365px] w-[213px] text-sm text-white md:text-2xl text-left">
+                                    <p class="md:w-[365px] w-[213px] text-md text-white md:text-2xl text-left">
                                         Over 3 years of experience in the
                                         wind industry</p>
                                 </div>
 
                                 <div class="flex justify-center items-center">
                                     <h2 class="w-[115px] md:w-[255px] text-white text-[40px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
-                                        85+
+                                        90+
                                     </h2>
-                                    <p class="md:w-[365px] w-[213px] text-sm text-white md:text-2xl text-left">
+                                    <p class="md:w-[365px] w-[213px] text-md text-white md:text-2xl text-left">
                                         A dedicated in-house team of
                                         90+ professionals</p>
                                 </div>
@@ -71,7 +71,7 @@
                                     <h2 class="w-[115px] md:w-[255px] text-white text-[40px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
                                         Low
                                     </h2>
-                                    <p class="md:w-[365px] w-[213px] text-sm text-white md:text-2xl text-left">
+                                    <p class="md:w-[365px] w-[213px] text-md text-white md:text-2xl text-left">
                                         Low employee turnover,
                                         reflecting strong team stability</p>
                                 </div>
@@ -135,32 +135,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide relative">
-                    <img src="{{asset('images/hero_3.jpg')}}" alt="Wind Turbine"
-                         class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>
-                    <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full overlay-content opacity-0 translate-y-4 transition-all duration-500 ease-out">
-                        <div
-                            class="md:p-18 absolute inset-0 flex flex-col items-end md:justify-end md:w-[900px] ml-auto h-full">
-                            <div class="p-10 flex flex-col justify-around md:h-auto h-full">
-                                <h2 class="md:text-6xl text-white md:pb-40">
-                                    High safety standards, rapid mobilization and efficient execution.<br>
-                                </h2>
-                                <div class="flex gap-20">
-                                    <div class="flex flex-col justify-end leading-none">
-                                        <p class="md:text-[52px] font-light text-white">IRATA</p>
-                                        <p class="md:text-[35px] font-light text-white">certified</p>
-                                    </div>
+    {{--                <div class="swiper-slide relative">--}}
+    {{--                    <img src="{{asset('images/hero_3.jpg')}}" alt="Wind Turbine"--}}
+    {{--                         class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>--}}
+    {{--                    <div class="absolute inset-0 bg-[#003538] opacity-60 rounded-[24px]"></div>--}}
+    {{--                    <div--}}
+    {{--                        class="absolute inset-0 flex flex-col items-center justify-between md:w-[750px] md:ml-auto h-full overlay-content opacity-0 translate-y-4 transition-all duration-500 ease-out">--}}
+    {{--                        <div--}}
+    {{--                            class="md:p-18 absolute inset-0 flex flex-col items-end md:justify-end md:w-[900px] ml-auto h-full">--}}
+    {{--                            <div class="p-10 flex flex-col justify-around md:h-auto h-full">--}}
+    {{--                                <h2 class="md:text-6xl text-white md:pb-40">--}}
+    {{--                                    High safety standards, rapid mobilization and efficient execution.<br>--}}
+    {{--                                </h2>--}}
+    {{--                                <div class="flex gap-20">--}}
+    {{--                                    <div class="flex flex-col justify-end leading-none">--}}
+    {{--                                        <p class="md:text-[52px] font-light text-white">IRATA</p>--}}
+    {{--                                        <p class="md:text-[35px] font-light text-white">certified</p>--}}
+    {{--                                    </div>--}}
 
-                                    <p class="md:text-2xl text-white">In house employeed, professionals with extensive
-                                        field
-                                        experience.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    {{--                                    <p class="md:text-2xl text-white">In house employeed, professionals with extensive--}}
+    {{--                                        field--}}
+    {{--                                        experience.</p>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                        </div>--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
                 <div class="swiper-slide relative">
                     <img src="{{asset('images/hero_5.jpg')}}" alt="Wind Turbine"
                          class="flex w-full h-[465px] md:h-[876px] object-cover rounded-[24px]"/>

@@ -22,7 +22,7 @@ return [
     [
         'year' => '2024',
         'img' => 'leading_the_wind_certificate.svg',
-        'title' => 'Award-Winning Innovations and our ISO Certifications',
+        'title' => 'Award-Winning Performance | ISO Certified',
         'description' => 'Backed by ISO certifications, we launched our first project in Scandinavia — marking the beginning of our European expansion.',
         'pt_img' => 'pt-4',
         'pt_title' => 'pt-2',
