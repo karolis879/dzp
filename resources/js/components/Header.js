@@ -52,7 +52,7 @@ export function initHeader() {
         const logo = document.querySelector(".logo-container");
         const mobileLogo = document.querySelector(".mobile-dzp-logo");
 
-        if ((window.scrollY > 20) || (window.innerWidth < 720 && window.scrollY > 20) ) {
+        if (window.scrollY > 20) {
             logo.classList.remove("opacity-0", "translate-y-3", "hidden");
             logo.classList.add("opacity-100", "translate-y-0", "w-[100px]");
             mobileLogo.classList.add("hidden");

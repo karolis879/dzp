@@ -1,4 +1,4 @@
-<div class=" relative overflow-x-visible overflow-y-hidden md:pb-10" id="news">
+<div class=" relative overflow-hidden md:pb-10" id="news">
     <div
         class="container mx-auto relative">
         <div class="md:px-[75px]  md:py-18 w-full">
@@ -128,8 +128,7 @@
         {{--  Mobile swiper --}}
 
         @include('mobile_sections.mobile_latest_news')
-
-        <img class="hidden absolute md:flex w-[162px] h-[430px] right-[-50px] top-[-60px]" style="pointer-events: none"
+        <img class="hidden absolute lg:flex w-[162px] h-[430px] right-[-50px] top-[-60px]" style="pointer-events: none"
              data-aos="fade-down" data-aos-delay="300"
              src="{{asset('images/hangin_guy_3.svg')}}">
     </div>

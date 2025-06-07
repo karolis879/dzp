@@ -9,16 +9,16 @@ export function initSwipers() {
         grabCursor: true,
         slidesPerView: 1,
         loop: true,
-        speed: 1000, // <-- Slide transition duration in milliseconds (default is 300ms)
+        speed: 1000,
         cubeEffect: {
             shadow: true,
             slideShadows: true,
             shadowOffset: 20,
             shadowScale: 0.94,
         },
-        // autoplay: {
-        //     delay: 4500,
-        // },
+        autoplay: {
+            delay: 4500,
+        },
         pagination: {
             el: ".swiper-pagination",
         },
