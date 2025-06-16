@@ -27,7 +27,7 @@ class FetchLinkedInData extends Command
 
             // Collect all descriptions & image IDs (null if no image)
             foreach ($data['elements'] as $item) {
-                $imageIdFull = $item['content']['multiImage']['images'][0]['id'] ?? null;
+                $imageIdFull = $item['content']['multiImage']['images'][0]['id'] ?? $item['content']['media']['id'] ?? null;
                 $imageId = $imageIdFull ? Str::after($imageIdFull, 'urn:li:image:') : null;
 
                 $imageIds[] = $imageId; // could be null
