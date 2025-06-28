@@ -82,29 +82,30 @@
                 </div>
 
                 <!-- Card 3 (optional – duplicated for layout symmetry) -->
-{{--                <div class="border-[2px] border-gray-200 rounded-[24px] hover:shadow-[0px_10px_20px_0px_#00000026] transition-shadow duration-300 flex flex-col">--}}
-{{--                    <div class="p-6 flex flex-col justify-between flex-1">--}}
-{{--                        <div class="flex justify-between">--}}
-{{--                            <div class="h-[196px] flex flex-col justify-between">--}}
-{{--                                <img src="{{ asset('images/fender.png') }}" alt="logo"--}}
-{{--                                     class="w-[118px] h-[44px] my-4">--}}
-{{--                                <img src="{{ asset('images/brackets_up.png') }}" alt="brackets"--}}
-{{--                                     class="w-[61px] h-[46px] object-cover">--}}
-{{--                            </div>--}}
-{{--                            <img src="{{ asset('images/fender_guy.png') }}" alt="person"--}}
-{{--                                 class="w-[196px] h-[196px] object-cover rounded-[20px] rounded-bl-[90px]">--}}
-{{--                        </div>--}}
+                <div class="border-[2px] border-gray-200 rounded-[24px] hover:shadow-[0px_10px_20px_0px_#00000026] transition-shadow duration-300 flex flex-col">
+                    <div class="p-6 flex flex-col justify-between flex-1">
+                        <div class="flex justify-between">
+                            <div class="h-[196px] flex flex-col justify-between">
+                                <img src="{{ asset('images/bionalis.png') }}" alt="logo"
+                                     data-rjs="2"
+                                     class=" my-4">
+                                <img src="{{ asset('images/brackets_up.png') }}" alt="brackets"
+                                     class="w-[61px] h-[46px] object-cover">
+                            </div>
+                            <img src="{{ asset('images/incognito.avif') }}" alt="person"
+                                 class="w-[196px] h-[196px] object-cover rounded-[20px] rounded-bl-[90px]">
+                        </div>
 
-{{--                        <div class="flex flex-col justify-between flex-1 mt-4">--}}
-{{--                            <p class="text-2xl text-[#191919] mb-4">--}}
-{{--                                DZP provided consistent support on-site, always responsive and flexible. It’s been a smooth collaboration across all projects.--}}
-{{--                            </p>--}}
-{{--                            <p class="text-base text-[#818181] mt-auto">Jane Doe, Project Supervisor, WindCorp</p>--}}
-{{--                            <img src="{{ asset('images/brackets_down.png') }}" alt="brackets"--}}
-{{--                                 class="w-[34px] h-[26px] object-cover ml-auto mr-20 mt-7">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+                        <div class="flex flex-col justify-between flex-1 mt-4">
+                            <p class="text-2xl text-[#191919] mb-4">
+                                I love working with DZP because they finish what they start — fast, professional, and always with a report that speaks for itself.
+                            </p>
+                            <p class="text-base text-[#818181] mt-auto">Bionalis</p>
+                            <img src="{{ asset('images/brackets_down.png') }}" alt="brackets"
+                                 class="w-[34px] h-[26px] object-cover ml-auto mr-20 mt-7">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -152,6 +153,28 @@
                                         They can do practically everything: repaint, repair, balance. That means I don’t need to look for other subcontractors – they handle it all themselves.
                                     </p>
                                     <p class="text-[9px] text-[#818181]">Ernestas Lukoševičius, Construction Manager, Nordex</p>
+                                    <img src="{{ asset('images/brackets_down.png') }}" alt="brackets" class="w-[34px] h-[26px] object-cover ml-auto mr-8 mt-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col" style="width: 60%;">
+                        <div class="bg-white border-[2px] border-gray-200 rounded-[24px] hover:shadow-[0px_10px_20px_0px_#00000026] transition-shadow duration-300 flex flex-col h-full">
+                            <div class="p-3 flex flex-col justify-between h-full">
+                                <div class="flex justify-between">
+                                    <div class="h-[112px] flex flex-col justify-between">
+                                        <img src="{{ asset('images//bionalis.png') }}" alt="logo" class=" my-4">
+                                        <img src="{{ asset('images/brackets_up.png') }}" alt="brackets" class="w-[35px] h-[26px] object-cover">
+                                    </div>
+                                    <img src="{{ asset('images/incognito.avif') }}" alt="quote" class="w-[112px] h-[112px] object-cover rounded-[20px] rounded-bl-[50px]">
+                                </div>
+
+                                <div class="flex flex-col flex-1 justify-between mt-3">
+                                    <p class="text-[13px] text-[#191919] mb-4">
+                                        I love working with DZP because they finish what they start — fast, professional, and always with a report that speaks for itself.
+                                    </p>
+                                    <p class="text-[9px] text-[#818181]">Bionalis</p>
                                     <img src="{{ asset('images/brackets_down.png') }}" alt="brackets" class="w-[34px] h-[26px] object-cover ml-auto mr-8 mt-4">
                                 </div>
                             </div>

@@ -46,7 +46,7 @@ return [
             'description' =>'Drone-Assisted Blade & Turbine Inspection'
         ],
         [
-            'name' => 'Lightning Protection System (LPS) measurements.svg',
+            'name' => 'lighting_protection.svg',
            'description' => 'Lightning Protection System (LPS) Measurements'
         ],
         [
@@ -66,7 +66,7 @@ return [
         ],
         [
             'name' => 'Painting and Sandblasting.svg',
-            'description' => 'Painting & Sandblasting'
+            'description' => 'Painting'
         ],
         [
             'name' => 'Other and maintenance jobs.svg',
@@ -76,11 +76,11 @@ return [
 
     'exterior' => [
         [
-            'name' => 'Frame Construction Works.svg',
+            'name' => 'windows_exchange.svg',
             'description' => 'Frame Construction Works'
         ],
         [
-            'name' => 'Frame Construction Maintenance.svg',
+            'name' => 'windows_exchange.svg',
             'description' => 'Frame Construction Maintenance'
         ],
         [
@@ -88,7 +88,7 @@ return [
             'description' => 'Windows and Facade Cleanings'
         ],
         [
-            'name' => 'Window Exchange or Repair.svg',
+            'name' => 'windows_exchange.svg',
             'description' => 'Window Exchange or Repair'
         ],
     ],
