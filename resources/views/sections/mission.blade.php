@@ -9,7 +9,7 @@
                             </span>
         </h3>
         <div class="flex md:pt-15 md:gap-25">
-            <img class="hidden md:flex w-1/3 object-contain" src="{{asset('images/values_and_mission.png')}}" data-aos="fade-up-right">
+            <img class="hidden md:flex w-1/3 object-cover rounded-[30px] rounded-bl-[250px]" src="{{asset('images/values_and_mission.jpeg')}}" data-aos="fade-up-right">
             <div class=" md:w-2/3 pt-10 md:grid lg:grid-cols-2 gap-10 md:gap-20" data-aos="fade-up" data-aos-duration="800">
                 <div class=" flex md:flex-col md:pt-0 md:w-full xl:w-[360px]">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
@@ -100,8 +100,7 @@
 
                     <p class="text-[#191919] font-medium md:pt-4 text-2xl md:text-[32px]">Reliability at the Core</p>
                     <p class="text-[#191919] font-medium text-base pt-3">We apply modern methods and expertise to enhance the efficiency, reliability, and
-                        performance of wind turbines—fueling the transition to clean energy.
-                        customers.</p>
+                        performance of wind turbines—fueling the transition to clean energy.</p>
                     </div>
                 </div>
             </div>

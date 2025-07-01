@@ -164,7 +164,7 @@
                             <div class="p-3 flex flex-col justify-between h-full">
                                 <div class="flex justify-between">
                                     <div class="h-[112px] flex flex-col justify-between">
-                                        <img src="{{ asset('images//bionalis.png') }}" alt="logo" class=" my-4">
+                                        <img src="{{ asset('images/bionalis.png') }}" alt="logo" class=" my-4">
                                         <img src="{{ asset('images/brackets_up.png') }}" alt="brackets" class="w-[35px] h-[26px] object-cover">
                                     </div>
                                     <img src="{{ asset('images/incognito.avif') }}" alt="quote" class="w-[112px] h-[112px] object-cover rounded-[20px] rounded-bl-[50px]">

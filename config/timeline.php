@@ -32,7 +32,7 @@ return [
         'year' => '2025',
         'img' => 'leading_the_wind_house.svg',
         'title' => 'Growth & Expansion',
-        'description' => 'Within a few years, the company expanded rapidly, installing more than 50 wind turbines in various countries.',
+        'description' => 'Within a few years, the company expanded rapidly, fixing and inspecting more than 500 wind turbines in various countries.',
         'pt_img' => 'pt-4',
         'pt_title' => 'pt-4',
         'pt_desc' => 'pt-2',

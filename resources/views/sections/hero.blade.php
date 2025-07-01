@@ -61,11 +61,11 @@
 
                                 <div class="flex justify-center items-center">
                                     <h2 class="w-[115px] md:w-[255px] text-white text-[40px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
-                                        90+
+                                        100+
                                     </h2>
                                     <p class="md:w-[365px] w-[213px] text-md text-white md:text-2xl text-left">
                                         A dedicated in-house team of
-                                        90+ professionals</p>
+                                        100+ professionals</p>
                                 </div>
                                 <div class="flex justify-center items-center">
                                     <h2 class="w-[115px] md:w-[255px] text-white text-[40px] md:text-[80px] md:text-6xl font-light drop-shadow-lg md:text-left">
