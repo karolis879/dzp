@@ -10,10 +10,10 @@
                 <img src="{{ asset('images/iso2.png') }}" alt="..."
                      class="w-[236px] h-[333px] rounded-[12px] object-cover"/>
             </div>
-            <div class="swiper-slide">
-                <img src="{{ asset('images/iso3.png') }}" alt="..."
-                     class="w-[236px] h-[333px] rounded-[12px] object-cover"/>
-            </div>
+{{--            <div class="swiper-slide">--}}
+{{--                <img src="{{ asset('images/iso3.png') }}" alt="..."--}}
+{{--                     class="w-[236px] h-[333px] rounded-[12px] object-cover"/>--}}
+{{--            </div>--}}
         </div>
     </div>
 </div>
