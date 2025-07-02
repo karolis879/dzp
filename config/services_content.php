@@ -57,7 +57,7 @@ return [
 
     'turbine' => [
         [
-            'name' => 'Nacelle-and-Spinner-Repair.svg',
+            'name' => 'nacelle.svg',
             'description' => 'Nacelle and Spinner Repair'
         ],
         [
