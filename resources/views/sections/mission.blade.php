@@ -9,7 +9,7 @@
                             </span>
         </h3>
         <div class="flex md:pt-15 md:gap-25">
-            <img class="hidden md:flex w-1/3 object-cover rounded-[30px] rounded-bl-[250px]" src="{{asset('images/values_and_mission.png')}}" data-aos="fade-up-right">
+            <img class="hidden md:flex w-1/3 object-cover rounded-[30px] rounded-bl-[200px]" src="{{asset('images/values_and_mission.png')}}" data-aos="fade-up-right">
             <div class=" md:w-2/3 pt-10 md:grid lg:grid-cols-2 gap-10 md:gap-20" data-aos="fade-up" data-aos-duration="800">
                 <div class=" flex md:flex-col md:pt-0 md:w-full xl:w-[360px]">
                     <div class="md:w-[89px] md:h-[100px] pt-2 group  md:p-0">
