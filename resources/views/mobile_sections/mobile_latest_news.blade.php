@@ -7,7 +7,7 @@
                         <a href="https://www.linkedin.com/feed/update/{{$data->post_id}}" target="_blank">
                             <div
                                 class="md:w-[240px] w-[236px] h-[218px] md:h-[240px] bg-[#E4E9E9] rounded-[20px] flex items-center justify-center">
-                                <img src="{{$data->image}}" alt="news1"
+                                <img src="{{$data->image ?? 'images/dzp_news_logo.jpeg}}" alt="news1"
                                      class="w-full h-full object-cover rounded-[20px]"/>
                             </div>
                         </a>
