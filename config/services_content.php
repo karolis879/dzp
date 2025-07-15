@@ -76,11 +76,11 @@ return [
 
     'exterior' => [
         [
-            'name' => 'windows_exchange.svg',
+            'name' => 'frame.svg',
             'description' => 'Frame Construction Works'
         ],
         [
-            'name' => 'windows_exchange.svg',
+            'name' => 'maintenance.svg',
             'description' => 'Frame Construction Maintenance'
         ],
         [
