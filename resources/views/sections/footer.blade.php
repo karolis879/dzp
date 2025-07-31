@@ -111,7 +111,9 @@
             <div class="flex gap-5 md:pt-0 px-4 md:px-0 pt-3">
                 <p class="text-[#649295]  text-xs"><span class="font-semibold">Designed by</span> BrokenPixels in
                     Switzerland </p>
-                <p class="text-[#649295]  text-xs"><span class="font-semibold">Coded by</span> Karolis</p>
+                <a href="https://www.linkedin.com/in/karolis-vaiciulis/" target="_blank">
+                    <p class="text-[#649295]  text-xs"><span class="font-semibold">Coded by</span> Karolis</p>
+                </a>
             </div>
         </div>
     </div>
